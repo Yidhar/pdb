@@ -1,0 +1,9 @@
+nyto ={
+	nyto ={
+		name = "nyto"
+		plural = "nyto_plural"
+		home_planet = "nyto_planet"
+		home_system = "nyto_system"
+		name_list = "bio_ship"
+	}
+}

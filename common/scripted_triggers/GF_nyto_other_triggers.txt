@@ -1,0 +1,50 @@
+can_destroy_planet_with_tech_GFnyto_accelerating_coil3= {
+    optimize_memory
+    custom_tooltip = {
+        fail_text = is_not_a_standard_planet_or_megastructure
+        is_a_planet_megastructure = yes
+    }
+    custom_tooltip = {
+        fail_text = is_shielded
+        NOR = {
+            is_planet_class = pc_shielded
+            is_planet_class = pc_ringworld_shielded
+            is_planet_class = pc_habitat_shielded
+        }
+    }
+}
+
+is_nyto_country ={
+    optimize_memory
+    OR = {
+        owner_main_species ={
+            is_species_class = nyto
+        }
+        has_country_flag = nyto_empire
+    }
+}
+
+
+is_mechanical_empire = {
+    optimize_memory
+    OR = {
+        owner_species = { has_trait = trait_mechanical }
+        has_country_flag = synthetic_empire
+        is_nyto_country = yes
+    }
+}
+
+is_individual_machine = {
+    optimize_memory
+    or = {
+        and = {
+            founder_species = {
+                is_archetype = MACHINE
+            }
+            is_gestalt = no
+        }
+        is_nyto_country = yes
+    }
+}
+
+

@@ -1,0 +1,14 @@
+namespace = gf_nyto_origin_events
+# country_event = {
+# 	id = gf_nyto_origin_events.1
+# 	title = "origin_gf_nyto_attractor_field_start_title"
+# 	desc = "origin_gf_nyto_attractor_field_start_desc"
+# 	picture = "GFX_evt_landing_ship"	# Placeholder, consider using a custom image later
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_origin = origin_gf_nyto_attractor_field
+# 	}
+# 	option = {
+# 		name = "origin_gf_nyto_attractor_field_start_option"
+# 	}
+# }

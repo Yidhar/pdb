@@ -1,0 +1,23 @@
+origin_gf_nyto_attractor_field = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_remnants.dds"	# Placeholder
+	picture = "GFX_origin_remnants"	# Placeholder
+	possible = {
+        species_archetype = {
+            value = NYTO
+        }
+    }
+    flags = {
+        custom_start_screen
+    }
+	modifier = {
+		# Placeholder effects based on "Stable Point"
+        bonus_pop_growth_mult = -0.1
+
+	}
+    traits = {
+        trait = trait_GF_nyto_ogas_agreement
+    }
+    starting_colony = pc_GF_nyto_embers_gloomy
+	description = origin_gf_nyto_attractor_field_desc
+}

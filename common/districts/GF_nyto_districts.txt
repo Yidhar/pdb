@@ -1,0 +1,287 @@
+# Unique Districts for Paradeus (Nyto)
+# Replaces standard districts for "Attractor Field" origin
+district_gf_nyto_city = {
+	base_buildtime = 480
+	min_for_deposits_on_planet = 1
+	max_for_deposits_on_planet = 1
+	icon = district_gf_nyto_city
+	potential = {
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+	}
+	allow = {
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+		NOT = {
+			is_planet_class = pc_city
+		}
+		NOT = {
+			is_planet_class = pc_relic
+		}
+	}
+    zone_slots = {
+        slot_city_government
+    }
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 3000
+		planet_amenities_add = 500
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 1000
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+			}
+		}
+		modifier = {
+			planet_housing_add = 1000
+		}
+	}
+	# description = district_gf_nyto_city_desc
+}
+
+district_gf_nyto_generator = {
+	base_buildtime = 240
+	min_for_deposits_on_planet = 1
+	icon = district_gf_nyto_generator
+	potential = {
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+	}
+	allow = {
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+		NOT = {
+			is_planet_class = pc_city
+		}
+		NOT = {
+			is_planet_class = pc_relic
+		}
+	}
+	conversion_ratio = 1
+    zone_slots = {
+        slot_city_government
+    }
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = -1000
+		job_technician_add = 500
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_power_hub_1
+			}
+		}
+		modifier = {
+			job_technician_add = 500
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_power_hub_2
+			}
+		}
+		modifier = {
+			job_technician_add = 500
+		}
+	}
+}
+
+district_gf_nyto_mining = {
+	base_buildtime = 240
+	min_for_deposits_on_planet = 1
+	icon = district_gf_nyto_mining
+	potential = {
+		owner = {
+			has_origin = origin_gf_nyto_attractor_field
+		}
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+	}
+	allow = {
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+		NOT = {
+			is_planet_class = pc_city
+		}
+		NOT = {
+			is_planet_class = pc_relic
+		}
+	}
+	conversion_ratio = 1
+    zone_slots = {
+        slot_city_government
+    }
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = -1000
+		job_miner_add = 500
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_mineral_purification_1
+			}
+		}
+		modifier = {
+			job_miner_add = 500
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_mineral_purification_2
+			}
+		}
+		modifier = {
+			job_miner_add = 500
+		}
+	}
+}
+
+district_gf_nyto_agriculture = {
+	base_buildtime = 240
+	min_for_deposits_on_planet = 1
+	icon = district_gf_nyto_agriculture
+	potential = {
+		owner = {
+			has_origin = origin_gf_nyto_attractor_field
+		}
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+	}
+	allow = {
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+		NOT = {
+			is_planet_class = pc_city
+		}
+		NOT = {
+			is_planet_class = pc_relic
+		}
+	}
+	conversion_ratio = 1
+    zone_slots = {
+        slot_city_government
+    }
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = -1000
+		job_farmer_add = 500
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_food_processing_1
+			}
+		}
+		modifier = {
+			job_farmer_add = 500
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_food_processing_2
+			}
+		}
+		modifier = {
+			job_farmer_add = 500
+		}
+	}
+}
+
+district_gf_nyto_industrial = {
+	base_buildtime = 480
+	min_for_deposits_on_planet = 1
+
+	icon = district_gf_nyto_industrial
+	potential = {
+		owner = {
+			has_origin = origin_gf_nyto_attractor_field
+		}
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+	}
+	allow = {
+		NOT = {
+			is_planet_class = pc_city
+		}
+		NOT = {
+			is_planet_class = pc_relic
+		}
+	}
+
+	conversion_ratio = 1
+    zone_slots = {
+        slot_city_government
+    }
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = -1000
+		job_artisan_add = 150
+		job_foundry_add = 150
+	}
+	# description = district_gf_nyto_industrial_desc
+}

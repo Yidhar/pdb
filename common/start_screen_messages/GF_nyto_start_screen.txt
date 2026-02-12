@@ -1,0 +1,9 @@
+part = {
+    location = 0
+    localization = "START_SCREEN_NYTO01"
+
+    trigger = {
+        has_country_flag = custom_start_screen
+        has_origin = origin_gf_nyto_attractor_field
+    }
+}

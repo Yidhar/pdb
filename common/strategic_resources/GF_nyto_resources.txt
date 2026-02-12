@@ -1,0 +1,84 @@
+# Paradeus Strategic Resources
+# Tier 1: Industrial Parts (工业零件)
+# Used for basic maintenance of Nytos and buildings.
+resource_gf_nyto_industrial_parts = {
+	tradable = yes
+	market_amount = 100
+	market_price = 10	# Slightly more expensive than minerals
+	max = 10000
+	ai_weight = {
+		weight = 10
+	}
+	tooltip_decimals = 0
+}
+
+# Tier 2: Collapse Fluid (坍塌液)
+# Core strategic resource. High value, dangerous.
+GF_nyto_collapse_fluid = {
+	tradable = yes
+	market_amount = 50
+	market_price = 50	# High value
+	max = 5000
+	prerequisites = {
+		"tech_gf_nyto_collapse_physics"
+	}
+	# To be implemented
+	ai_weight = {
+		weight = 50
+	}
+	tooltip_decimals = 1
+}
+
+#Collapse crystal.
+GF_nyto_collapse_crystal = {
+	tradable = yes
+	market_amount = 50
+	market_price = 50	# High value
+	max = 5000
+	prerequisites = {
+		"tech_gf_nyto_collapse_physics"
+	}
+	# To be implemented
+	ai_weight = {
+		weight = 50
+	}
+	tooltip_decimals = 1
+}
+
+# Tier 2: Collapse Epiphyllum (坍塌昙花)
+# Biology and stability resource.
+resource_gf_nyto_collapse_epiphyllum = {
+	tradable = yes
+	market_amount = 50
+	market_price = 40
+	max = 5000
+	prerequisites = {
+		"tech_gf_nyto_epiphyllum_cultivation"
+	}
+	# To be implemented
+	ai_weight = {
+		weight = 40
+	}
+	tooltip_decimals = 2
+}
+
+# Tier 2: Training Keys (训练密钥)
+# Military and leadership resource.
+resource_gf_nyto_training_keys = {
+	tradable = yes
+	market_amount = 10
+	market_price = 100	# Very high value
+	max = 1000
+	prerequisites = {
+		"tech_gf_nyto_tactical_simulation"
+	}
+	# To be implemented
+	ai_weight = {
+		weight = 30
+	}
+	tooltip_decimals = 3
+}
+
+GF_nyto_new_fire_control_unit = {
+	tradable = yes
+}

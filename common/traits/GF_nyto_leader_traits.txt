@@ -1,0 +1,138 @@
+# Leader Traits for Nyto (Mirrors of Species Traits)
+leader_trait_GF_nyto_elid = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_elid.png"
+	leader_class = all
+	leader_potential_add = {
+		always = no		# Added via event or species link
+	}
+	modifier = {
+		leader_lifespan_add = -20
+	}
+	notify_on_gained = no
+}
+
+leader_trait_GF_nyto_epiphany = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_epiphany.png"
+	immortal = yes
+	leader_class = all
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		leader_skill_levels = 5
+		species_leader_exp_gain = 1
+	}
+	councilor_modifier = {
+		country_unity_produces_mult = 0.25
+	}
+	notify_on_gained = no
+}
+
+leader_trait_GF_nyto_eucharist_of_the_lamb = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_eucharist_of_the_lamb.png"
+	leader_class = all
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		leader_skill_levels = 1
+		species_leader_exp_gain = 0.5
+	}
+	notify_on_gained = no
+}
+
+leader_trait_GF_nyto_mind_map_corruption = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_mind_map_corruption.png"
+	leader_class = all
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		leader_upkeep_mult = 0.15
+		leader_trait_selection_options_add = -1
+	}
+	notify_on_gained = no
+}
+
+leader_trait_GF_nyto_entropy_accumulation = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_entropy_accumulation.png"
+	leader_class = all
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		leader_lifespan_add = -30
+		species_leader_exp_gain = -0.2
+	}
+	notify_on_gained = no
+}
+
+leader_trait_GF_nyto_nexus_node = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_nexus_node.png"
+	leader_class = all
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		# Combined effects
+		planet_stability_add = 15
+		ship_fire_rate_mult = 0.25
+		army_damage_mult = 0.5
+		all_technology_research_speed = 0.2
+	}
+	notify_on_gained = no
+}
+
+leader_trait_GF_nyto_metabolic_burnout = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_metabolic_burnout.png"
+	leader_class = all
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		leader_lifespan_add = -30
+	}
+	notify_on_gained = no
+}
+
+leader_trait_GF_nyto_epiphyllum_bloom = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_epiphyllum_bloom.png"
+	leader_class = all
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		leader_lifespan_add = -40
+	}
+	notify_on_gained = no
+}
+
+leader_trait_GF_nyto_collapse_radiation_adaptation = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_collapse_radiation_adaptation.png"
+	leader_class = all
+	leader_potential_add = {
+		always = no
+	}
+	modifier = {
+		leader_lifespan_add = 20
+	}
+	notify_on_gained = no
+}

@@ -1,0 +1,6 @@
+nyto ={
+    species_class = nyto
+    portraits ={
+        "GF_nyto"
+    }
+}

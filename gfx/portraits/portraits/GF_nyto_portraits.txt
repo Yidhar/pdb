@@ -1,0 +1,101 @@
+portraits = {
+    GF_nyto_chibi_pop_01 ={texturefile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_black.png }
+    GF_nyto_chibi_pop_02 = {texturefile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_white.png }
+    GF_nyto_chibi_pop_03 = {textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Nele.png}
+    GF_nyto_chibi_pop_04 = {textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Bramedb.png}
+    GF_nyto_chibi_pop_05 = { textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Embla.png}
+    GF_nyto_chibi_pop_06 ={ textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Gray.png }
+    GF_nyto_chibi_pop_07 ={textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Grig.png}
+    GF_nyto_chibi_pop_08 = {textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Hebe.png }
+    GF_nyto_chibi_pop_09 ={ textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Isomer.png}
+    GF_nyto_chibi_pop_10 ={textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Isomer_black.png}
+    GF_nyto_chibi_pop_11 ={textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Isomer_White.png}
+    GF_nyto_chibi_pop_12 = {textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Mercurows.png}
+    GF_nyto_chibi_pop_13 = {textureFile =  gfx/portraits/NYTO/chibi/GF_nyto_chibi_Morridow.png}
+    GF_nyto_chibi_pop_14 ={ textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Narciss.png }
+    GF_nyto_chibi_pop_15= {textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Styx.png}
+    GF_nyto_chibi_pop_16= { textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Sana.png}
+    GF_nyto_chibi_pop_17 = {textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Nimogen.png}
+    GF_nyto_chibi_pop_18 ={textureFile = gfx/portraits/NYTO/chibi/GF_nyto_chibi_Tareus_AR.png}
+    GF_nyto_leader_Dandelion_001 = {textureFile = gfx/portraits/NYTO/leader/GF_nyto_Dandelion001.png }
+    GF_nyto_leader_Dandelion_002 = {textureFile = gfx/portraits/NYTO/leader/GF_nyto_Dandelion002.png }
+    GF_nyto_leader_Dandelion_003 = {textureFile = gfx/portraits/NYTO/leader/GF_nyto_Dandelion003.png }
+    GF_nyto_leader_nele ={textureFile ="gfx/portraits/NYTO/leader/GF_nyto_Nele.png" }
+    GF_nyto_leader_nele_steup = { textureFile =  "gfx/portraits/NYTO/leader/GF_nyto_Nele_game_setup.png"}
+    GF_nyto_leader_Morridow_01 ={ textureFile = gfx/portraits/NYTO/leader/GF_nyto_Morridow_1.dds }
+    GF_nyto_leader_Morridow_02 ={ textureFile = gfx/portraits/NYTO/leader/GF_nyto_Morridow_2.dds }
+    GF_nyto_leader_Morridow_03 ={ textureFile = gfx/portraits/NYTO/leader/GF_nyto_Morridow_3.dds }
+    GF_nyto_leader_Narciss_1 = { textureFile = gfx/portraits/NYTO/leader/GF_nyto_Narciss_1.dds }
+    GF_nyto_leader_Nimetlan_1 = { textureFile = gfx/portraits/NYTO/leader/GF_nyto_Nimeylan_1.dds }
+    GF_nyto_leader_Isomer_basic ={ textureFile = gfx/portraits/NYTO/leader/GF_nyto_lsomer_basic.dds }
+    GF_nyto_leader_nimogen ={textureFile = gfx/portraits/NYTO/leader/GF_nyto_nimogen.dds }
+    GF_nyto_leader_silver = {textureFile = gfx/portraits/NYTO/leader/GF_nyto_silver.dds }
+    GF_nyto_leader_Hebe = { textureFile = gfx/portraits/NYTO/leader/GF_nyto_Hebe_s.png}
+}
+
+portrait_groups = {
+    GF_nyto ={
+        default = GF_nyto_leader_Dandelion_002
+        game_setup = {
+            set = {
+                portraits = {
+                    GF_nyto_leader_Dandelion_001
+                    GF_nyto_leader_Dandelion_002
+                    GF_nyto_leader_Dandelion_003
+                    GF_nyto_leader_nele_steup
+                }
+            }
+        }
+        pop_group = {
+            set = {
+               portraits = {
+                   GF_nyto_chibi_pop_01
+                   GF_nyto_chibi_pop_02
+                   GF_nyto_chibi_pop_03
+                   GF_nyto_chibi_pop_04
+                   GF_nyto_chibi_pop_05
+                   GF_nyto_chibi_pop_06
+                   GF_nyto_chibi_pop_07
+                   GF_nyto_chibi_pop_08
+                   GF_nyto_chibi_pop_09
+                   GF_nyto_chibi_pop_10
+                   GF_nyto_chibi_pop_11
+                   GF_nyto_chibi_pop_12
+                   GF_nyto_chibi_pop_13
+                   GF_nyto_chibi_pop_14
+                   GF_nyto_chibi_pop_15
+                   GF_nyto_chibi_pop_16
+                   GF_nyto_chibi_pop_17
+               }
+            }
+        }
+        leader = {
+            add = {
+                portraits = {
+                    GF_nyto_leader_Dandelion_001
+                    GF_nyto_leader_Dandelion_002
+                    GF_nyto_leader_Dandelion_003
+                    GF_nyto_leader_nele
+                    GF_nyto_leader_Morridow_01
+                    GF_nyto_leader_Morridow_02
+                    GF_nyto_leader_Morridow_03
+                    GF_nyto_leader_Narciss_1
+                    GF_nyto_leader_Nimetlan_1
+                    GF_nyto_leader_Isomer_basic
+                    GF_nyto_leader_silver
+                    GF_nyto_leader_Hebe
+                }
+            }
+        }
+        ruler = {
+            set = {
+                portraits = {
+                    GF_nyto_leader_Dandelion_001
+                    GF_nyto_leader_Dandelion_002
+                    GF_nyto_leader_Dandelion_003
+                    GF_nyto_leader_nele
+                }
+            }
+        }
+    }
+}

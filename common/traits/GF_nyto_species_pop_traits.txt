@@ -1,0 +1,466 @@
+trait_GF_nyto_ogas_agreement = {
+	cost = 0
+	sorting_priority = 20
+	potential_crossbreeding_chance = 0	#潜在杂交概率
+	initial = yes	#是否初始特质,指是否开局可选
+	randomized = yes	#是否随机特质（指生成ai时是否会有此特性）
+	# immortal_leaders = no
+	improves_leaders = yes
+	advanced_trait = no	#是否高级特质
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_ogas_agreement.png"
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		pop_bonus_workforce_mult = -0.2
+		country_unity_produces_mult = -0.3
+		all_technology_research_speed = 0.3
+		planet_pop_assembly_add = 5
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_GF_nyto_isomer_synchronization = {
+	cost = 3
+	sorting_priority = 21
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_isomer_synchronization.png"
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_mental_instability"
+	}
+	modifier = {
+		country_unity_produces_mult = 0.1
+		planet_stability_add = 5
+	}
+}
+
+trait_GF_nyto_paradeus_indoctrination = {
+	cost = 1
+	sorting_priority = 22
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_paradeus_indoctrination.png"
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_ego_dissolution"
+	}
+	modifier = {
+		pop_government_ethic_attraction = 0.5
+		army_morale = 0.2
+	}
+}
+
+trait_GF_nyto_distortion_barrier = {
+	cost = 2
+	sorting_priority = 23
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_distortion_barrier.png"
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		army_damage_taken_mult = -0.2
+		planet_orbital_bombardment_damage = -0.25
+	}
+}
+
+trait_GF_nyto_electronic_warfare = {
+	cost = 2
+	sorting_priority = 24
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_electronic_warfare.png"
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_virus_vulnerability"
+		"trait_GF_nyto_blind_devotion"
+	}
+	modifier = {
+		all_technology_research_speed = 0.1
+		intel_decryption_mult = 1
+	}
+}
+
+trait_GF_nyto_pain_tolerance = {
+	cost = 1
+	sorting_priority = 25
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_pain_tolerance.png"
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		army_health = 0.2
+		army_morale_damage_mult = -0.25
+	}
+}
+
+trait_GF_nyto_mental_instability = {
+	cost = -2
+	sorting_priority = 26
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_mental_instability.png"
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_isomer_synchronization"
+		"trait_GF_nyto_doctrinal_enforcer"
+	}
+	modifier = {
+		pop_happiness = -0.1
+		planet_crime_add = 5
+	}
+}
+
+trait_GF_nyto_maintenance_dependency = {
+	cost = -1
+	sorting_priority = 27
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_maintenance_dependency.png"
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = 0.2
+	}
+}
+
+trait_GF_nyto_biological_lock = {
+	cost = -2
+	initial = no
+	randomized = yes
+	immortal_leaders = no
+	improves_leaders = yes
+	advanced_trait = no
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_biological_lock.png"
+	allowed_archetypes = {
+		NYTO
+	}
+}
+
+# Set 3: Faith & Hierarchy
+trait_GF_nyto_doctrinal_enforcer = {
+	cost = 2
+	sorting_priority = 31
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_doctrinal_enforcer.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_mental_instability"
+		"trait_GF_nyto_ego_dissolution"
+	}
+	modifier = {
+		planet_crime_add = -25
+		pop_cat_worker_bonus_workforce_mult = 0.15
+	}
+}
+
+trait_GF_nyto_inquisitor_logic = {
+	cost = 2
+	sorting_priority = 32
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_inquisitor_logic.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_blind_devotion"
+	}
+	modifier = {
+		army_morale = 0.5
+		intel_decryption_mult = 2
+	}
+	# TODO: Event Implementation - Spawns special "Inquisitor" armies
+}
+
+trait_GF_nyto_blind_devotion = {
+	cost = -2
+	sorting_priority = 33
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_blind_devotion.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_inquisitor_logic"
+		"trait_GF_nyto_electronic_warfare"
+	}
+	modifier = {
+		all_technology_research_speed = -0.1
+		pop_government_ethic_attraction = 1
+	}
+}
+
+trait_GF_nyto_ego_dissolution = {
+	cost = -2
+	sorting_priority = 34
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_ego_dissolution.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_doctrinal_enforcer"
+		"trait_GF_nyto_paradeus_indoctrination"
+	}
+	modifier = {
+		pop_happiness = -0.15
+		pop_political_power = -0.5
+	}
+}
+
+# Set 4: Cybernetics & Network
+trait_GF_nyto_zero_latency_link = {
+	cost = 2
+	sorting_priority = 35
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_zero_latency_link.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_virus_vulnerability"
+	}
+	modifier = {
+		planet_stability_add = 10
+		pop_complex_drone_output = 0.1
+	}
+}
+
+trait_GF_nyto_virtual_ghost = {
+	cost = 2
+	sorting_priority = 36
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_virtual_ghost.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_memory_overflow"
+	}
+	modifier = {
+		intel_encryption_add = 2
+		intel_decryption_add = 2
+	}
+}
+
+trait_GF_nyto_memory_overflow = {
+	cost = -2
+	sorting_priority = 37
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_memory_overflow.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_virtual_ghost"
+	}
+	modifier = {
+		empire_size_penalty_mult = 0.2
+		leader_upkeep_mult = 0.5
+	}
+}
+
+trait_GF_nyto_virus_vulnerability = {
+	cost = -2
+	sorting_priority = 38
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_virus_vulnerability.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_zero_latency_link"
+		"trait_GF_nyto_electronic_warfare"
+	}
+	modifier = {
+		spy_network_daily_value_mult = -0.5
+		pop_robot_upkeep_mult = 0.5
+	}
+}
+
+# Set 5: Biology & Warfare
+trait_GF_nyto_epiphyllum_bloom = {
+	cost = 2
+	sorting_priority = 39
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_epiphyllum_bloom.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_metabolic_burnout"
+	}
+	modifier = {
+		army_damage_mult = 1
+		leader_lifespan_add = -40
+		planet_pops_food_produces_mult = 0.1
+	}
+}
+
+trait_GF_nyto_nanite_repair_systems = {
+	cost = 2
+	sorting_priority = 40
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_nanite_repair_systems.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	# Unrestricted
+	modifier = {
+		army_health = 0.5
+		pop_environment_tolerance = 0.2
+	}
+}
+
+trait_GF_nyto_metabolic_burnout = {
+	cost = -2
+	sorting_priority = 41
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_metabolic_burnout.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+		"trait_GF_nyto_epiphyllum_bloom"
+	}
+	modifier = {
+		leader_lifespan_add = -30
+		planet_pops_food_upkeep_mult = 0.1
+	}
+}
+
+trait_GF_nyto_sensory_overload = {
+	cost = -2
+	sorting_priority = 42
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_sensory_overload.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	opposites = {
+	}
+	modifier = {
+		pop_amenities_usage_mult = 0.5
+		planet_crime_add = 10
+	}
+}
+
+# Set 6: High-Impact Traits (Cost 4/-4)
+trait_GF_nyto_eucharist_of_the_lamb = {
+	cost = 4
+	sorting_priority = 50
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_eucharist_of_the_lamb.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		LEADER_SKILL_ADD = 1
+		species_leader_exp_gain = 0.5
+	}
+	# TODO: Event Implementation
+	# Trigger: When a leader reaches Level 10.
+	# Effect: "Ascension". The leader gains the "Epiphany" trait.
+	# Cost: Empire suffers -20% Unity and -20% Pop Growth for 10 years.
+}
+
+trait_GF_nyto_nexus_node = {
+	cost = 4
+	sorting_priority = 51
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_nexus_node.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		planet_stability_add = 15
+		ship_fire_rate_mult = 0.25
+		army_damage_mult = 0.5
+		all_technology_research_speed = 0.2
+	}
+	# TODO: Event Implementation
+	# Trigger: Activated via Edict (Targeting Leader).
+	# Effect: "Overclock". +50% effectiveness for 5 years, then -50% for 5 years (Cool down).
+}
+
+trait_GF_nyto_mind_map_corruption = {
+	cost = -4
+	sorting_priority = 52
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_mind_map_corruption.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		leaders_upkeep_mult = 0.15
+		leader_trait_selection_options_add = -1
+	}
+	# TODO: Event Implementation
+	# Trigger: Random yearly pulse (Low chance).
+	# Effect: "Glitch". Leader loses 1 Level or gains a negative trait.
+}
+
+trait_GF_nyto_entropy_accumulation = {
+	cost = -4
+	sorting_priority = 53
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_entropy_accumulation.png"	# Placeholder
+	allowed_archetypes = {
+		NYTO
+	}
+	immortal_leaders = yes
+	modifier = {
+		leader_lifespan_add = -30
+		species_leader_exp_gain = -0.2
+	}
+	# TODO: Event Implementation
+	# Trigger: On Leader Level Up.
+	# Effect: "System Entropy". Small chance on level up to gain a "Corrupted Sector" modifier (-5% efficiency, stacks).
+}
+
+# Special Event Trait (Hidden)
+trait_GF_nyto_epiphany = {
+	cost = 0
+	sorting_priority = 99
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_epiphany.png"	# Placeholder
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		LEADER_SKILL_ADD = 5
+		species_leader_exp_gain = 1
+		country_unity_produces_mult = 0.25
+		planet_stability_add = 15
+		planet_crime_add = -25
+		ship_fire_rate_mult = 0.2
+		ship_evasion_mult = 0.1
+		army_damage_mult = 0.5
+		army_morale = 1
+		army_damage_taken_mult = -0.15
+		all_technology_research_speed = 0.2
+	}
+}
+
+trait_GF_nyto_elid = {
+	cost = -4
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_elid.png"
+	initial = no
+	immortal_leaders = yes
+	randomized = no
+	species_possible_remove = {
+	}
+	modifier = {
+		pop_bonus_workforce_mult = -0.15
+		leader_lifespan_add = -40
+	}
+}
+
+trait_GF_nyto_collapse_radiation_adaptation = {
+	cost = 2
+	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_collapse_radiation_adaptation.png"
+	initial = yes
+	randomize = no
+	modification = yes
+	allowed_archetypes = {
+		BIOLOGICAL
+	}
+	opposites = {
+		"trait_GF_nyto_elid"
+	}
+	modifier = {
+		pop_environment_tolerance = 0.2
+		leader_lifespan_add = 20
+		army_health = 0.1
+	}
+}

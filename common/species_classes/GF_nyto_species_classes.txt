@@ -1,0 +1,29 @@
+nyto= {
+    archetype = NYTO
+    randomized = no
+    gender = no
+    use_climate_preference = no
+    portrait_modding = no
+    # possible = {authority = {value = auth_GF_paradeus}}
+    portraits = {"GF_nyto"}
+    custom_portraits = {portraits = {"GF_nyto"}}
+    leader_age_min = 5
+    leader_age_max = 50
+    graphical_culture = humanoid_01
+    move_pop_sound_effect = "robot_pops_move"
+    resources = {
+        category = planet_pops
+        upkeep = {
+            energy = 0.2
+            food = 0.1
+            alloys = 0.05
+
+        }
+
+    }
+    playable = {
+        always = yes
+    }
+    trait = "trait_GF_nyto_ogas_agreement"
+
+}

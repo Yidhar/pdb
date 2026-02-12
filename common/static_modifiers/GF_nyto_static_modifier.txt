@@ -1,0 +1,4 @@
+GF_nyto_static_pop ={
+    planet_pop_assembly_add = 5
+    hide_from_country_list = yes
+}

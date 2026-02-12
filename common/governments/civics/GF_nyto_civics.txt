@@ -1,0 +1,23 @@
+GF_nyto_Cyber_Religion ={
+    possible = {
+        species_class = {
+            value = nyto
+        }
+        ethics = {
+            or = {
+                value = ethic_spiritualist
+                value = ethic_fanatic_spiritualist
+            }
+            or = {
+                value = ethic_authoritarian
+                value = ethic_fanatic_authoritarian
+            }
+        }
+    }
+    description = GF_nyto_Cyber_Religion_description
+    modification = yes
+    modifier = {
+        planet_stability_mult = 0.5
+        fumongus_authoritarian =0.25
+    }
+}
