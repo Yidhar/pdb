@@ -47,7 +47,7 @@ GF_nyto_collapse_crystal = {
 
 # Tier 2: Collapse Epiphyllum (坍塌昙花)
 # Biology and stability resource.
-resource_gf_nyto_collapse_epiphyllum = {
+GF_nyto_collapse_epiphyllum = {
 	tradable = yes
 	market_amount = 50
 	market_price = 40
@@ -64,7 +64,7 @@ resource_gf_nyto_collapse_epiphyllum = {
 
 # Tier 2: Training Keys (训练密钥)
 # Military and leadership resource.
-resource_gf_nyto_training_keys = {
+GF_nyto_training_keys = {
 	tradable = yes
 	market_amount = 10
 	market_price = 100	# Very high value

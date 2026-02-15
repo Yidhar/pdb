@@ -1,0 +1,106 @@
+#坍缩粒子研究人员
+
+GF_nyto_collapse_particle_researcher = {
+	category = specialist
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = GF_nyto_research_building_tir1
+			icon = calculator
+		}
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		NOT = {
+			is_species_class = EILD
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		mod_GF_nyto_planet_collapse_pollute = 1
+	}
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
+		}
+		upkeep = {
+			GF_nyto_collapse_fluid = 1
+			consumer_goods = 1
+		}
+		produces = {
+			trigger = {
+				planet = {
+					has_building = building_GFnyto_collapse_exploit_plant_2
+					has_building = building_GFnyto_algorithm
+				}				
+			}
+			physics_research = 4
+			society_research = 4
+			engineering_research = 4
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_variable_set = GFnyto_plante_wrlv
+				}
+			}
+			physics_research = 0.0035
+			society_research = 0.0035
+			engineering_research = 0.0035
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		produces = {
+			trigger = {
+				owner = {
+					is_ai = yes
+				}
+			}
+			GF_nyto_collapse_fluid = 100
+			GF_nyto_training_keys = 3
+			GF_nyto_new_fire_control_unit = 5
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					has_building = building_GFnyto_collapse_exploit_plant_2
+					has_building = building_GFnyto_algorithm
+				}
+			}
+			consumer_goods = 2
+			GF_nyto_training_keys = 0.2
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					is_variable_set = GFnyto_plante_wrlv
+				}
+			}
+			consumer_goods = 0.01
+			GF_nyto_collapse_fluid = 0.025
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	weight = {
+		weight = 10
+	}
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
