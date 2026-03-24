@@ -1,3 +1,6 @@
 ﻿l_simp_chinese:
  mod_mod_GF_nyto_planet_collapse_purify:0 "坍塌净化"
  mod_mod_GF_nyto_planet_collapse_pollute:0 "坍塌污染"
+
+ pc_GF_nyto_embers_gloomy:0 "余烬黯然星球"
+ pc_GF_nyto_embers_gloomy_desc:0 "坍塌辐射在这里无处不在，几乎没有什么能在这里生存下来。"

@@ -20,7 +20,7 @@ GF_nyto_collapse_fluid = {
 	market_price = 50	# High value
 	max = 5000
 	prerequisites = {
-		"tech_gf_nyto_collapse_physics"
+		"tech_GF_nyto_collapse_stability"
 	}
 	# To be implemented
 	ai_weight = {
@@ -36,7 +36,7 @@ GF_nyto_collapse_crystal = {
 	market_price = 50	# High value
 	max = 5000
 	prerequisites = {
-		"tech_gf_nyto_collapse_physics"
+		"tech_GF_nyto_collapse_stability"
 	}
 	# To be implemented
 	ai_weight = {
@@ -53,7 +53,7 @@ GF_nyto_collapse_epiphyllum = {
 	market_price = 40
 	max = 5000
 	prerequisites = {
-		"tech_gf_nyto_epiphyllum_cultivation"
+		"tech_GF_nyto_Inverse_collapse_2"
 	}
 	# To be implemented
 	ai_weight = {
@@ -70,7 +70,7 @@ GF_nyto_training_keys = {
 	market_price = 100	# Very high value
 	max = 1000
 	prerequisites = {
-		"tech_gf_nyto_tactical_simulation"
+		"tech_GFnyto_framework"
 	}
 	# To be implemented
 	ai_weight = {

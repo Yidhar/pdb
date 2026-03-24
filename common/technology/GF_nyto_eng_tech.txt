@@ -1,0 +1,281 @@
+#升级1
+tech_GF_nyto_robomodding_points_1= {
+	icon = tech_GF_nyto_robomodding_points_1
+	cost = 10000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+	weight = 5
+	modifier = {NYTO_species_trait_points_add = 2 EILD_species_trait_points_add = 2 }
+	potential = {is_nyto_country =yes}
+	ai_weight = {weight = 2}
+}
+#升级2
+tech_GF_nyto_robomodding_points_2 = {
+	icon = tech_GF_nyto_robomodding_points_2
+	cost = 20000
+	area = engineering
+	tier = 2
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_GF_nyto_robomodding_points_1" }
+	weight = 5
+	modifier = {NYTO_species_trait_points_add = 2 EILD_species_trait_points_add = 2 }
+	potential = {is_nyto_country =yes}
+	ai_weight = {weight = 2}
+}
+#移动城市LV1
+tech_GF_nyto_mobile_city_1= {
+	icon = tech_GF_nyto_mobile_city_1
+	cost = 10000
+	area = engineering
+	tier = 1
+	category = { voidcraft }
+	prerequisites = { "tech_mega_engineering" }
+	weight = 5
+	modifier = {}
+	potential = {is_nyto_country =yes}
+	ai_weight = {weight = 2}
+}
+#算法工程
+tech_GF_nyto_algorithm ={ 
+	cost = 30000
+	area = engineering
+	category = { biology }
+	tier = 2
+	weight = 999
+	potential = {is_nyto_country =yes}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_exotic_gases
+	}
+}
+#新型火控单元
+tech_GFnyto_framework ={
+	cost = 30000
+	area = engineering
+	category = { voidcraft }
+	tier = 3
+	weight = 999
+	potential = {is_nyto_country =yes}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_rare_crystals
+	}
+}
+
+#高级蚀刻理论
+tech_GFnyto_framework2={
+	cost = 30000
+	area = engineering
+	category = { voidcraft }
+	tier = 3
+	weight = 50
+	potential = {is_nyto_country =yes}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_GFnyto_framework
+	}
+}
+
+#坍塌理论
+tech_GFnyto_tansuo={
+	cost = 30000
+	area = engineering
+	category = { particles }
+	tier = 3
+	weight = 80
+	potential = {
+		is_nyto_country =yes
+	}
+	ai_weight = {weight = 100}
+	prerequisites = {
+		tech_GF_nyto_Inverse_collapse_1
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 20
+			has_technology = tech_climate_restoration
+		}
+	}
+}
+
+#粒子解离
+tech_GFnyto_tansuo2={
+	cost = 30000
+	area = engineering
+	category = { particles }
+	tier = 4
+	weight = 50
+	potential = {
+		is_nyto_country =yes
+	}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_GFnyto_tansuo
+	}
+}
+
+#恒星坍缩器
+tech_GFnyto_star_tasuo={
+	cost = 50000
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 50
+	potential = {
+		is_nyto_country =yes
+	}
+	ai_weight = {weight = 200}
+	prerequisites = {
+		tech_mega_engineering
+	}
+	modifier = {
+		custom_tooltip = "tech_GFnyto_star_tasuo_desc"
+	}
+}
+
+#指挥舰
+tech_template_GFnyto_Command_ship ={
+	cost = 50000
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 20
+	ai_weight = {
+		weight = 50
+	}
+	modifier = {
+		command_limit_add = 100
+	}
+	potential = {
+		is_nyto_country =yes
+	}
+	prerequisites = {
+		tech_template_GFnyto_cv_batellship
+	}
+}
+#航空战列舰
+tech_template_GFnyto_cv_batellship ={
+	cost = 50000
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 20
+	ai_weight = {
+		weight = 50
+	}
+	modifier = {
+		command_limit_add = 50
+	}
+	potential = {
+		is_nyto_country =yes
+	}
+	prerequisites = {
+		tech_titans
+	}
+}
+#永恒要塞
+tech_template_stions_fortress ={
+	cost = 50000
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 20
+	ai_weight = {
+		weight = 50
+	}
+	potential = {
+		is_nyto_country =yes
+	}
+	prerequisites = {
+		tech_mega_engineering
+	}
+}
+#轨道卫星城
+tech_template_GF_nyto_orbit_stions ={
+	cost = @tier1cost3
+	area = engineering
+	category = { voidcraft }
+	tier = 3
+	weight = @tier3weight1
+	ai_weight = { weight = 100 	}
+	potential = { is_nyto_country =yes 	}
+	prerequisites = { tech_habitat_1 tech_GF_nyto_algorithm tech_GFnyto_tansuo  }
+	modifier = {
+		planet_building_build_speed_mult = 0.5
+		planet_colony_development_speed_mult = 1
+		custom_tooltip = "tech_template_GF_nyto_orbit_stions_desc"
+	}
+}
+
+#坍缩共相性
+tech_template_GF_nyto_universalism ={
+	icon =tech_GFnyto_tansuo
+	cost = 80000
+	area = physics
+	is_rare = yes
+	tier = 5
+	category = { particles }
+	weight = 50
+	potential = {  is_nyto_country = yes  }
+	prerequisites = { tech_GFnyto_star_tasuo  }
+	mod_weight_if_group_picked = {  }
+	modifier = {
+		megastructure_build_speed_mult = 0.5
+		custom_tooltip ="tech_template_GF_nyto_universalism_titl"
+	}
+}
+
+# 堡垒强度
+tech_template_GF_nyto_stions_fortress_HP = {
+	icon = tech_template_stions_fortress
+	cost = 50000
+	area = engineering
+	category = { military_theory }
+	levels = 100
+	tier = @repeatableTechTier
+	cost_per_level = 10000
+	weight = 50
+
+	potential = { is_nyto_country = yes }
+	prerequisites = {
+		tech_template_stions_fortress
+	}
+	modifier = {
+		GF_nyto_stions_HP_nums =1
+		#custom_tooltip ="tech_template_GF_nyto_stions_fortress_HP_titl"
+	}
+}
+
+#堡垒附属粒子炮
+tech_template_GF_nyto_stions_fortress_commn = {
+	icon = tech_template_stions_fortress
+	cost = 20000
+	area = engineering
+	cost_per_level = 20000
+	category = { military_theory }
+	levels = 100
+	tier = 5
+	weight = 50
+	potential = {
+		is_nyto_country = yes
+	}
+	prerequisites = {
+		tech_template_stions_fortress
+	}
+	modifier = {
+		GF_nyto_stions_weapon_num = 1
+		#custom_tooltip="tech_template_GF_nyto_stions_fortress_commn_titl"
+	}
+}
