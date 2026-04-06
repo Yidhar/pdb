@@ -1,0 +1,495 @@
+@min_buff = 1000
+
+Gf_nyto_habitat_cost ={
+	base = 0
+	complex_trigger_modifier={
+		trigger = count_planet_within_border
+		parameters ={
+			limit = {
+				NOT = { has_anomaly = yes }
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = { has_star_flag = ring_world_built }
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+				NOR = { is_asteroid = yes is_moon = yes }
+				is_star = no
+			}
+		}
+		mode = add
+		mult = 1
+	}
+}
+# GF_nyto_technician_modifer ={
+# 	base = 0
+# 	complex_trigger_modifier = {
+# 		trigger = count_owned_pop_job
+# 		parameters = {
+# 			limit ={
+# 				has_job = GFnyto_phase_technician
+# 			}
+# 		}
+# 		mode = add
+# 		mult = 1
+# 	}
+# }
+GF_nyto_drp_modifer ={
+	base = 0
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_districts
+		parameters = {
+			type = $districts$
+		}
+		mode = add
+		mult = 0.1
+	}
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_buildings
+		parameters = {
+			type = any
+		}
+		mode = mult
+	}
+	[[rss]
+		add = modifier:planet_jobs_$rss$_produces_mult
+	]
+		add = modifier:planet_jobs_produces_mult
+	[[category]
+		add = modifier:planet_jobs_$category$_produces_mult
+		]
+	[[rss_category]
+		add = modifier:planet_$rss_category$_produces_mult
+		]
+	[[researchers0]
+		add = modifier:planet_$researchers0$_produces_mult
+	]
+	[[researchers1]
+		add = modifier:planet_$researchers1$_produces_mult
+		add = modifier:planet_jobs_$researchers1$_produces_mult
+	]
+	[[researchers2]
+		add = modifier:planet_$researchers2$_produces_mult
+		add = modifier:planet_jobs_$researchers2$_produces_mult
+	]
+	[[researchers3]
+		add = modifier:planet_researchers_$researchers3$_produces_mult
+		add = modifier:planet_jobs_$researchers3$_produces_mult
+	]
+	add = modifier:planet_jobs_upkeep_mult
+	[[JOB]
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = count_owned_pop_job
+		parameters = {
+			limit ={
+				has_job_type = $JOB$
+			}
+		}
+		mode = mult
+		mult = $jobsup|0.15$
+	}]
+	[[modifier]
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		parameters = {
+			modifier = $modifier$
+		}
+		mode = add
+		mult = -1
+	} ]
+	modifier = {
+		#check_variable = {
+		#	which =
+		#
+		#}
+		check_variable_arithmetic = {
+			which = base
+			add = 100
+			VALUE < value:Gfnyto_planet_wrlv_proudcu2
+		}
+		mult = value:Gfnyto_planet_wrlv_proudcu2
+	}
+	modifier = {
+		check_variable_arithmetic = {
+			which = base
+			add = 100
+			VALUE < value:Gfnyto_planet_wrlv_proudcu2
+		}
+		mult = 0.003
+	}
+
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger =has_planetary_ascension_tier
+		mode = add
+		mult = $planet_tier|10$
+		potential ={
+			has_planetary_ascension_tier > 0
+		}
+	}
+
+	#divide = 3
+}
+
+GF_nyto_PR_var_drp_count={
+	base = 0
+	add = $job_count$
+	mult = $jobsup|0.15$
+}
+
+GFnyto_Emergency_pollution_control_res ={
+	base = 1
+	add = trigger:planet_size
+	multiply = planet.GFnyto_plante_wrlv
+	#divide = 10
+	round = yes
+	abs = yes
+}
+
+Gfnyto_planet_wrlv_proudcu ={
+	base = 1
+	add = planet.GFnyto_plante_wrlv
+	mult = 0.1
+	pow = 2
+	complex_trigger_modifier = {
+		potential = {
+			planet={
+				has_planetary_ascension_tier > 1
+				has_planetary_ascension_tier < 11
+			}
+		}
+		trigger_scope = planet
+		trigger =has_planetary_ascension_tier
+		mode = add
+		mult = 0.01 #飙升十倍？
+	}
+	modifier = {
+		has_planetary_ascension_tier > 10
+		add = 1
+	}
+}
+Gfnyto_planet_wrlv_proudcu2={
+	base = 0
+	add = value:Gfnyto_planet_wrlv_proudcu
+	pow = 2
+	divide = planet.GFnyto_plante_wrlv
+	divide = 200
+	mult = value:Gfnyto_planet_wrlv_proudcu_pops
+	round = yes
+	abs = yes
+}
+Gfnyto_planet_wrlv_proudcu_pops ={
+	base = 0
+	add = trigger:num_pops
+	mult = 0.01
+	add = 1
+}
+
+
+Gfnyto_planet_wrlv_upkeep ={
+	base = 1
+	add = planet.GFnyto_plante_wrlv
+	mult = 0.1
+	pow = 2
+}
+Gfnyto_planet_wrlv_upkeep2 ={
+	base= 0
+	modifier = {
+		has_modifier = GF_nyto_Radiation
+		add = value:Gfnyto_planet_wrlv_upkeep3
+	}
+
+	modifier = {
+		has_modifier = GF_nyto_Radiation2
+		add = value:Gfnyto_planet_wrlv_upkeep3
+	}
+	mult = -0.1
+	mult = value:Gfnyto_planet_wrlv_upkeep
+	divide = planet.GFnyto_plante_wrlv
+	abs = yes
+}
+Gfnyto_planet_wrlv_upkeep3 ={
+	base = 0
+	add = planet.GFnyto_plante_wrlv
+	divide = 0.02
+	mult = -0.1
+}
+#总净化
+GFnyto_plante_wrlv_cleanse ={
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_buildings
+		parameters = {
+			type = building_GFnyto_affluence_center
+			disabled = no
+		}
+		mode = add
+		mult = 10
+	}
+	add = value:Recoil_decay_barrier_center_purify
+	modifier = {
+		not = {
+			is_planet_class = pc_GFnytp_habitis
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GF_nyto_embers_gloomy
+		}
+		add = value:GF_nyto_planet_size_cleanse
+	}
+	min = 0
+}
+
+#壁垒净化
+Recoil_decay_barrier_center_purify ={
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_buildings
+		parameters = {
+			type = GF_nyto_Recoil_decay_barrier
+			disabled = no
+		}
+		mode = add
+		mult = 50
+	}
+	modifier = {
+		check_variable_arithmetic = {
+			which = GF_nyto_Recoil_decay_barrier_num
+			add = 1
+			value < value:has_GF_nyto_Recoil_decay_barrier_num
+		}
+		mult =value:Recoil_decay_barrier_center_purify_buffer
+	}
+}
+
+
+#壁垒级联加成
+Recoil_decay_barrier_center_purify_buffer ={
+	base = 1.1
+	pow = value:has_GF_nyto_Recoil_decay_barrier_num
+}
+
+
+#建筑计数
+has_GF_nyto_Recoil_decay_barrier_num ={
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_buildings
+		parameters = {
+			type = GF_nyto_Recoil_decay_barrier
+			disabled = no
+		}
+		mode = add
+	}
+	min = 0
+}
+
+#污染
+GFnyto_plante_wrlv_contaminate ={
+	base = 0
+	##区划
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_districts
+		parameters = { type = district_GF_nyto_pc_toxic_alloy }
+		mode = add
+		mult = 10
+	}
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_districts
+		parameters = { type = district_GF_nyto_pc_toxic_energy }
+		mode = add
+		mult = 10
+	}
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_districts
+		parameters = { type = district_GF_nyto_pc_toxic_leisure }
+		mode = add
+		mult = 10
+	}
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_districts
+		parameters = { type = district_GF_nyto_pc_toxic_science }
+		mode = add
+		mult = 10
+	}
+	####
+	###岗位
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_assigned_jobs
+		parameters = { job = GFnyto_Epiphyllum_job }
+		mode = add
+		mult = -0.25
+	}
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_assigned_jobs
+		parameters = { job = GFnyto_collapse_particle_rar }
+		mode = add
+		mult = 2
+	}
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_assigned_jobs
+		parameters = { job = GFnyto_collapse_particle_zip }
+		mode = add
+		mult = 2
+	}
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_assigned_jobs
+		parameters = { job = GFnyto_collapse_particle_researcher }
+		mode = add
+	}
+	#####
+
+	min = 0
+}
+
+#星球自净能力
+GF_nyto_planet_size_cleanse ={
+	base = 0
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = planet_size
+		mode = add
+	}
+	mult = value:GF_nyto_planet_size_cleanse_down
+}
+
+GF_nyto_planet_size_cleanse_down ={
+	base = 0
+	add = planet.GFnyto_plante_wrlv
+	mult = 0.01
+	modifier = {
+		is_planet_class = pc_gaia
+		mult = 2
+	}
+	modifier = {
+		check_variable_arithmetic = {
+			which = 0
+			add = value:GFnyto_plante_wrlv_contaminate
+			value > 30
+		}
+		mult = 0.9
+	}
+	modifier = {
+		check_variable_arithmetic = {
+			which = 0
+			add = value:GFnyto_plante_wrlv_contaminate
+			value > 50
+		}
+		mult = 0.5
+	}
+	modifier = {
+		check_variable_arithmetic = {
+			which = 0
+			add = value:GFnyto_plante_wrlv_contaminate
+			value > 75
+		}
+		mult = 0.1
+	}
+	modifier = {
+		check_variable_arithmetic = {
+			which = 0
+			add = value:GFnyto_plante_wrlv_contaminate
+			value > 80
+		}
+		mult = -0.9
+	}
+}
+
+#花期
+Epiphyllum_flower_period ={
+	base = 0
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = num_assigned_jobs
+		parameters = { job = GFnyto_Epiphyllum_job }
+		mode = add
+		mult = 5
+	}
+}
+
+
+
+#巨构
+GF_nyto_meaga_pr_lv= {
+	base = 1
+	complex_trigger_modifier = {
+		trigger = count_megastructure
+		trigger_scope =contact_country
+		parameters = {
+			limit = {
+				solar_system ={
+					not = {
+						is_same_value = root.solar_system
+					}
+				}
+				is_megastructure_type = GFnyto_megastructure_collapse_reactor_restored
+			}
+		}
+		mode = add
+		mult = 0.3
+	}
+	complex_trigger_modifier = {
+		trigger = count_system_megastructure
+		#trigger_scope = solar_system
+		parameters = {
+			limit = {
+				not = { is_same_value = root }
+				is_megastructure_type = GFnyto_megastructure_collapse_reactor_restored
+			}
+		}
+		mode = add
+		mult = 5
+	}
+}
+
+#月时计
+GF_nyto_get_game_time_month ={
+	base = 0
+	add = trigger:days_passed
+	divide = 30
+	floor = yes
+	modulo = 12
+	add = 1
+	complex_trigger_modifier = {
+		trigger = has_tradition
+		mode = add
+	}
+}
+
+GF_nyto_stions_weapon_nums ={
+	base = 3
+	add = owner.modifier:GF_nyto_stions_weapon_num
+}
+
+GF_nyto_is_boss_limt_hp ={
+	base = 0
+	add = event_target:is_GF_nyto_Boss.trigger:has_hp
+	modifier = {
+		event_target:is_GF_nyto_Boss ={
+			is_variable_set = GF_nyto_is_boss_hp_mult
+
+		}
+		mult =  event_target:is_GF_nyto_Boss.GF_nyto_is_boss_hp_mult
+	}
+}
+GF_nyto_is_boss_limt_hp_mult ={
+	base = 1
+	add = event_target:is_GF_nyto_Boss.GF_nyto_is_boss_hp_mult
+}
+
+

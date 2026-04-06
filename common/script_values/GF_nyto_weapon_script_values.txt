@@ -1,0 +1,61 @@
+GF_Nyto_T_weapon2_fire_rate_value ={
+    base = 1
+    modifier = {
+        check_modifier_value = {
+            modifier = ship_fire_rate_mult
+            value > 0
+        }
+        add =  modifier:ship_fire_rate_mult
+    }
+    modifier = {
+        check_modifier_value = {
+            modifier = weapon_type_energy_weapon_fire_rate_mult
+            value > 0
+        }
+        add =  modifier:weapon_type_energy_weapon_fire_rate_mult
+    }
+    # max =  10
+}
+
+GF_Nyto_T_weapon2_actions_value ={
+    base = 0
+    add = GF_nyto_combat_days
+    divide = value:GF_Nyto_T_weapon2_actions_value_2
+    round = yes
+    subtract = 1
+    min = 1
+    max = 27
+}
+GF_Nyto_T_weapon2_actions_value_2 ={
+    base = 5
+    divide = value:GF_Nyto_T_weapon2_fire_rate_value
+}
+
+GF_Nyto_T_weapon2_damage_value = {
+    base = 2
+    modifier = {
+        check_modifier_value = {
+            modifier = weapon_type_energy_weapon_damage_mult
+            value > 0
+        }
+        add = weapon_type_energy_weapon_damage_mult
+    }
+    modifier = {
+        check_modifier_value = {
+            modifier = ship_weapon_damage
+            value > 0
+        }
+        add = ship_weapon_damage
+    }
+    pow = value:GF_Nyto_T_weapon2_actions_value
+    divide = modifier:GF_Nyto_T_weapon2_num
+    min = 1
+    max = 200000
+}
+
+GF_nyto_armor_req_pow = {
+    base = 500
+    mult = modifier:GF_nyto_has_armor
+    mult = modifier:ship_armor_mult
+    mult = -1
+}
