@@ -94,15 +94,6 @@ GFnyto_collapse_particle_researcher = {
 	weight = {
 		weight = 10
 	}
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 #白骑士
@@ -149,15 +140,6 @@ GF_nyto_white_knight = {
 	weight = {
 		weight = 5
 	}
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 #相位技师
@@ -189,15 +171,6 @@ GFnyto_phase_technician = {
 	}
 	weight = {
 		weight = 5
-	}
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
 	}
 }
 
@@ -233,15 +206,6 @@ GFnyto_technology_minister = {
 	weight = {
 		weight = 5
 	}
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 #开拓者
@@ -275,15 +239,6 @@ GFnyto_explorer = {
 	}
 	weight = {
 		weight = 999
-	}
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
 	}
 }
 
@@ -339,15 +294,6 @@ GFnyto_algorithm = {
 	weight = {
 		weight = 5
 	}
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 #架构师
@@ -398,15 +344,6 @@ GFnyto_framework = {
 	}
 	weight = {
 		weight = 5
-	}
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
 	}
 }
 
