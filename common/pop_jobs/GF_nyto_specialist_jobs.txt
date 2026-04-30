@@ -97,7 +97,7 @@ GFnyto_collapse_particle_researcher = {
 }
 
 #白骑士
-GF_nyto_white_knight = {
+GFnyto_white_knight = {
 	category = specialist
 	swappable_data = {
 		default = {

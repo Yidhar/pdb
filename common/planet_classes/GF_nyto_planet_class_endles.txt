@@ -1,0 +1,18 @@
+pc_GF_nyto_endles = {
+	entity = GF_null_entity
+	entity_scale = 0
+	icon = GFX_planet_type_black_hole
+	icon_large = GFX_planet_type_black_hole_big
+	star = yes
+	atmosphere_color 		= hsv { 0.0 0.0 0.0 }		#DONE
+	atmosphere_intensity 	= 0.0
+	atmosphere_width 		= 0.0
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	fixed_city_level = 6
+	chance_of_ring = 0
+	colonizable = no
+	starting_planet = no
+	show_city = no
+}

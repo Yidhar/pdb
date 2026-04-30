@@ -28,7 +28,7 @@ district_GF_nyto_pc_toxic_house = {
 	}
 	planet_modifier = {
 		planet_housing_add = 3000
-		job_GF_nyto_white_knight_add = 100
+		job_GFnyto_white_knight_add = 100
 		planet_amenities_add = 2500
 	}
 	
@@ -640,6 +640,6 @@ district_GF_nyto_pc_toxic_trade = {
 	}
 	planet_modifier = {
 		planet_housing_add = 1000
-		job_GF_nyto_white_knight_add = 1000
+		job_GFnyto_white_knight_add = 1000
 	}
 }

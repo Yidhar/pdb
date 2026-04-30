@@ -1,0 +1,181 @@
+# Nyto advanced production, holdings, and special buildings
+
+building_GFnyto_algorithm = {
+	icon = building_GFnyto_algorithm
+	base_buildtime = 360
+	can_build = yes
+	category = research
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	planet_modifier = {
+		job_GFnyto_algorithm_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			GF_nyto_collapse_fluid = 20
+		}
+		upkeep = {
+			energy = 10
+			exotic_gases = 1
+		}
+	}
+
+	prerequisites = {
+		tech_GF_nyto_algorithm
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_GFnytp_framework_core = {
+	icon = building_GFnytp_framework_core
+	base_buildtime = 360
+	can_build = yes
+	category = research
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	planet_modifier = {
+		job_GFnyto_framework_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			GF_nyto_collapse_fluid = 20
+		}
+		upkeep = {
+			energy = 20
+			rare_crystals = 0.75
+		}
+	}
+
+	upgrades = {
+		building_GFnytp_framework_core2
+	}
+
+	prerequisites = {
+		tech_GFnyto_framework
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_GFnytp_framework_core2 = {
+	icon = building_GFnytp_framework_core2
+	base_buildtime = 360
+	can_build = no
+	category = research
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	planet_modifier = {
+		job_GFnyto_framework_add = 4
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			GF_nyto_collapse_fluid = 20
+		}
+		upkeep = {
+			energy = 20
+			rare_crystals = 1.5
+		}
+	}
+
+	prerequisites = {
+		tech_GFnyto_framework2
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_GFnyto_nourishment_center = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	category = resource
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_fluid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_fluid = 5
+		}
+	}
+
+	planet_modifier = {
+		job_GFnyto_collapse_particle_zip_add = 2
+	}
+
+	prerequisites = {
+		tech_GFnyto_tansuo
+	}
+
+	upgrades = {
+		building_GFnyto_nourishment_center2
+	}
+}
+
+building_GFnyto_nourishment_center2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+	category = resource
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_fluid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_fluid = 6
+		}
+	}
+
+	planet_modifier = {
+		job_GFnyto_collapse_particle_zip_add = 4
+	}
+
+	prerequisites = {
+		tech_GFnyto_tansuo2
+	}
+}

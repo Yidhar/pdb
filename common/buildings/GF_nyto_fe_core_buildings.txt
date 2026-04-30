@@ -1,0 +1,121 @@
+# Nyto FE core utility buildings
+
+building_GFnyto_fe_dome = {
+	base_buildtime = @b2_time
+	can_build = yes
+	category = amenity
+	base_cap_amount = 1
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+		is_capital = yes
+	}
+
+	country_modifier = {
+		all_technology_research_speed = 1
+		country_naval_cap_mult = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_building = building_GFnyto_nano_forge
+		}
+		planet_jobs_physics_research_produces_mult = 0.5
+		planet_jobs_society_research_produces_mult = 0.5
+		planet_jobs_engineering_research_produces_mult = 0.5
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_building = building_GFnyto_nano_forge
+		}
+		text = building_GFnyto_fe_dome2
+	}
+
+	triggered_desc = {
+		trigger = {
+			NOT = {
+				has_building = building_GFnyto_nano_forge
+			}
+		}
+		text = building_GFnyto_fe_dome1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			GF_nyto_collapse_fluid = 200
+		}
+		upkeep = {
+			energy = 50
+			GF_nyto_collapse_fluid = 10
+		}
+	}
+
+	prerequisites = {
+		tech_GF_nyto_storage_of_ancient_technology
+	}
+
+	ai_weight = {
+		weight = 999
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		energy = 100
+		alloys = 100
+		minerals = 100
+		rare_crystals = 100
+		exotic_gases = 100
+		volatile_motes = 100
+		GF_nyto_training_keys = 100
+		GF_nyto_new_fire_control_unit = 100
+	}
+
+	exempt_from_ai_planet_specialization = yes
+}
+
+building_GFnyto_fe_stronghold = {
+	base_buildtime = @b2_time
+	can_build = yes
+	category = army
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	planet_modifier = {
+		job_GFnyto_white_knight_add = 5
+		planet_orbital_bombardment_damage = -0.3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	army_modifier = {
+		army_damage_mult = 0.2
+	}
+
+	prerequisites = {
+		tech_GF_nyto_storage_of_ancient_technology
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		unity = 9999999
+	}
+}

@@ -1,0 +1,32 @@
+#圣所
+pc_GFnyto_portal_star = {
+	entity = "p1_entity"
+	entity_scale = 10
+	picture = pc_GFnyto_portal_star
+	icon = GFX_planet_type_a_b_star
+	icon_large = GFX_planet_type_a_b_star_big
+	atmosphere_color		= hsv { 0.56 0.4 0.7 }
+	atmosphere_intensity	= 0.5
+	atmosphere_width		= 1.2
+	star = yes
+	modifier = {
+		pop_environment_tolerance = -10
+		planet_jobs_produces_mult = 1
+		planet_building_build_speed_mult = 0.7
+	}
+	allowed_archetypes = {NYTO}
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	fixed_city_level = 6
+	chance_of_ring = 0
+	planet_size = { min = 200 max = 300 }
+	moon_size = { min = 100 max = 200 }
+	colonizable = yes
+	starting_planet = no
+	ideal = yes
+	uses_alternative_skies_for_moons = no
+	show_city = no
+}

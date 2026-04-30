@@ -1,0 +1,172 @@
+# Nyto holdings and legacy high-tier buildings
+
+GF_nyto_holding_sacrificial_shrine = {
+	base_buildtime = 360
+	owner_type = subject_holding
+	icon = building_sacrificial_temple_2
+	base_cap_amount = 1
+
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	potential = {
+		owner.overlord = { has_civic = civic_Gf_nyto_tanhua_pluse }
+		owner = { is_machine_empire = no }
+	}
+
+	destroy_trigger = {
+		owner = { is_machine_empire = yes }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_spiritualist = no }
+		}
+		monthly_loyalty = -0.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+		}
+		job_overlord_Epiphyllum_add = 2
+	}
+}
+
+GF_nyto_Recoil_decay_barrier = {
+	base_buildtime = @b3_time
+	can_build = yes
+	can_demolish = yes
+	category = government
+
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				is_nyto_country = yes
+				has_country_flag = has_nyto_technology
+			}
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			alloys = 200
+		}
+		upkeep = {
+			energy = 50
+		}
+	}
+
+	planet_modifier = {
+		pop_environment_tolerance = 0.1
+	}
+}
+
+building_GFnyto_class_4_singularity = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	category = resource
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b4_minerals
+			alloys = 100
+		}
+		upkeep = {
+			minerals = 50
+			alloys = 10
+			GF_nyto_collapse_fluid = 5
+		}
+	}
+
+	planet_modifier = {
+		job_GFnyto_phase_technician_add = 3
+	}
+
+	prerequisites = {
+		tech_GF_nyto_storage_of_ancient_technology
+	}
+
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 10
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 1000
+				}
+			}
+		}
+	}
+}
+
+building_GFnyto_nano_forge = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	can_build = yes
+	can_demolish = yes
+	category = manufacturing
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			GF_nyto_collapse_fluid = 100
+			minerals = 500
+		}
+		upkeep = {
+			minerals = 50
+			energy = 10
+			GF_nyto_collapse_fluid = 10
+		}
+	}
+
+	country_modifier = {
+		country_starbase_capacity_add = 4
+		country_naval_cap_add = 50
+		country_leader_cap_add = 0.5
+	}
+
+	prerequisites = {
+		tech_GF_nyto_storage_of_ancient_technology
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		energy = 100
+		alloys = 100
+		minerals = 100
+		rare_crystals = 100
+		exotic_gases = 100
+		volatile_motes = 100
+		GF_nyto_training_keys = 100
+		GF_nyto_new_fire_control_unit = 100
+	}
+
+	exempt_from_ai_planet_specialization = yes
+}

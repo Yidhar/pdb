@@ -1,0 +1,11 @@
+﻿﻿l_simp_chinese:
+ building_GFnyto_fe_dome:0 "Сетунь_Ω计算机中枢"
+ building_GFnyto_fe_dome_desc:0 "来自旧时代的大型计算中枢，为帝国提供惊人的科研支持。"
+ building_GFnyto_fe_stronghold:0 "轨道要塞"
+ building_GFnyto_fe_stronghold_desc:0 "一座巨大的轨道防御平台，可以提供卓越的行星防御能力。"
+ GF_nyto_holding_sacrificial_shrine:0 "昙花园地"
+ GF_nyto_holding_sacrificial_shrine_desc:0 "以附属国人口为代价栽培昙花并向宗主回馈资源。"
+ GF_nyto_assembly_plant:0 "涅托组装厂"
+ GF_nyto_assembly_plant_desc:0 "专用于涅托主体的组装建筑。"
+ GF_nyto_research_building_tir1:0 "涅托研究设施"
+ GF_nyto_research_building_tir1_desc:0 "预留的早期研究建筑定义。"

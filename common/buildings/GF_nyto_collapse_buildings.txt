@@ -1,0 +1,160 @@
+# Nyto collapse research and assembly buildings
+
+building_GFnyto_collapse_exploit_plant_1 = {
+	icon = building_nyto_collapse_exploit_plant_1
+	base_buildtime = 180
+	category = research
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	planet_modifier = {
+		job_GFnyto_collapse_particle_researcher_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	upgrades = {
+		building_GFnyto_collapse_exploit_plant_2
+	}
+
+	prerequisites = {
+		tech_GF_nyto_collapse_stability
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { is_nyto_country = yes }
+		}
+		physics_research = 999
+		society_research = 999
+		engineering_research = 999
+	}
+
+	exempt_from_ai_planet_specialization = yes
+}
+
+building_GFnyto_collapse_exploit_plant_2 = {
+	icon = building_nyto_collapse_exploit_plant_2
+	base_buildtime = 360
+	can_build = no
+	category = research
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		job_GFnyto_collapse_particle_researcher_add = 3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+
+	prerequisites = {
+		tech_GF_nyto_collapse_stability_2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { is_nyto_country = yes }
+			NOT = { colony_type == col_GF_nyto_general_planet }
+		}
+		physics_research = 9999
+		society_research = 9999
+		engineering_research = 9999
+	}
+
+	ai_resource_production = {
+		trigger = {
+			exists = owner
+			owner = { is_nyto_country = yes }
+			colony_type == col_GF_nyto_general_planet
+		}
+		physics_research = -10
+		society_research = -10
+		engineering_research = -10
+	}
+
+	exempt_from_ai_planet_specialization = yes
+}
+
+building_GFnyto_collapse_change_center = {
+	icon = building_job_GFnyto_collapse_changer
+	base_buildtime = 360
+	category = pop_assembly
+	base_cap_amount = 1
+
+	potential = {
+		exists = owner
+		owner = {
+			is_nyto_country = yes
+			NOT = { has_ascension_perk = ap_GF_nyto_conquer_hell }
+		}
+	}
+
+	planet_modifier = {
+		planet_pop_assembly_add = 2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		alloys = 10000
+		minerals = 10000
+		rare_crystals = 10000
+		exotic_gases = 10000
+		volatile_motes = 1000
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 5
+			alloys = 2
+			food = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 20
+			always = yes
+		}
+	}
+
+	exempt_from_ai_planet_specialization = yes
+
+	prerequisites = {
+		tech_GF_nyto_collapse_stability
+	}
+}

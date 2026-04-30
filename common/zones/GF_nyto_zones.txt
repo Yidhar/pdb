@@ -76,19 +76,25 @@ zone_gf_nyto_collapse_purify = {
 	resources = {
 		category = planet_zones
 		cost = {
+			minerals = @zone_cost
 		}
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
 	}
 
 	include = {
 		all
 	}
-	exclude = {
-		building_automation_city_1
-		building_automation_generator_1
-		building_automation_mining_1
-		building_automation_farming_1
-	}
-	included_building_sets = {
+	excluded_building_sets = {
+		urban_automation
+		urban_automation_arcology
+		generator_automation
+		mining_automation
+		farming_automation
 	}
 
 	triggered_district_planet_modifier = {
@@ -116,19 +122,25 @@ zone_gf_nyto_collapse_pollute = {
 	resources = {
 		category = planet_zones
 		cost = {
+			minerals = @zone_cost
 		}
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
 	}
 
 	include = {
 		all
 	}
-	exclude = {
-		building_automation_city_1
-		building_automation_generator_1
-		building_automation_mining_1
-		building_automation_farming_1
-	}
-	included_building_sets = {
+	excluded_building_sets = {
+		urban_automation
+		urban_automation_arcology
+		generator_automation
+		mining_automation
+		farming_automation
 	}
 
 	triggered_district_planet_modifier = {

@@ -1,0 +1,238 @@
+# Nyto special, dimensional, and FE-adjacent buildings
+
+building_GFnyto_dimensional_fabricator = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	category = resource
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_fluid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_fluid = 5
+		}
+	}
+
+	planet_modifier = {
+		job_GFnyto_collapse_particle_rar_add = 2
+	}
+
+	prerequisites = {
+		tech_GFnyto_tansuo
+	}
+
+	upgrades = {
+		building_GFnyto_dimensional_fabricator2
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		alloys = 1000
+		minerals = 1000
+		consumer_goods = 1000
+		exotic_gases = 100
+		rare_crystals = 100
+		volatile_motes = 100
+	}
+
+	custom_storm_ai_weight = {
+		weight = 100
+	}
+}
+
+building_GFnyto_dimensional_fabricator2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+	category = resource
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_fluid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_fluid = 5
+		}
+	}
+
+	planet_modifier = {
+		job_GFnyto_collapse_particle_rar_add = 4
+	}
+
+	prerequisites = {
+		tech_GFnyto_tansuo2
+	}
+
+	ai_weight = {
+		base = 999
+		modifier = {
+			subtract = 999
+			owner = {
+				has_monthly_income = {
+					resource = GF_nyto_collapse_fluid
+					value < 100
+				}
+			}
+		}
+	}
+}
+
+building_GFnyto_Elids = {
+	base_buildtime = @b3_time
+	can_build = yes
+	can_demolish = yes
+	category = pop_assembly
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_fluid = 100
+			alloys = 50
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_fluid = 3
+		}
+	}
+
+	prerequisites = {
+		tech_GF_nyto_EILD_brain_wave
+	}
+
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			owner = {
+				any_owned_species = {
+					NOT = { is_species = NYTO }
+					NOT = { is_species = EILD }
+				}
+			}
+		}
+	}
+}
+
+building_GFnyto_collapse_tower = {
+	base_buildtime = @b3_time
+	can_build = yes
+	can_demolish = yes
+	category = resource
+
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				is_nyto_country = yes
+				has_country_flag = has_nyto_technology
+			}
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			GF_nyto_collapse_fluid = 10
+		}
+		produces = {
+			trigger = {
+				check_variable = { which = GFnyto_plante_wrlv value < 200 }
+			}
+			GF_nyto_collapse_fluid = 0.5
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		produces = {
+			trigger = {
+				check_variable = { which = GFnyto_plante_wrlv value >= 200 }
+			}
+			GF_nyto_collapse_fluid = 100
+		}
+		produces = {
+			trigger = {
+				check_variable = { which = GFnyto_plante_wrlv value > 200 }
+			}
+			GF_nyto_collapse_fluid = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+}
+
+building_GFnyto_affluence_center = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	category = manufacturing
+
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				is_nyto_country = yes
+				has_country_flag = has_nyto_technology
+			}
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		produces = {
+			trigger = {
+				check_variable = { which = GFnyto_plante_wrlv value < 100 }
+			}
+			GF_nyto_collapse_fluid = 1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		produces = {
+			trigger = {
+				check_variable = { which = GFnyto_plante_wrlv value > 100 }
+			}
+			GF_nyto_collapse_fluid = 100
+		}
+		produces = {
+			trigger = {
+				check_variable = { which = GFnyto_plante_wrlv value > 100 }
+			}
+			GF_nyto_collapse_fluid = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	planet_modifier = {
+		pop_environment_tolerance = 0.05
+	}
+}

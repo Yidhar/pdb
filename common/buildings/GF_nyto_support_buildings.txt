@@ -1,0 +1,186 @@
+# Nyto support, administration, and advanced production buildings
+
+building_GFnyto_forward_base = {
+	icon = building_GFnyto_forward_base
+	base_buildtime = 360
+	category = resource
+	base_cap_amount = 1
+	can_build = no
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+		is_capital = no
+	}
+
+	planet_modifier = {
+		job_GFnyto_explorer_add = 5
+		planet_housing_add = 10
+		planet_stability_add = 10
+		planet_crime_add = -10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_capital = no
+		}
+		modifier = {
+			pop_happiness = -0.1
+			job_soldier_add = 3
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_GFnyto_forward_base2 = {
+	icon = building_GFnyto_forward_base
+	base_buildtime = 360
+	category = resource
+	base_cap_amount = 1
+	can_build = no
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+		is_capital = no
+	}
+
+	planet_modifier = {
+		job_GFnyto_explorer_add = 5
+		planet_housing_add = 10
+		planet_stability_add = 10
+		planet_crime_add = -10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_capital = no
+		}
+		modifier = {
+			pop_happiness = -0.1
+			job_soldier_add = 3
+		}
+	}
+
+	country_modifier = {
+		starbase_shipyard_build_speed_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_GFnyto_transportation_hub = {
+	icon = building_GFnyto_transportation_hub
+	base_buildtime = 360
+	category = government
+	base_cap_amount = 1
+
+	potential = {
+		exists = owner
+		owner = { is_nyto_country = yes }
+	}
+
+	planet_modifier = {
+		job_GFnyto_white_knight_add = 2
+		planet_jobs_produces_mult = 0.1
+		army_health = 0.2
+	}
+
+	country_modifier = {
+		country_resource_max_add = 5000
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+			alloys = 100
+			energy = 1
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		alloys = 10000
+		minerals = 10000
+		rare_crystals = 10000
+		exotic_gases = 10000
+		volatile_motes = 1000
+	}
+
+	ai_weight = {
+		weight = 20
+	}
+
+	exempt_from_ai_planet_specialization = yes
+}
+
+building_GFnyto_heritage_department = {
+	icon = building_GFnyto_heritage_department
+	base_buildtime = 360
+	can_build = yes
+	category = manufacturing
+	base_cap_amount = 1
+
+	potential = {
+		exists = owner
+		owner = {
+			is_nyto_country = yes
+			has_country_flag = GFnyto_heritage_department_build
+		}
+		is_capital = yes
+	}
+
+	planet_modifier = {
+		job_culture_worker_add = 5
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+		}
+		produces = {
+			minor_artifacts = 4
+		}
+		upkeep = {
+			energy = 8
+			alloys = 2
+			minerals = 2
+		}
+	}
+
+	ai_weight = {
+		weight = 500
+	}
+}

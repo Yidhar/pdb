@@ -95,6 +95,7 @@
  district_gf_nyto_industrial:0 "精密制造区"
  district_gf_nyto_industrial_plural:0 "$district_gf_nyto_industrial$"
  district_gf_nyto_industrial_desc:0 "高度自动化的橙白色工厂，流水线上日夜不停地组装义体与精密仪器。"
+ col_GF_nyto_general_planet_tt:0 "$col_GF_nyto_general_planet$"
 
  START_SCREEN_NYTO01:"战争摧毁了一切，父亲带走了往日的余晖不见踪影。只有身为失败品的我们被留下和残檐断壁共同生活从塔林到死海，每一个异构体每一名涅托都只是父亲大人追寻露尼西亚道路上的失败品。当我们从废墟中醒来时，我们就充分的意识到。我们被遗弃了。。。。。。在那混乱的日子里我们彷徨，我们颓废。我们自相残杀，当有一切归于死寂之时，当我们穷途末路之日。我们听到了来自"锡安"的呼唤，他/她/祂们让我们归乡。。。。。尽管在那以后再也没有人听到相同的呼唤但是我们每一个人都相信那不是虚假的，我们开始合作，在这死寂的星球上开始建立属于我们的历史和文明。如今。我们突破了塌缩辐射云层的封锁。开始探索这广阔的星海。带着我们的怒火与归乡的希望搜寻着威廉和通往锡安的道路"
  trait_GF_nyto_collapse_radiation_adaptation:0 "坍塌辐射适应"
