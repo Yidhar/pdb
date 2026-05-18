@@ -1,0 +1,15 @@
+﻿l_english:
+ ### Nyto Ship Components ###
+ GF_nyto_crisis_armor:0 "Crisis Armor"
+ GF_nyto_crisis_armor_desc:0 "An ultra-heavy armor module reserved for crisis hulls."
+ ### GF Nyto Ship Component Migration ###
+ GF_nyto_crisis_laser:0 "Revelation Lance"
+ mod_GF_Nyto_T_weapon2_num:0 "Nyto T-Slot Weapon Enhancement"
+ mod_GF_nyto_has_armor:0 "Ship Armor Strength"
+ GFnyto_power_lv0:0 "Provisional Reactor"
+ GFnyto_additional_arithmetic_module_base:0 "Basic Auxiliary Computation Module"
+ GFnyto_additional_arithmetic_module4:0 "Advanced Auxiliary Computation Module"
+ GF_nyto_crisis_laser_DESC:0 "A high-energy lance weapon mounted on crisis warships."
+ GFnyto_power_lv0_DESC:0 "A provisional reactor used to keep special ship systems operational."
+ GFnyto_additional_arithmetic_module_base_DESC:0 "Provides basic auxiliary computing power for fire-control and tactical systems."
+ GFnyto_additional_arithmetic_module4_DESC:0 "Provides high-level tactical computation and weapon calibration for large vessels."

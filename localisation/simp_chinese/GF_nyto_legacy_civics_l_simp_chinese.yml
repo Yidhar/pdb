@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+ ### Legacy Civics ###
+ civic_GF_nyto_forward_base:0 "星河远征"
+ civic_GF_nyto_forward_base_desc:0 "长夜终尽！摆脱母星恶劣的环境后，我们最重要的事情就是找到新的殖民地！\n每次新征服一个星球时获得5年限时建筑前进营地。\n开局时获得为期5年的"远征"国家修正。"
+ civic_GF_nyto_special_operations_command:0 "特战司"
+ civic_GF_nyto_special_operations_command_desc:0 "每个人生来就是为了战斗的胜利。每一场失败都没有人是无辜的。\n允许人口生成白骑士陆军。"
+ civic_GF_nyoto_armor_train:0 "永恒国度"
+ civic_GF_nyoto_armor_train_desc:0 "人是没有安全感的生物，无论什么样的钢铁防线在这无边宇宙中都显得过于渺小。\n允许无限制建造永固要塞。"
+ civic_Gf_nyto_tanhua_pluse:0 "昙花共生"
+ civic_Gf_nyto_tanhua_pluse_desc:0 "妖艳的花朵在人们的身上肆意绽放。\n昙花种植区将额外提供1个岗位。"
+ civic_GF_nyto_reup:0 "高效回收"
+ civic_GF_nyto_reup_desc:0 "我们必须利用好我们手头上的每一份资源，才有可能迎来曙光。\n成功防御ELID入侵将获得额外资源。"
+ civic_GF_nyto_heart_of_suffering:0 "苦难之心"
+ civic_GF_nyto_heart_of_suffering_desc:0 "轻声呼唤我的名字吧，用泉水来把我饮饱吧，你那无垠的、难言的心是否会回应呢？"
+ civic_GF_nyto_heart_of_suffering_modif:0 "开局直接获得ELID人口并不再触发ELID入侵事件。每次征服新的星球时会将半数人口转换为ELID。\n若携带星河远征国策，则会在开局时替换为复仇远征。\n§R将无法使用春天唤醒决议。§!"
+ civic_GF_nyto_Vengeance_Crusade:0 "复仇远征"
+ civic_GF_nyto_Vengeance_Crusade_desc:0 "愿神明终于一日能宽恕我，愿我能相称于这顶王冠"

@@ -1,0 +1,23 @@
+gfnyto_collapse_liquid = {
+	trigger = {
+		owner = {
+			is_nyto_country = yes
+			OR = {
+				has_technology = tech_GF_nyto_collapse_stability_bomb
+				has_civic = civic_GF_nyto_heart_of_suffering
+			}
+		}
+	}
+	default = yes
+	stop_when_armies_dead = no
+	abduct_pops = no
+	planet_damage = 5
+	army_damage = 5
+	kill_pop_chance = {
+		base = 0.25
+	}
+	min_pops_to_kill_pop = 0
+	ai_weight = {
+		weight = 9999
+	}
+}

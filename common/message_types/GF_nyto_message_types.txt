@@ -1,0 +1,20 @@
+message_type = {
+	icon = GFX_message_anomaly
+	icon_frame = 1
+	key = "GF_nyto_music_1"
+	auto_opens = others
+}
+message_type = {
+	icon = "GFX_message_anomaly"
+	icon_frame = 1
+	key = "GF_nyto_music_2"
+	ping = ping_notification_red
+	auto_opens = others
+}
+message_type = {
+	icon = GFX_message_missing_offspring
+	icon_frame = 1
+	key = "GF_nyto_popd"
+	ping = ping_notification_red
+	auto_opens = others
+}

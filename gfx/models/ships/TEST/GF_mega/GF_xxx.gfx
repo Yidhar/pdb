@@ -1,0 +1,34 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_xxx_mesh"
+		file = "gfx/models/ships/TEST/GF_mega/GF_xxx.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "FBXASC229FBXASC175FBXASC185FBXASC232FBXASC177FBXASC161008Shape"
+			index = 0
+			texture_diffuse = "02_02 - DefaultD_BaseColor.dds"
+			texture_normal = "02_02 - DefaultD_Normal.dds"
+			texture_specular = "02_02 - DefaultD_sp.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "FBXASC229FBXASC175FBXASC185FBXASC232FBXASC177FBXASC161006Shape"
+			index = 0
+			texture_diffuse = "02_03 - Default5_BaseColor.dds"
+			texture_normal = "02_03 - Default5_Normal.dds"
+			texture_specular = "02_03 - Default5_sp.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "FBXASC229FBXASC175FBXASC185FBXASC232FBXASC177FBXASC161004Shape"
+			index = 0
+			texture_diffuse = "02_wire_085028177_BaseColor.dds"
+			texture_normal = "02_wire_085028177_Normal.dds"
+			texture_specular = "02_wire_085028177_sp.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

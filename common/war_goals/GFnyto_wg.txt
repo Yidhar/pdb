@@ -1,0 +1,52 @@
+wg_GFnyto_assimilation = {
+	casus_belli = cb_GFnyto_assimilation
+	hide_if_no_cb = yes
+	total_war = no
+	show_claims_in_description = yes
+	secret_fealties_join_attacker = yes
+	set_defender_wargoal = wg_end_threat_ae
+	potential = {
+		owner = {
+			has_origin = origin_GF_nyto_the_last_light
+		}
+	}
+	possible = {
+		always = yes
+	}
+	ai_weight = {
+		weight = 100
+	}
+	on_accept = {
+		copy_techs_from = {
+			target = from
+		}
+		from = {
+			every_owned_planet = {
+				set_owner = prevprev
+				fire_on_action = {
+					on_action = on_planet_conquer
+					scopes = {
+						from = prevprev
+					}
+				}
+			}
+			every_owned_starbase = {
+				set_owner = prevprev
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_ethic = ethic_gestalt_consciousness
+					}
+				}
+				every_owned_leader = {
+					random = {
+						chance = 50
+						change_species = prevprev.owner_main_species
+						set_owner = prevprev
+					}
+				}
+			}
+		}
+	}
+}

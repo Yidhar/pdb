@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "lastexile_mesh"
+		file = "gfx/models/ships/TEST/exile/lastexile.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "FBXASC0509Shape"
+			index = 0
+			texture_diffuse = "Tex_0040_diffuse.dds"
+			texture_normal = "Tex_0040_normal.dds"
+			texture_specular = "Tex_0040_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "FBXASC051Shape"
+			index = 0
+			texture_diffuse = "Tex_0030_diffuse.dds"
+			texture_normal = "Tex_0030_noraml.dds"
+			texture_specular = "Tex_0030_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

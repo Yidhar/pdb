@@ -1,0 +1,263 @@
+#工业区划
+#综合工业星球 （全产
+col_GF_nyto_pc_toxic_alloy_plural = {
+	icon = GFX_colony_type_foundry
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_alloy_build_speed_mult = 0.25
+		pc_GF_nyto_embers_gloomy_habitability = 1
+	}
+	weight_modifier = {
+		add = 1000
+		modifier = {
+			num_free_districts = {
+				type = district_GF_nyto_pc_toxic_alloy
+				value > 1
+			}
+		}
+	}
+
+}
+
+#战略资源中枢 （稀有
+col_Gf_nyto_xiyou_rss = {
+	icon = GFX_colony_type_refinery
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}		
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_alloy_build_speed_mult = 0.25
+		pc_GF_nyto_embers_gloomy_habitability = 1
+	}
+	weight_modifier = {
+		add = 20
+		modifier = {
+			is_planet_class = pc_habitat
+		}
+	}
+}
+
+#通用产业星球 (矿物/合金
+col_GF_nyto_general_planet = {
+	icon = GFX_colony_type_foundry
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_alloy_build_speed_mult = 0.25
+		pc_GF_nyto_embers_gloomy_habitability = 1	
+	}
+	#妈的 权重要重做
+	weight_modifier = {
+		add = 200
+		modifier = {
+			is_capital = yes
+			mult = 10
+		}
+	}
+}
+
+# 民用产业  食物/消费
+col_GF_nyto_food_planet ={
+	icon = GFX_colony_type_farm
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_alloy_build_speed_mult = 0.25
+		pc_GF_nyto_embers_gloomy_habitability = 1	
+	}
+	weight_modifier = {
+
+	}
+}
+
+
+
+
+
+
+
+#坍塌工业星球
+col_GF_nyto_pc_toxic_consumer_good_plural = {
+	icon = GFX_colony_type_foundry
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_leisure_build_speed_mult = 0.25
+		planet_jobs_GF_nyto_collapse_liquid_produces_mult = 0.35
+		pc_GF_nyto_embers_gloomy_habitability = 1
+	}
+	weight_modifier = {
+		add = 10
+		modifier = {
+			num_free_districts = {
+				type = district_GF_nyto_pc_toxic_leisure
+				value > 3
+			}
+		}
+	}
+}
+
+
+#高精业复合中心
+col_GF_nyto_pc_toxic_energy_plural = {
+	icon = GFX_colony_type_research
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		custom_tooltip = "col_GF_nyto_pc_toxic_energy_plural_a"
+		planet_jobs_upkeep_mult = -0.1
+		pc_GF_nyto_embers_gloomy_habitability = 1
+	}
+	weight_modifier = {
+		add = 10
+		modifier = {
+			num_buildings = {
+				type = building_GFnyto_algorithm
+				value > 3
+			}
+		}
+	}
+}
+
+##快速污染星球
+#col_GF_nyto_speed_planet_wrlv ={
+#	icon = GFX_colony_type_foundry
+#	potential = {
+#		NOT = {
+#			is_planet_class = pc_GF_nyto_embers_gloomy
+#		}
+#		NOT = {
+#			is_planet_class = pc_GF_nyto_devil_furnace
+#		}
+#	}
+#	weight_modifier = {
+#		base = 0
+#		modifier = {
+#			add = 500
+#			is_planet_class = pc_habitat
+#		}
+#	}
+#
+#}
+
+
+
+#指挥中心
+col_GF_nyto_nv_fleet ={
+	icon = GFX_colony_type_fortress
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}		
+	}
+	weight_modifier = {
+		base = 0
+	}
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 0.25
+	}
+}
+
+#科研中枢
+col_GF_nyto_science ={
+	icon = GFX_colony_type_research
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.2
+		planet_jobs_society_research_produces_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.2
+		pc_GF_nyto_embers_gloomy_habitability = 1
+	}
+	weight_modifier = {
+		base = 0
+	}
+}
+
+#阿佛纳斯
+col_GF_nyto_capital ={
+	icon = GFX_colony_type_capital
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+		}
+		is_capital = yes
+		or ={
+			has_planet_flag = GFnyto_Spring_wakes_up
+			owner = {
+				has_civic = civic_GF_nyto_Vengeance_Crusade
+			}
+		}
+		owner={
+			or ={
+				has_ascension_perk = ap_GF_nyto_resurrection
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	planet_modifier = {
+		pc_GF_nyto_embers_gloomy_habitability = 1
+
+	}
+
+	triggered_planet_modifier = {
+		pop_happiness = -0.5
+		planet_jobs_produces_mult = 0.02
+		planet_orbital_bombardment_damage = 0.5
+		#planet_pop_assembly_mult = -0.3
+		#pop_growth_speed = -0.3
+		pop_decline_speed = 0.07
+		multiplier = value:Gfnyto_planet_wrlv_proudcu2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner ={
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+				has_civic = civic_GF_nyto_Vengeance_Crusade
+			}
+		}
+		planet_jobs_produces_mult = 0.05
+		multiplier = value:Gfnyto_planet_wrlv_proudcu2
+	}
+	weight_modifier = {
+		base = 99999
+	}
+}

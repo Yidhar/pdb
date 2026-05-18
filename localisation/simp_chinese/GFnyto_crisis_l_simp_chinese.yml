@@ -1,0 +1,34 @@
+﻿l_simp_chinese:
+GFnyto_crisis_chain_title:0 "征服地狱"
+GFnyto_crisis_chain_desc:0 "通过锡安,我们预见了一场针对银河系的入侵。面对强大的入侵者我们毫无胜算......只是坐以待毙的话。如果能够整合星海,我们或许还有一丝胜机。不幸的是,能看清现状的人寥寥无几。我们没有耐心,也没有时间再继续争论下去。\n\n说明:一旦我们国家的维持度降低到0,那么我们会输掉这局游戏!\n\n帝国维持度增加途径:\n击毁敌方舰船:+1 \n占领敌方行星:+50 \n毁灭敌方帝国:+500\n\n帝国维持度降低机制:\n每月固定增长:-10 \n我方行星沦陷:-100\n"
+
+GFnytocrisis.4.name:0 "坏结局"
+GFnytocrisis.4.desc:0 "战争机器在耗尽了燃料后轰然倒塌,一切都已经结束了。"
+GFnytocrisis.4.a:0 "我们输了。"
+
+GFnyto_empire_maintenance:0 "帝国维持度"
+
+GFnyto_lgate_base:0 "坍塌点"
+GFnyto_lgate_base_DESC:0 ""
+we_cannot_break_through_the_singularity:1 "我们突破不了奇点。"
+
+GFnyto_crisis_see_angel:0 "看见天使"
+
+ GFnytocrisis_country_name: "§RRevelation§!"
+ mod_damage_vs_country_type_Revelation_mult:0 "对启示录造成的伤害增加"
+ starbase_revelation:0 ""
+
+
+ GFnytocrisis.101.name:0 "启示论"
+ GFnytocrisis.101.desc:0 "它们来了,从地狱中升起，从天堂坠落。从我们的过去重反未来.启示之日即是今日."
+
+
+ GFnytocrisis.102.name:0 "异象论"
+
+
+ GF_nyto_is_boss_limt_hp:0 "[GF_nyto_boss_has_hp]"
+ GF_nyto_boss_name:0 "[event_target:is_GF_nyto_Boss.GetName]"
+ GF_nyto_is_boss_limt_hp_nums:"x[GF_nyto_boss_has_hp_nums]"
+ ### Crisis Compatibility Fixes ###
+ GF_nyto_crisis_batte:0 "战争升级"
+ GF_nyto_crisis_default_country_buff:0 "战争战利品增幅"

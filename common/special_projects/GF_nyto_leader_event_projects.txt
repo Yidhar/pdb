@@ -1,0 +1,14 @@
+#特殊项目,人造神明
+special_project = {
+	key = "GFnyto_god_created_by_us"
+	cost = 1000
+	tech_department = physics_technology
+	picture = GFX_evt_acquire_asset
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	event_scope = country_event
+	on_success = {
+		# TODO: oldversion 依赖的 GFnyto_leader.1 事件尚未迁回，先保留空成功回调以消除悬挂引用
+	}
+	on_fail = {
+	}
+}

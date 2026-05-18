@@ -1,0 +1,250 @@
+namespace = gfnytoaction
+#坍缩液轨道抛射
+planet_event = {
+	id = gfnytoaction.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {		
+		has_orbital_bombardment_stance = gfnyto_collapse_liquid
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+		habitable_planet = yes
+	}	
+	immediate = {
+		set_update_modifiers_batch = begin
+		if = {
+			limit = { 
+				planet_devastation >= 95
+			}
+			owner = {
+				add_static_war_exhaustion = {
+					attacker = from
+					location = root
+					value_for_planet_destruction = 0.5
+				}
+				country_event = { id = gfnytoaction.2 }
+			}
+			from = { country_event = { id = gfnytoaction.3 } }
+			change_pc = pc_GF_nyto_embers_gloomy
+			remove_all_buildings = yes
+			reroll_deposits = yes
+			remove_modifier = "natural_beauty"
+			remove_modifier = "atmospheric_aphrodisiac"
+			remove_modifier = "atmospheric_hallucinogen"
+			remove_modifier = "lush_planet"
+			remove_modifier = "dangerous_wildlife"
+			set_planet_flag = gfnyto_collapse_liquid_nuked
+			set_planet_flag = armageddon_nuked
+			every_owned_pop_group = {
+				kill_pop_group = {
+					pop_group = this
+					percentage = 1
+				}
+			}
+
+		}
+		set_update_modifiers_batch = end
+	}
+}
+country_event = {
+	id = gfnytoaction.2
+	title = "action.82.name"
+	picture = GFX_evt_nuclear_explosion
+	desc = action.82.desc
+	show_sound = event_super_explosion
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = action.82.a
+		custom_tooltip = bombed_to_tomb_world
+		if = {
+			limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+			add_modifier = {
+				modifier = colossus_victim
+				days = 10800 # 30 years
+			}
+		}
+	}
+}
+country_event = {
+	id = gfnytoaction.3
+	title = "action.82.name"
+	picture = GFX_evt_nuclear_explosion
+	desc = gfnytoaction.4.desc
+	show_sound = event_super_explosion
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		custom_tooltip = bombed_to_tomb_world
+		hidden_effect ={
+			if = {
+				limit = {
+					or = {
+						has_ascension_perk = ap_become_the_crisis
+						has_ascension_perk = ap_GF_nyto_conquer_hell
+					}
+				}
+				add_resource ={ 
+					menace = 350
+				}
+			}
+		}
+	}
+}
+#行星轨道防御系统
+#被轰炸
+planet_event = {
+	id = gfnytoaction.10
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		colony_type = col_GF_nyto_capital
+	}
+	immediate = {
+		if = {
+			limit ={
+				check_modifier_value = {
+					modifier = planet_orbital_bombardment_damage
+					value > 1000
+				}
+			}
+			set_update_modifiers_batch = begin
+			every_owned_pop_group = {
+				kill_pop_group = {
+					pop_group = this
+					percentage = 1
+				}
+			}
+			destroy_colony = yes
+			set_update_modifiers_batch = end
+		}
+	}
+}
+
+country_event = {
+	id = gfnytoaction.6
+	title = "gfnytoaction.6.name"
+	desc = "gfnytoaction.6.desc"
+	fire_only_once = yes
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	show_sound = event_space_battle
+	location = from
+	is_triggered_only = yes
+	option = {name = UNDERSTOOD}
+}
+
+
+
+#更新堡垒强度
+ship_event = {
+	id = gfnytoaction.2001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		always = yes
+	}
+	immediate = {
+		#触发要塞更新触发器
+		ship_event = { id = gfnytoaction.2002 }
+		ship_event = { id = gfnytoaction.2003 }
+		ship_event = {
+			id = gfnytoaction.2001
+			days = 33
+		}
+	}
+}
+
+#血条回复
+ship_event = {
+	id = gfnytoaction.2002
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = from
+		owner ={
+			check_modifier_value = { modifier = GF_nyto_stions_HP_nums value != from.GF_nyto_stions_HP_nums }
+		}
+	}
+	immediate = {
+		#处于战斗状态的结算+1
+		if = {
+			limit = {
+				is_in_combat = yes
+			}
+			change_variable = {
+				which = GF_nyto_stions_fortes_has_hp
+				value = 1
+			}
+			repair_ship = yes
+		}
+		#非战斗时回复至满
+		else = {
+			set_variable = {
+				which = GF_nyto_stions_fortes_has_hp
+				value =  owner.modifier:GF_nyto_stions_HP_nums
+			}
+		}
+	}
+}
+
+#补充离子炮台
+ship_event = {
+	id = gfnytoaction.2003
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = from
+		fleet ={
+			count_owned_ship = {
+				limit = {
+					is_ship_size = ion_cannon
+				}
+				count < owner.modifier:GF_nyto_stions_weapon_num
+			}
+		}
+		is_in_combat = no
+	}
+	immediate = {
+		fleet ={
+			while = {
+				limit = {
+					count_owned_ship = {
+						limit = {
+							is_ship_size = ion_cannon
+						}
+						count <= owner.modifier:GF_nyto_stions_weapon_num
+					}
+				}
+				create_ship = {
+					name = random
+					random_existing_design = ion_cannon
+				}
+			}
+		}
+	}
+}
+
+###40xxxx 受击触发的玩家舰船配件####
+
+ship_event = {
+	id = gfnytoaction.401
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		check_modifier_value = {
+			modifier = GF_nyto_has_armor
+			value > 0
+		}
+		has_hp < 800000000
+	}
+	immediate = {
+		from ={ remove_ship_flag = GF_nyto_damage_taken_f_cd }
+		reduce_hp = value:GF_nyto_armor_req_pow
+	}
+}

@@ -1,0 +1,1 @@
+magick mogrify -resize 170x340 -background transparent -gravity center -extent 660x340 .\AINYTO01\*.png

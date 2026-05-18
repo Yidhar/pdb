@@ -1,0 +1,898 @@
+###EILD事件###
+namespace = GFnytoeild
+@Eildtime = 1
+
+#事件开始
+planet_event = {
+	id = GFnytoeild.1
+	title = "GFnytoeild.1.name"
+	desc = "GFnytoeild.1.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_activating_unknown_technology
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = yes
+		original_owner = yes
+		has_ground_combat = no
+		is_capital = yes
+		is_occupied_flag = no
+	}
+	trigger = {
+		owner = {
+			has_origin = origin_GF_nyto_the_last_light
+			NOT = {
+				has_civic = civic_GF_nyto_heart_of_suffering
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			planet_event = {
+				id = GFnytoeild.41
+				random = 30
+				days = 120
+			}
+		}
+		create_army = {
+			owner = ROOT
+			type = GF_nyto_armor_train
+			species = ROOT
+			land_army = yes
+		}
+	}
+	option = {
+		name = GFnytoeild.1.a
+		begin_event_chain = {
+			event_chain = "GFnyto_eild_attack_chain"
+			target = ROOT
+		}
+		enable_special_project = {
+			name = "GFnyto_defense_eild_attack_project"
+			location = ROOT
+			owner = root.owner
+		}
+		add_modifier = {
+			modifier = "GFnyto_eild_attack"
+			days = -1
+		}
+		add_deposit = d_GFnyto_ancient_land_zone
+		add_deposit = d_GFnyto_black_zone
+	}
+}
+
+# EILD特殊项目1整修隔离墙完成
+planet_event = {
+	id = GFnytoeild.2
+	title = "GFnytoeild.2.name"
+	desc = "GFnytoeild.2.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_construction
+	location = ROOT
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			planet_event = {
+				id = GFnytoeild.3
+				random = 360
+				days = 500
+			}
+		}
+	}
+	option = {
+		name = NYTOWELLDONE
+		remove_deposit = d_GFnyto_ancient_land_zone
+		add_deposit = d_GFnyto_planetary_surface_defense_zone
+		add_deposit = d_GFnyto_planetary_orbit_defense_zone
+		add_modifier = {
+			modifier = GFnyto_planetary_defense_ready
+		}
+	}
+}
+
+#整修大型路基炮塔
+planet_event = {
+	id = GFnytoeild.3
+	title = "GFnytoeild.3.name"
+	desc = "GFnytoeild.3.desc"
+	show_sound = event_construction
+	picture = GFX_evt_city_ruins
+	is_triggered_only = yes
+	immediate = {
+		enable_special_project = {
+			name = GFnyto_defense_eild_attack_Land_base_station
+			location = root
+			owner = root.owner
+		}
+	}
+	option = {
+		name = GFnytoeild.3.a
+	}
+}
+
+#修完
+planet_event = {
+	id = GFnytoeild.4
+	title = "GFnytoeild.4.name"
+	desc = "GFnytoeild.4.desc"
+	show_sound = event_construction
+	picture = GFX_evt_city_ruins
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			planet_event = {
+				id = GFnytoeild.31
+				random = 360
+				days = 3600
+			}
+			create_army = {
+				name = "城防巨炮"
+				owner = owner
+				species = owner_main_species
+				type = GF_nyto_Land_base_station
+				land_army = yes
+			}
+			create_army = {
+				name = "城防巨炮"
+				owner = owner
+				species = owner_main_species
+				type = GF_nyto_Land_base_station
+				land_army = yes
+			}
+			set_variable = {
+				which = has_Land_base_station
+				value = 2
+			}
+		}
+	}
+	option = {
+		name = GFnytoeild.4a
+	}
+}
+
+#当炮台被摧毁时给与重建炮台项目
+country_event = {
+	id = GFnytoeild.5
+	hide_window = yes
+	show_sound = event_construction
+	picture = GFX_evt_city_ruins
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			AND = {
+				from = {
+					army_type = GF_nyto_Land_base_station
+				}
+				fromfromfrom = {
+					check_variable = {
+						which = has_Land_base_station
+						value > 0
+					}
+				}
+			}
+			from = {
+				army_type = GF_nyto_yaosai
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				from = {
+					army_type = GF_nyto_Land_base_station
+				}
+			}
+			fromfromfrom = {
+				change_variable = {
+					which = has_Land_base_station
+					value = -1
+				}
+			}
+			if = {
+				limit = {
+					fromfromfrom = {
+						check_variable = {
+							which = has_Land_base_station
+							value < 1
+						}
+					}
+				}
+				fromfromfrom = {
+					planet_event = {
+						id = GFnytoeild.6
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					army_type = GF_nyto_yaosai
+				}
+			}
+			fromfromfrom = {
+				remove_planet_flag = GF_nyto_yaosai
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = GFnytoeild.6
+	title = "GFnytoeild.5.name"
+	desc = "GFnytoeild.5.desc"
+	show_sound = event_construction
+	is_triggered_only = yes
+	picture = GFX_evt_city_ruins
+	immediate = {
+		enable_special_project = {
+			name = GFnyto_defense_eild_attack_Land_base_station2
+			location = root
+			owner = root.owner
+		}
+	}
+	option = {
+		name = GFnytoeild.5.a
+	}
+}
+
+#抢修完成
+planet_event = {
+	id = GFnytoeild.7
+	title = "GFnytoeild.6.name"
+	desc = "GFnytoeild.6.desc"
+	show_sound = event_construction
+	picture = GFX_evt_city_ruins
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			create_army = {
+				name = "城防巨炮"
+				owner = owner
+				species = owner_main_species
+				type = GF_nyto_Land_base_station
+				land_army = yes
+			}
+			create_army = {
+				name = "城防巨炮"
+				owner = owner
+				species = owner_main_species
+				type = GF_nyto_Land_base_station
+				land_army = yes
+			}
+			set_variable = {
+				which = has_Land_base_station
+				value = 2
+			}
+		}
+	}
+	option = {
+		name = GFnytoeild.6.a
+	}
+}
+
+#建立特殊项目2找到关停方法
+planet_event = {
+	id = GFnytoeild.31
+	title = "GFnytoeild.31.name"
+	desc = "GFnytoeild.31.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_administrative_work
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+	option = {
+		name = GFnytoeild.31.a
+		enable_special_project = {
+			name = "GFnyto_find_close_ruin_project"
+			location = ROOT
+			owner = root.owner
+		}
+	}
+}
+
+# EILD特殊项目2寻找关闭遗迹方法完成
+planet_event = {
+	id = GFnytoeild.32
+	title = "PROJECT_COMPLETE"
+	desc = "GFnytoeild.32.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_administrative_work
+	location = ROOT
+	is_triggered_only = yes
+	option = {
+		name = NYTOMAYTHEFORCEBEWITHYOU
+		enable_special_project = {
+			name = "GFnyto_close_ruin_project"
+			location = ROOT
+			owner = root.owner
+		}
+	}
+}
+
+# EILD特殊项目3关闭遗迹完成
+planet_event = {
+	id = GFnytoeild.33
+	title = "PROJECT_COMPLETE"
+	desc = "GFnytoeild.33.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_whispering
+	location = ROOT
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			planet_event = {
+				id = GFnytoeild.34
+				random = 360
+				days = 3600
+			}
+			owner = {
+				create_message = {
+					type = GF_nyto_music_2
+					localization = "MESSAGE_GF_nyto_music_1"
+					days = 999
+					target = prev
+				}
+				event_target:EILD_country@root = {
+					destroy_country = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = NYTORECEIVE
+		remove_modifier = "GFnyto_eild_attack"
+		remove_planet_flag = GF_nyto_eild_attack_begin
+		if = {
+			limit = {
+				controller = {
+					is_country = event_target:EILD_country@root
+				}
+			}
+			set_controller = root.owner
+		}
+		add_modifier = {
+			modifier = "GFnyto_eild_attack_end"
+			years = 10
+		}
+	}
+}
+
+#建立特殊项目4收容EILD
+planet_event = {
+	id = GFnytoeild.34
+	title = "GFnytoeild.34.name"
+	desc = "GFnytoeild.34.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_alien_nature
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+	option = {
+		name = GFnytoeild.34.a
+		enable_special_project = {
+			name = "study_GF_nyto_eild_army_project"
+			location = ROOT
+			owner = root.owner
+		}
+	}
+}
+
+# 特殊项目4完成,创建EILD附属种族
+planet_event = {
+	id = GFnytoeild.35
+	title = "PROJECT_COMPLETE"
+	desc = "GFnytoeild.35.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_alien_nature
+	location = ROOT
+	is_triggered_only = yes
+	immediate = {
+		create_species = {
+			name = "ELID-infected"
+			class = "EILD"
+			portrait = "GFnyto_eild"
+			traits = {
+				trait = trait_GF_nyto_elid
+				trait = trait_latent_psionic
+				trait = trait_nerve_stapled
+			}
+			effect = {
+				save_event_target_as = GFnyto_ELID_infected_species
+				set_species_homeworld = root
+			}
+		}
+		while = {
+			count = 10
+			create_pop = {
+				species = event_target:GFnyto_ELID_infected_species
+			}
+		}
+		event_target:GFnyto_ELID_infected_species = {
+			set_citizenship_type = {
+				country = root.owner
+				type = citizenship_limited
+			}
+		}
+	}
+	option = {
+		name = NYTOGETEILD
+		owner = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech_option = tech_GF_nyto_EILD_brain_wave
+					}
+				}
+				add_research_option = tech_GF_nyto_EILD_brain_wave
+			}
+			add_tech_progress = {
+				tech = tech_GF_nyto_EILD_brain_wave
+				progress = 0.2
+			}
+		}
+	}
+}
+
+#EILD进攻初始化
+planet_event = {
+	id = GFnytoeild.41
+	title = "GFnytoeild.41.name"
+	desc = "GFnytoeild.41.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_ground_battle
+	location = ROOT
+	auto_opens = yes
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = yes
+		original_owner = yes
+		has_ground_combat = no
+	}
+	trigger = {
+		owner = {
+			is_ai = no
+			has_origin = origin_GF_nyto_the_last_light
+		}
+	}
+	immediate = {
+		set_planet_flag = GF_nyto_eild_attack_begin
+		planet_event = {
+			id = GFnytoeild.49
+			days = 720
+		}
+		create_country = {
+			name = "EILD"
+			type = faction
+			auto_delete = no
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = {
+					who = root.owner
+					location = root.solar_system
+				}
+				save_global_event_target_as = EILD_country@root
+				create_species = {
+					name = "EILD"
+					class = EILD
+					portrait = random
+					traits = random
+					effect = {
+						save_global_event_target_as = ELID_species@root
+					}
+				}
+			}
+		}
+		create_army = {
+			name = "EILD"
+			owner = event_target:EILD_country@root
+			species = event_target:ELID_species@root
+			type = "GF_nyto_eild_army_1"
+			land_army = yes
+		}
+	}
+	option = {
+		name = GFnytoeild.4.a
+	}
+}
+
+#入侵判定
+planet_event = {
+	id = GFnytoeild.49
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_planet_flag = GF_nyto_eild_attack_begin
+					has_planet_flag = GFnyto_colony_eild_attack_begin
+				}
+				NOT = {
+					has_planet_flag = GFnyto_EIld_aatack_GG
+				}
+				is_owned_by = controller
+			}
+			planet_event = {
+				id = GFnytoeild.44
+			}
+		}
+		planet_event = {
+			id = GFnytoeild.49
+			days = 720
+			random = 120
+		}
+	}
+}
+
+#依据危险度循环进攻阶段
+planet_event = {
+	id = GFnytoeild.44
+	title = "GFnytoeild.43.name"
+	desc = "GFnytoeild.43.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_ground_battle
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_planet_flag = GF_nyto_eild_attack_begin
+			has_planet_flag = GFnyto_colony_eild_attack_begin
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				exists = owner
+			}
+			event_target:EILD_country@root = {
+				if = {
+					limit = {
+						prev = {
+							is_homeworld = yes
+						}
+						NOT = {
+							has_country_flag = GF_nyto_elid_attack_damge_colodown
+						}
+					}
+					change_variable = {
+						which = Elidlevel
+						value = 1.2
+					}
+					remove_modifier = GF_nyto_Elid_level
+					add_modifier = {
+						modifier = GF_nyto_Elid_level
+						multiplier = Elidlevel
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = GFnyto_Eild_hunting_S
+							has_country_flag = GFnyto_Eild_hunting_M
+							has_country_flag = GFnyto_Eild_hunting_L
+						}
+					}
+					prev.owner = {
+						prevprev = {
+							planet_event = {
+								id = GFnytoeild.59
+							}
+							event_target:EILD_country@root = {
+								every_owned_army = {
+									remove_army = yes
+								}
+							}
+						}
+					}
+				}
+			}
+			GF_nyto_elid_attack = yes
+		}
+	}
+	option = {
+		name = "ok"
+	}
+}
+
+#每次胜利获得资源  危险度下降0.2
+country_event = {
+	id = GFnytoeild.441
+	title = "GFnytoeild.44a.name"
+	desc = "GFnytoeild.44a.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_ground_battle
+	is_triggered_only = yes
+	trigger = {
+		root = {
+			has_authority = auth_GF_paradeus
+		}
+		from = {
+			is_country = event_target:EILD_country@fromfrom
+			NOT = {
+				has_country_flag = GFnyto_Eild_hunting_S
+				has_country_flag = GFnyto_Eild_hunting_M
+				has_country_flag = GFnyto_Eild_hunting_L
+			}
+		}
+		fromfrom = {
+			check_variable = {
+				which = GFnyto_Eild_level
+				value > 0
+			}
+		}
+	}
+	immediate = {
+		fromfrom = {
+			multiply_variable = {
+				which = GFnyto_Eild_level
+				value = 0.8
+			}
+		}
+	}
+	option = {
+		name = GFnytoeild.44ab
+		root = {
+			if = {
+				limit = {
+					has_civic = civic_GF_nyto_reup
+				}
+				add_resource = {
+					GF_nyto_collapse_liquid = 20
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					unity = 200
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					alloys = 20
+					mult = fromfrom.GFnyto_Eild_level
+				}
+			}
+			else = {
+				add_resource = {
+					GF_nyto_collapse_liquid = 20
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					unity = 150
+					mult = fromfrom.GFnyto_Eild_level
+				}
+			}
+		}
+	}
+}
+
+#狩猎中断
+planet_event = {
+	id = GFnytoeild.59
+	picture = GFX_evt_city_ruins
+	title = GFnytoeild.59.name
+	desc = GFnytoeild.59.desc
+	is_triggered_only = yes
+	hide_window = no
+	immediate = {
+		event_target:EILD_country@root = {
+			remove_country_flag = GFnyto_Eild_hunting_S
+			remove_country_flag = GFnyto_Eild_hunting_M
+			remove_country_flag = GFnyto_Eild_hunting_L
+		}
+	}
+	option = {
+		name = GFnytoeild.59a
+	}
+}
+
+#第一次抵抗失败
+country_event = {
+	id = GFnytoeild.45
+	title = "GFnytoeild.45.name"
+	desc = "GFnytoeild.45.desc"
+	picture = GFX_evt_city_ruins
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			is_capital = yes
+			has_planet_flag = GF_nyto_eild_attack_begin
+			NOT = {
+				has_planet_flag = GF_nyto_GG
+			}
+		}
+	}
+	immediate = {
+		this = {
+			remove_country_flag = GFnyto_Eild_hunting_S
+			remove_country_flag = GFnyto_Eild_hunting_M
+			remove_country_flag = GFnyto_Eild_hunting_L
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				fromfrom = {
+					controller = {
+						is_country = event_target:EILD_country@fromfrom
+					}
+					NOT = {
+						has_planet_flag = GF_nyto_GG
+					}
+				}
+			}
+			fromfrom = {
+				set_planet_flag = GF_nyto_GG
+				planet_event = {
+					id = GFnytoeild.47
+					days = 120
+					random = 30
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			fromfrom = {
+				NOT = {
+					has_planet_flag = GF_nyto_GG
+				}
+			}
+		}
+		default_hide_option = yes
+		name = "GFnytoeild.45a"
+		ai_chance = {
+			factor = 99999
+		}
+	}
+}
+
+#第二次失败 GG
+country_event = {
+	id = GFnytoeild.46
+	title = "GFnytoeild.46.name"
+	desc = "GFnytoeild.46.desc"
+	picture = GFX_evt_city_ruins
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			is_capital = yes
+			has_planet_flag = GF_nyto_eild_attack_begin
+			has_planet_flag = GF_nyto_GG
+		}
+	}
+	immediate = {
+		fromfrom = {
+			every_owned_pop_group = {
+				kill_all_pop = yes
+			}
+			destroy_colony = yes
+			set_planet_name = "寄了"
+		}
+	}
+	option = {
+		name = GFnytoeild.46a
+	}
+}
+
+#第一次战败复活
+planet_event = {
+	id = GFnytoeild.47
+	title = "GFnytoeild.47.name"
+	desc = "GFnytoeild.47.desc"
+	fire_only_once = yes
+	picture = GFX_evt_city_ruins
+	is_triggered_only = yes
+	pre_triggers = {
+		is_capital = yes
+	}
+	trigger = {
+		controller = {
+			is_country = event_target:EILD_country@root
+		}
+	}
+	immediate = {
+		set_planet_name = "寄了！但没有完全寄"
+		set_controller = root.owner
+		set_timed_planet_flag = {
+			flag = GFnyto_EIld_aatack_GG
+			years = 3
+		}
+		while = {
+			count = 10
+			random_owned_pop_group = {
+				kill_single_pop = yes
+			}
+			create_message = {
+				type = GF_nyto_popd
+				localization = "MESSAGE_GF_nyto_popd"
+				days = 30
+				target = prev
+			}
+		}
+		owner = {
+			create_message = {
+				type = GF_nyto_music_1
+				localization = "MESSAGE_GF_nyto_music_1"
+				days = 999
+				target = prev
+			}
+		}
+	}
+	option = {
+		name = "GFnytoeild.47a"
+	}
+}
+
+#殖民被坍缩液轰炸星球
+planet_event = {
+	id = GFnytoeild.10
+	title = "GFnytoeild.10.name"
+	desc = "GFnytoeild.10.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_activating_unknown_technology
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	trigger = {
+		owner = {
+			has_origin = origin_GF_nyto_the_last_light
+		}
+		has_planet_flag = gfnyto_collapse_liquid_nuked
+	}
+	immediate = {
+		set_planet_flag = GFnyto_colony_eild_attack_begin
+		set_variable = {
+			which = GFnyto_Eild_level
+			value = 5
+		}
+		add_deposit = d_GFnyto_black_zone
+		add_modifier = {
+			modifier = "GFnyto_eild_attack"
+			days = -1
+		}
+		planet_event = {
+			id = GFnytoeild.49
+			days = 360
+			random = 80
+		}
+	}
+	option = {
+		name = GFnytoeild.10.a
+		begin_event_chain = {
+			event_chain = "GFnyto_colony_eild_attack_chain"
+			target = ROOT
+		}
+		enable_special_project = {
+			name = "defense_colony_GF_nyto_eild_attack_project"
+			location = ROOT
+			owner = root.owner
+		}
+	}
+}
+
+# 殖民地EILD特殊项目完成
+planet_event = {
+	id = GFnytoeild.11
+	title = "PROJECT_COMPLETE"
+	desc = "GFnytoeild.11.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_ground_battle
+	location = ROOT
+	is_triggered_only = yes
+	option = {
+		name = NYTOWELLDONE
+		remove_modifier = "GFnyto_eild_attack"
+		remove_planet_flag = GFnyto_colony_eild_attack_begin
+		remove_planet_flag = gfnyto_collapse_liquid_nuked
+	}
+}

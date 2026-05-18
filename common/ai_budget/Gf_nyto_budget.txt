@@ -1,0 +1,177 @@
+# 造船
+GF_nyto_collapse_liquid_expenditure_ship = {
+	resource = GF_nyto_collapse_fluid
+	type = expenditure
+	category = ships
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 2
+	}
+}
+GF_nyto_new_fire_control_unit_expenditure_ship = {
+	resource = GF_nyto_new_fire_control_unit
+	type = expenditure
+	category = ships
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 2
+	}
+}
+GF_engery_expenditure_ship = {
+	resource = energy
+	type = expenditure
+	category = ships
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.3
+	}
+}
+
+# 舰队升级
+GF_nyto_collapse_liquid_expenditure_ship_upgrades = {
+	resource = GF_nyto_collapse_fluid
+	type = expenditure
+	category = ship_upgrades
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 2
+	}
+}
+GF_nyto_new_fire_control_unit_expenditure_ship_upgrades = {
+	resource = GF_nyto_new_fire_control_unit
+	type = expenditure
+	category = ship_upgrades
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 2
+	}
+}
+GF_engery_expenditure_ship_upgrades = {
+	resource = energy
+	type = expenditure
+	category = ship_upgrades
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.5
+	}
+}
+
+# 舰队维护
+GF_nyto_collapse_liquid_expenditure_ship_upkeep = {
+	resource = GF_nyto_collapse_fluid
+	type = upkeep
+	category = ships
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 0.7
+	}
+}
+GF_nyto_new_fire_control_unit_expenditure_ship_upkeep = {
+	resource = GF_nyto_new_fire_control_unit
+	type = upkeep
+	category = ships
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 0.7
+	}
+}
+GF_engery_expenditure_ship_upkeep = {
+	resource = energy
+	type = upkeep
+	category = ships
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.2
+	}
+}
+
+# 行星与建筑
+GF_nyto_alloys_expenditure_plante_upkeep = {
+	resource = alloys
+	type = upkeep
+	category = planets
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.2
+	}
+}
+GF_nyto_minier_planet_upgrade_expenditure_planet_upgrade = {
+	resource = minerals
+	type = expenditure
+	category = planet_buildings
+	potential = {
+		always = yes
+	}
+}
+
+# 决议
+GF_cg_food_expenditure_decisions = {
+	resource = food
+	type = expenditure
+	category = decisions
+	potential = {
+		is_cg_country = yes
+	}
+	weight = {
+		weight = 0.1
+	}
+	desired_min = {
+		base = 10
+	}
+}
+GF_cg_energy_expenditure_decisions = {
+	resource = energy
+	type = expenditure
+	category = decisions
+	potential = {
+		is_cg_country = yes
+	}
+	weight = {
+		weight = 0.1
+	}
+}
+GF_cg_minerals_expenditure_decisions = {
+	resource = minerals
+	type = expenditure
+	category = decisions
+	potential = {
+		is_cg_country = yes
+	}
+	weight = {
+		weight = 0.1
+	}
+}
+
+# 旧版 holylight_crystal / sr_beauty 预算项延后，待对应 resource 定义正式迁入后再接回。
+
+GF_nyto__collapse_liquid_planets_cost = {
+	resource = GF_nyto_collapse_fluid
+	type = expenditure
+	category = planets
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.5
+	}
+}

@@ -1,0 +1,32 @@
+# Triggers country_event for the attacker upon defeat
+# This = country, attack leader
+# From = country, planet owner
+# FromFrom = planet
+on_planet_defenders_lose = {
+	events = {
+		GFnytoeild.45
+		GFnytoeild.46
+	}
+}
+
+# Triggers country_event for the defender upon victory
+# Root = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_win = {
+	events = {
+		GFnytoeild.441
+	}
+}
+
+# An army has been killed in ground combat
+# This = owner
+# From = army
+# FromFrom = opponent
+# FromFromFrom = planet
+on_army_killed_in_combat = {
+	events = {
+		GFnytoeild.5
+	}
+}
+

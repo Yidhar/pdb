@@ -1,0 +1,433 @@
+portraits = {
+	#GF_nyto00     = {texturefile = "gfx/models/portraits/GFnyto/Nyto07202055.dds"}
+	GFnyto_nyto_black     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_black.dds"}
+	GFnyto_nyto_white     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_white.dds"}
+	GFnyto_nyto_nimogen    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_nimogen.dds"}
+	GFnyto_nyto_silver     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_silver.dds"}
+	GFnyto_nyto_deadline     	 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_deadline.dds"}
+	GFnyto_nyto_Isomer_white     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Isomer_white.dds"}
+	GFnyto_nyto_Isomer_shadow    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Isomer_shadow.dds"}
+	GFnyto_nyto_basic    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_basic.dds"}
+	GFnyto_nyto_an_1    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_an_1.dds"}
+	GFnyto_nyto_an_2    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_an_2.dds"}
+	GFnyto_nyto_an_3    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_an_3.dds"}
+	GFnyto_nyto_an_4    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_an_4.dds"}
+	GFnyto_nyto_lsomer_basic     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_lsomer_basic.dds"}
+
+	GFnyto_nyto_strelet   		  = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_strelet.dds"}
+	GFnyto_nyto_rodelero     	  = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_rodelero.dds"}
+	GFnyto_nyto_doppelsoldner     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_doppelsoldner.dds"}
+
+	GFnyto_nyto_disaster= {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_disaster.dds"}
+	#	GFnyto_nyto_morridow    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_morridow.dds"}
+	#	GFnyto_nyto_morridow_casual     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_morridow_casual.dds"}
+
+	GFnyto_Machlian  		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_Machlian.dds"}
+	GFnyto_Machlian_2    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_Machlian_2.dds"}
+
+	GFnyto_Scouter  		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_Scouter.dds"}
+	GFnyto_gunner    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_gunner.dds"}
+	GFnyto_nyto_Adeline 		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Adeline.dds"}
+	GFnyto_nyto_Eleanor    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Eleanor.dds"}
+	GFnyto_nyto_Tie = { texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Tie.dds"}
+	GFnyto_Nimeylan_1 ={  texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Nimeylan_1.dds" }
+	GFnyto_Bramed_1 = {  texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Bramed_1.dds" }
+	GFnyto_Morridow_1 ={ texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Morridow_1.dds" }
+	GFnyto_Morridow_2 ={ texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Morridow_2.dds" }
+	GFnyto_Morridow_3 ={ texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Morridow_3.dds" }
+	GFnyto_Gray_1 = { texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Gray_1.dds"}
+	GFnyto_Narciss_1 ={  texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Narciss_1.dds" }
+	GFnyto_tyrs_1 = { texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_tyrs_1.dds"}
+	GFnyto_tyrs_2 ={ texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_tyrs_2.dds"}
+	GFnyto_tyrs_3 ={ texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_tyrs_3.dds"}
+	GFnyto_shana ={ texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_shana_1.dds" }
+	GFnyto_shana2 ={ texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_shana_arm.dds" }
+	GFnyto_shana3 ={ texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_shana_arm2.dds" }
+	GFnyto_shana4 ={ texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_shana_arm3.dds" }
+	GFnyto_shana5 ={ texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_shana_s.dds" }
+	GFnyto_lmz ={ texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_ganladi_a.dds" }
+	#pop
+	AINYTO01_0={texturefile ="gfx/models/portraits/AINYTO01/00000-2981299892.png"}
+	AINYTO01_1={texturefile ="gfx/models/portraits/AINYTO01/00007-2981299899.png"}
+	AINYTO01_2={texturefile ="gfx/models/portraits/AINYTO01/00008-2981299900.png"}
+	AINYTO01_3={texturefile ="gfx/models/portraits/AINYTO01/00009-2981299901.png"}
+	AINYTO01_4={texturefile ="gfx/models/portraits/AINYTO01/00013-1887281081.png"}
+	AINYTO01_5={texturefile ="gfx/models/portraits/AINYTO01/00014-1887281082.png"}
+	AINYTO01_6={texturefile ="gfx/models/portraits/AINYTO01/00016-1887281084.png"}
+	AINYTO01_7={texturefile ="gfx/models/portraits/AINYTO01/00017-1887281085.png"}
+	AINYTO01_8={texturefile ="gfx/models/portraits/AINYTO01/00018-1887281086.png"}
+	AINYTO01_9={texturefile ="gfx/models/portraits/AINYTO01/00024-64663072.png"}
+	AINYTO01_10={texturefile ="gfx/models/portraits/AINYTO01/00025-64663073.png"}
+	AINYTO01_11={texturefile ="gfx/models/portraits/AINYTO01/00026-64663074.png"}
+	AINYTO01_12={texturefile ="gfx/models/portraits/AINYTO01/00027-64663076.png"}
+	AINYTO01_13={texturefile ="gfx/models/portraits/AINYTO01/00029-1680297793.png"}
+	AINYTO01_14={texturefile ="gfx/models/portraits/AINYTO01/00030-1680297794.png"}
+	AINYTO01_15={texturefile ="gfx/models/portraits/AINYTO01/00032-3418615314.png"}
+	AINYTO01_16={texturefile ="gfx/models/portraits/AINYTO01/00034-1139504683.png"}
+	AINYTO01_17={texturefile ="gfx/models/portraits/AINYTO01/00035-1139504684.png"}
+	AINYTO01_18={texturefile ="gfx/models/portraits/AINYTO01/00036-1139504685.png"}
+	AINYTO01_19={texturefile ="gfx/models/portraits/AINYTO01/00037-1139504686.png"}
+	AINYTO01_20={texturefile ="gfx/models/portraits/AINYTO01/00038-1139504687.png"}
+	AINYTO01_21={texturefile ="gfx/models/portraits/AINYTO01/00039-1139504688.png"}
+	AINYTO01_22={texturefile ="gfx/models/portraits/AINYTO01/00041-1139504690.png"}
+	AINYTO01_23={texturefile ="gfx/models/portraits/AINYTO01/00042-1139504691.png"}
+	AINYTO01_24={texturefile ="gfx/models/portraits/AINYTO01/00043-1139504692.png"}
+	AINYTO01_25={texturefile ="gfx/models/portraits/AINYTO01/00044-1139504693.png"}
+	AINYTO01_26={texturefile ="gfx/models/portraits/AINYTO01/00045-1139504694.png"}
+	AINYTO01_27={texturefile ="gfx/models/portraits/AINYTO01/00046-1139504695.png"}
+	AINYTO01_28={texturefile ="gfx/models/portraits/AINYTO01/00047-1139504696.png"}
+	AINYTO01_29={texturefile ="gfx/models/portraits/AINYTO01/00048-968073850.png"}
+	AINYTO01_30={texturefile ="gfx/models/portraits/AINYTO01/00049-968073851.png"}
+	AINYTO01_31={texturefile ="gfx/models/portraits/AINYTO01/00050-968073852.png"}
+	AINYTO01_32={texturefile ="gfx/models/portraits/AINYTO01/00051-968073853.png"}
+	AINYTO01_33={texturefile ="gfx/models/portraits/AINYTO01/00052-968073854.png"}
+	AINYTO01_34={texturefile ="gfx/models/portraits/AINYTO01/00053-968073855.png"}
+	AINYTO01_35={texturefile ="gfx/models/portraits/AINYTO01/00054-968073856.png"}
+	AINYTO01_36={texturefile ="gfx/models/portraits/AINYTO01/00055-968073857.png"}
+	AINYTO01_37={texturefile ="gfx/models/portraits/AINYTO01/00056-968073858.png"}
+	AINYTO01_38={texturefile ="gfx/models/portraits/AINYTO01/00058-968073860.png"}
+	AINYTO01_39={texturefile ="gfx/models/portraits/AINYTO01/00059-968073861.png"}
+	AINYTO01_40={texturefile ="gfx/models/portraits/AINYTO01/00060-968073862.png"}
+	AINYTO01_41={texturefile ="gfx/models/portraits/AINYTO01/00061-968073863.png"}
+	AINYTO01_42={texturefile ="gfx/models/portraits/AINYTO01/00063-968073865.png"}
+	AINYTO01_43={texturefile ="gfx/models/portraits/AINYTO01/00064-968073866.png"}
+	AINYTO01_44={texturefile ="gfx/models/portraits/AINYTO01/00065-968073867.png"}
+	AINYTO01_45={texturefile ="gfx/models/portraits/AINYTO01/00066-968073868.png"}
+	AINYTO01_46={texturefile ="gfx/models/portraits/AINYTO01/00067-968073869.png"}
+	AINYTO01_47={texturefile ="gfx/models/portraits/AINYTO01/00068-968073870.png"}
+	AINYTO01_48={texturefile ="gfx/models/portraits/AINYTO01/00069-968073871.png"}
+	AINYTO01_49={texturefile ="gfx/models/portraits/AINYTO01/00070-968073872.png"}
+	AINYTO01_50={texturefile ="gfx/models/portraits/AINYTO01/00071-968073873.png"}
+	AINYTO01_51={texturefile ="gfx/models/portraits/AINYTO01/00072-968073874.png"}
+	AINYTO01_52={texturefile ="gfx/models/portraits/AINYTO01/00083-2124209451.png"}
+	AINYTO01_53={texturefile ="gfx/models/portraits/AINYTO01/00084-80303714.png"}
+	AINYTO01_54={texturefile ="gfx/models/portraits/AINYTO01/00086-4135736246.png"}
+	AINYTO01_55={texturefile ="gfx/models/portraits/AINYTO01/00088-262998956.png"}
+	AINYTO01_56={texturefile ="gfx/models/portraits/AINYTO01/00094-908596206.png"}
+	AINYTO01_57={texturefile ="gfx/models/portraits/AINYTO01/00095-908596207.png"}
+	AINYTO01_58={texturefile ="gfx/models/portraits/AINYTO01/00096-908596208.png"}
+	AINYTO01_59={texturefile ="gfx/models/portraits/AINYTO01/00097-908596209.png"}
+	AINYTO01_60={texturefile ="gfx/models/portraits/AINYTO01/00098-908596210.png"}
+	AINYTO01_61={texturefile ="gfx/models/portraits/AINYTO01/00099-908596211.png"}
+	AINYTO01_62={texturefile ="gfx/models/portraits/AINYTO01/00100-908596212.png"}
+	AINYTO01_63={texturefile ="gfx/models/portraits/AINYTO01/00101-908596213.png"}
+	AINYTO01_64={texturefile ="gfx/models/portraits/AINYTO01/00102-908596214.png"}
+	AINYTO01_65={texturefile ="gfx/models/portraits/AINYTO01/00103-908596215.png"}
+	AINYTO01_66={texturefile ="gfx/models/portraits/AINYTO01/00104-908596216.png"}
+	AINYTO01_67={texturefile ="gfx/models/portraits/AINYTO01/00105-908596217.png"}
+	AINYTO01_68={texturefile ="gfx/models/portraits/AINYTO01/00106-908596218.png"}
+	AINYTO01_69={texturefile ="gfx/models/portraits/AINYTO01/00107-908596219.png"}
+}
+portrait_groups = {
+	GFnyto_nyto= {
+		default = GFnyto_nyto_deadline 
+			game_setup = {
+				add = {
+					portraits = {
+						AINYTO01_0
+						AINYTO01_1
+						AINYTO01_2
+						AINYTO01_3
+						AINYTO01_4
+						AINYTO01_5
+						AINYTO01_6
+						AINYTO01_7
+						AINYTO01_8
+						AINYTO01_9
+						AINYTO01_10
+						AINYTO01_11
+						AINYTO01_12
+						AINYTO01_13
+						AINYTO01_14
+						AINYTO01_15
+						AINYTO01_16
+						AINYTO01_17
+						AINYTO01_18
+						AINYTO01_19
+						AINYTO01_20
+						AINYTO01_21
+						AINYTO01_22
+						AINYTO01_23
+						AINYTO01_24
+						AINYTO01_25
+						AINYTO01_26
+						AINYTO01_27
+						AINYTO01_28
+						AINYTO01_29
+						AINYTO01_30
+						AINYTO01_31
+						AINYTO01_32
+						AINYTO01_33
+						AINYTO01_34
+						AINYTO01_35
+						AINYTO01_36
+						AINYTO01_37
+						AINYTO01_38
+						AINYTO01_39
+						AINYTO01_40
+						AINYTO01_41
+						AINYTO01_42
+						AINYTO01_43
+						AINYTO01_44
+						AINYTO01_45
+						AINYTO01_46
+						AINYTO01_47
+						AINYTO01_48
+						AINYTO01_49
+						AINYTO01_50
+						AINYTO01_51
+						AINYTO01_52
+						AINYTO01_53
+						AINYTO01_54
+						AINYTO01_55
+						AINYTO01_56
+						AINYTO01_57
+						AINYTO01_58
+						AINYTO01_59
+						AINYTO01_60
+						AINYTO01_61
+						AINYTO01_62
+						AINYTO01_63
+						AINYTO01_64
+						AINYTO01_65
+						AINYTO01_66
+						AINYTO01_67
+						AINYTO01_68
+						AINYTO01_69
+						GFnyto_nyto_black
+						GFnyto_nyto_white
+						GFnyto_nyto_nimogen  
+						GFnyto_nyto_silver
+						GFnyto_nyto_deadline     	
+						GFnyto_nyto_Isomer_white                      
+						GFnyto_nyto_Isomer_shadow
+						GFnyto_nyto_basic    
+						GFnyto_nyto_an_1
+						GFnyto_nyto_an_2
+						GFnyto_nyto_an_3
+						GFnyto_nyto_an_4					
+						GFnyto_nyto_lsomer_basic
+						GFnyto_Nimeylan_1
+						GFnyto_Bramed_1
+						GFnyto_Morridow_1
+						GFnyto_Morridow_2
+						GFnyto_Morridow_3
+						GFnyto_Gray_1
+						GFnyto_Narciss_1
+						GFnyto_Scouter
+						GFnyto_nyto_Adeline
+						GFnyto_nyto_Eleanor
+						GFnyto_nyto_Tie
+						GFnyto_tyrs_1
+						GFnyto_shana
+						GFnyto_shana2
+						GFnyto_shana3
+						GFnyto_shana4
+						GFnyto_shana5
+					}
+				}
+			}		
+#species scope
+			species = { #generic portrait for a species
+				add = {
+					portraits = {
+						GFnyto_nyto_basic
+					}
+				}
+			}
+			#pop scope
+			pop = { #for a specific pop
+				add = {
+					portraits = {
+						AINYTO01_0
+						AINYTO01_1
+						AINYTO01_2
+						AINYTO01_3
+						AINYTO01_4
+						AINYTO01_5
+						AINYTO01_6
+						AINYTO01_7
+						AINYTO01_8
+						AINYTO01_9
+						AINYTO01_10
+						AINYTO01_11
+						AINYTO01_12
+						AINYTO01_13
+						AINYTO01_14
+						AINYTO01_15
+						AINYTO01_16
+						AINYTO01_17
+						AINYTO01_18
+						AINYTO01_19
+						AINYTO01_20
+						AINYTO01_21
+						AINYTO01_22
+						AINYTO01_23
+						AINYTO01_24
+						AINYTO01_25
+						AINYTO01_26
+						AINYTO01_27
+						AINYTO01_28
+						AINYTO01_29
+						AINYTO01_30
+						AINYTO01_31
+						AINYTO01_32
+						AINYTO01_33
+						AINYTO01_34
+						AINYTO01_35
+						AINYTO01_36
+						AINYTO01_37
+						AINYTO01_38
+						AINYTO01_39
+						AINYTO01_40
+						AINYTO01_41
+						AINYTO01_42
+						AINYTO01_43
+						AINYTO01_44
+						AINYTO01_45
+						AINYTO01_46
+						AINYTO01_47
+						AINYTO01_48
+						AINYTO01_49
+						AINYTO01_50
+						AINYTO01_51
+						AINYTO01_52
+						AINYTO01_53
+						AINYTO01_54
+						AINYTO01_55
+						AINYTO01_56
+						AINYTO01_57
+						AINYTO01_58
+						AINYTO01_59
+						AINYTO01_60
+						AINYTO01_61
+						AINYTO01_62
+						AINYTO01_63
+						AINYTO01_64
+						AINYTO01_65
+						AINYTO01_66
+						AINYTO01_67
+						AINYTO01_68
+						AINYTO01_69
+					}
+				}
+			}
+			#leader scope
+			leader = { #scientists, generals, admirals, governor
+					add = {
+						portraits = {
+							AINYTO01_0
+							AINYTO01_1
+							AINYTO01_2
+							AINYTO01_3
+							AINYTO01_4
+							AINYTO01_5
+							AINYTO01_6
+							AINYTO01_7
+							AINYTO01_8
+							AINYTO01_9
+							AINYTO01_10
+							AINYTO01_11
+							AINYTO01_12
+							AINYTO01_13
+							AINYTO01_14
+							AINYTO01_15
+							AINYTO01_16
+							AINYTO01_17
+							AINYTO01_18
+							AINYTO01_19
+							AINYTO01_20
+							AINYTO01_21
+							AINYTO01_22
+							AINYTO01_23
+							AINYTO01_24
+							AINYTO01_25
+							AINYTO01_26
+							AINYTO01_27
+							AINYTO01_28
+							AINYTO01_29
+							AINYTO01_30
+							AINYTO01_31
+							AINYTO01_32
+							AINYTO01_33
+							AINYTO01_34
+							AINYTO01_35
+							AINYTO01_36
+							AINYTO01_37
+							AINYTO01_38
+							AINYTO01_39
+							AINYTO01_40
+							AINYTO01_41
+							AINYTO01_42
+							AINYTO01_43
+							AINYTO01_44
+							AINYTO01_45
+							AINYTO01_46
+							AINYTO01_47
+							AINYTO01_48
+							AINYTO01_49
+							AINYTO01_50
+							AINYTO01_51
+							AINYTO01_52
+							AINYTO01_53
+							AINYTO01_54
+							AINYTO01_55
+							AINYTO01_56
+							AINYTO01_57
+							AINYTO01_58
+							AINYTO01_59
+							AINYTO01_60
+							AINYTO01_61
+							AINYTO01_62
+							AINYTO01_63
+							AINYTO01_64
+							AINYTO01_65
+							AINYTO01_66
+							AINYTO01_67
+							AINYTO01_68
+							AINYTO01_69
+							###########
+							GFnyto_Nimeylan_1
+							GFnyto_Bramed_1
+							GFnyto_Morridow_1
+							GFnyto_Morridow_2
+							GFnyto_Morridow_3
+							GFnyto_Gray_1
+							GFnyto_Narciss_1
+							GFnyto_nyto_basic
+							GFnyto_nyto_lsomer_basic
+							GFnyto_nyto_nimogen
+							GFnyto_nyto_silver
+							GFnyto_nyto_deadline
+							GFnyto_nyto_Isomer_white
+							GFnyto_nyto_Isomer_shadow
+							GFnyto_nyto_Adeline
+							GFnyto_nyto_Eleanor
+							GFnyto_nyto_Tie
+							GFnyto_nyto_an_1
+							GFnyto_nyto_an_2
+							GFnyto_nyto_an_3
+							GFnyto_nyto_an_4
+							GFnyto_tyrs_1
+							GFnyto_tyrs_2
+							GFnyto_shana2
+						}
+					}
+					}
+		#leader scope
+			ruler = {
+				add = {
+					portraits = {
+						GFnyto_nyto_basic
+						GFnyto_nyto_lsomer_basic
+						GFnyto_nyto_nimogen
+						GFnyto_nyto_silver
+						GFnyto_nyto_deadline
+						GFnyto_nyto_Isomer_white
+						GFnyto_nyto_Isomer_shadow
+						GFnyto_nyto_Tie
+					}
+				}
+			}
+	}
+}

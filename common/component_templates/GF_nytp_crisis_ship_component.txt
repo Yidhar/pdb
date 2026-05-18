@@ -1,0 +1,16 @@
+utility_component_template = {
+    key = "GF_nyto_crisis_armor"
+    size = large
+    #	size_restriction = {cruiser titan}
+    icon = "GFX_ship_part_GFnyto_body_armor3"
+    icon_frame = 1
+    power = 0
+    modifier = {
+        ship_armor_add = 100000000
+    }
+    hidden = yes
+    component_set = "GFnyto_body_armor_3"
+    ai_weight = {
+        weight = 0
+    }
+}

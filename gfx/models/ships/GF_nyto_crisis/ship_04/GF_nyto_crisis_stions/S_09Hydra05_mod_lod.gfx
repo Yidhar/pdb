@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "S_09Hydra05_mod_lod_mesh"
+		file = "gfx/models/ships/GF_nyto_crisis/ship_04/GF_nyto_crisis_stions/S_09Hydra05_mod_lod.mesh"
+		animation = { id = "idle" type = "S_09Hydra05_mod_lod_idle_animation" }
+		meshsettings = {
+			name = "S_09Hydra05_mod_lodShape"
+			index = 0`
+			texture_diffuse = "S_09Hydra05_B_lod_0_01.dds"
+			texture_normal = "S_09Hydra05_N_lod_0_01.dds"
+			texture_specular = "S_09Hydra05_S_lod_0_01.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,262 @@
+# # #基础建筑 核心大电
+# #
+# SRA_engery_building ={
+#     icon = building_noble_estates
+#     base_buildtime = 360
+#     base_cap_amount = 1
+#     category = resource
+#     can_demolish = no
+#     can_be_disabled = no
+#     can_build = no
+#     can_be_ruined = no
+#     planet_modifier = {
+#         #基础载荷
+#
+#         #？？？
+#     }
+#     triggered_planet_modifier = {
+#         #载荷比buff
+#         #建造速度
+#         #建筑产能
+#         #维护成本
+#         #似了
+#     }
+#     resources = {
+#         category = buffer #不吃一些奇奇怪怪的循环和科技加成 你可以自己起一个category
+#         produces = {
+#             #base产出
+#             energy = 10
+#             mult = value:SRA_planet_engery_building|ACB|10|districts|SRA_engery_distr|BaseProduction|10|
+#         }
+#         upkeep = {
+#             #base维护
+#             minerals = 2
+#             mult = value:SRA_planet_engery_building|ACB|-15|ABC_MAX_P|80|districts|SRA_engery_distr|BaseMaintenance|2|ABC_MAX_D|590|Offset_point|150|
+#         }
+#         produces = {
+#             #消耗暗物质产出 你写点决议开
+#             trigger = {
+#                 has_planet_flag = 开了暗物质增产
+#             }
+#             energy = 20
+#             mult = value:SRA_planet_engery_building|ACB|10|districts|SRA_engery_distr|BaseProduction|10|
+#
+#         }
+#         produces = {
+#             #消耗星界产出 你写点决议开
+#             trigger = {
+#                 has_planet_flag = 开了星界丝缕
+#             }
+#             energy = 20
+#             mult = value:SRA_planet_engery_building|ACB|10|districts|SRA_engery_distr|BaseProduction|10|
+#         }
+#         produces = {
+#             trigger = {
+#                 has_planet_flag = 开了稀有增产
+#             }
+#             energy = 21
+#             mult = value:SRA_planet_engery_building|ACB|10|districts|SRA_engery_distr|BaseProduction|10|
+#         }
+#         upkeep = {
+#             #消耗暗物质维护 你写点决议开
+#             trigger = {
+#                 has_planet_flag = 开了暗物质增产
+#             }
+#             sr_dark_matter = 1
+#             mult = value:SRA_planet_engery_building|ACB|-15|ABC_MAX_P|80|districts|SRA_engery_distr|BaseMaintenance|2|ABC_MAX_D|590|Offset_point|150|
+#
+#         }
+#         upkeep = {
+#             #消耗星界维护 你写点决议开
+#             trigger = {
+#                 has_planet_flag = 开了星界丝缕
+#             }
+#             astral_threads = 1
+#             mult = value:SRA_planet_engery_building|ACB|-15|ABC_MAX_P|80|districts|SRA_engery_distr|BaseMaintenance|2|ABC_MAX_D|590|Offset_point|150|
+#         }
+#         upkeep = {
+#             #载荷维护
+#             alloys = 1
+#             mult = value:SRA_engery_effective_upkeep
+#
+#         }
+#         UPKEEP = {
+#             #稀有维护
+#             trigger = {
+#                 has_planet_flag = 开了稀有增产
+#             }
+#             exotic_gases = 0.1
+#             rare_crystals = 0.1
+#             volatile_motes = 0.1
+#             mult = value:SRA_planet_engery_building|ACB|-15|ABC_MAX_P|80|districts|SRA_engery_distr|BaseMaintenance|2|ABC_MAX_D|590|Offset_point|150|
+#
+#         }
+#         #每一个非自生建筑都会减少发电量 提高载荷  {载荷 ：额外维护费用 和星球buff}
+#         #每一个发电区划都会增加发电量 减少载荷   {载荷越高 额外的建筑合金维护费用越高  提供的星球建设速度等buff越低}
+#     }
+#     ai_weight = {
+#         weight = 0
+#     }
+# }
+# # 提供base 电  base 载荷
+#
+# #电转矿
+# SRA_minier_building ={
+#     icon = building_fe_mine_1
+#     base_buildtime = 720
+#     category = resources
+#     resources = {
+#         category = planet_buildings #或者新建一个
+#         produces = {
+#             minerals = 4
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_eminier_distr|BaseProduction|10|
+#         }
+#         upkeep = {
+#             energy = 6
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_eminier_distr|BaseMaintenance|2|
+#         }
+#     }
+#     planet_modifier = {
+#         #使用载荷的buff计数
+#     }
+# }
+#
+# #电转食物
+# SRA_food_building ={
+#     icon = building_fe_administration_1
+#     base_buildtime = 720
+#     category = resources
+#     resources = {
+#         category = planet_buildings
+#         produces = {
+#             food = 6
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_food_distr|BaseProduction|10|
+#         }
+#         upkeep = {
+#             energy = 6
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_food_distr|BaseMaintenance|2|
+#         }
+#     }
+# }
+# #
+# #矿物转合金
+# SRA_alloy_minier ={
+#     icon = building_fe_mine_1
+#     base_buildtime = 720
+#     category = resources
+#     resources = {
+#         category = planet_buildings
+#         produces = {
+#             alloys = 3
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_alloys_distr|BaseProduction|10|
+#         }
+#         upkeep = {
+#             minerals = 3
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_alloys_distr|BaseMaintenance|2|
+#         }
+#     }
+# }
+# # #矿+食物转消费品
+# SRA_consumer_goods = {
+#     icon = building_fe_mine_1
+#     base_buildtime = 720
+#     category = resources
+#     resources = {
+#         category = planet_buildings
+#         produces = {
+#             consumer_goods = 6
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_consumer_goods_distr|BaseProduction|10|
+#         }
+#         upkeep = {
+#             food = 4
+#             minerals = 3
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_consumer_goods_distr|BaseMaintenance|2|
+#         }
+#     }
+# }
+#
+# #电+科研
+# SRA_resrearch={
+#     icon = building_fe_mine_1
+#     base_buildtime = 720
+#     category = resources
+#     resources = {
+#         category = planet_buildings
+#         produces = {
+#             society_research = 3
+#             physics_research = 3
+#             engineering_research = 3
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_researsch_distr|BaseProduction|10|
+#         }
+#         upkeep = {
+#             consumer_goods = 2
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_researsch_distr|BaseMaintenance|2|
+#         }
+#     }
+# }
+#
+# #凝聚力你自己想办法吧
+#
+# # #电+矿转三稀有
+# SRA_xiyou ={
+#     icon = building_fe_mine_1
+#     base_buildtime = 720
+#     category = resources
+#     resources = {
+#         category = planet_buildings
+#         produces = {
+#             exotic_gases = 1
+#             rare_crystals = 1
+#             volatile_motes = 1
+#             sr_living_metal = 0.5
+#             nanites = 0.5
+#             sr_zro = 0.5
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_xiyou_distr|BaseProduction|10|
+#         }
+#         upkeep = {
+#             minerals = 45
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_xiyou_distr|BaseMaintenance|2|
+#         }
+#     }
+# }
+#
+# #
+# # #纳米机器人+电+稀有转星界
+# SRA_star ={
+#     icon = building_fe_mine_1
+#     base_buildtime = 720
+#     category = resources
+#     resources = {
+#         category = planet_buildings
+#         produces = {
+#             astral_threads = 1
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_star|BaseProduction|10|
+#         }
+#         upkeep = {
+#             energy = 10
+#             exotic_gases = 0.4
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_star|BaseMaintenance|2|
+#         }
+#     }
+# }
+#
+# #
+# # #活性金属+易爆微粒+电 转暗物质
+# SRA_dark ={
+#     icon = building_fe_mine_1
+#     base_buildtime = 720
+#     category = resources
+#     resources = {
+#         category = planet_buildings
+#         produces = {
+#             sr_dark_matter = 1
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_dark|BaseProduction|10|
+#         }
+#         upkeep = {
+#             energy = 10
+#             volatile_motes = 0.2
+#             rare_crystals = 0.2
+#             mult = value:SRA_planet_districts_modifier|districts|SRA_dark|BaseMaintenance|2|
+#         }
+#     }
+# }

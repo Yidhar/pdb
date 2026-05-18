@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ ### 舰船尺寸 ###
+ GFnyto_shiled_ship:0 "护盾舰"
+ GFnyto_shiled_ship_plural:0 "护盾舰"
+ ### 舰船区段 ###
+ GFnyto_shiledship_core:0 "护盾舰核心"

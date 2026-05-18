@@ -1,0 +1,3 @@
+on_destroy_planet_with_tech_GFnyto_accelerating_coil3 = {
+	events = { }
+}

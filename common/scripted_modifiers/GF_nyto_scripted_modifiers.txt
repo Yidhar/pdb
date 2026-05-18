@@ -33,3 +33,23 @@ mod_GF_nyto_planet_collapse_pollute = {
 	good = no
 	category = planet
 }
+
+GF_nyto_stions_HP_nums = {
+	category = country
+	good = yes
+}
+
+GF_nyto_stions_weapon_num = {
+	category = country
+	good = yes
+}
+
+GF_nyto_has_armor = {
+	category = ship
+	good = yes
+}
+
+GF_Nyto_T_weapon2_num = {
+	category = ship
+	good = yes
+}

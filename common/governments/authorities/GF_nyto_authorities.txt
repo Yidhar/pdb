@@ -6,7 +6,6 @@ auth_GF_paradeus = {
     election_term_years=10 #选举年限
     election_term_variance=5 #选举年限的上下浮动区间
     can_have_emergency_elections=yes #能否重新选举
-    emergency_election_cost=50 #重新选举的影响力花费
     election_type = none #选举类型,目前有“无”、“民主”、“寡头”三个类型
     #election_type=democratic #选举类型,目前有“无”、“民主”、“寡头”三个类型
     has_factions = yes #派系

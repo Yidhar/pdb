@@ -1,0 +1,119 @@
+# 人口替换
+operation_nyto_pop = {
+	categories = {
+		op_cat_subterfuge
+		op_cat_government
+	}
+	picture = GFX_evt_acquire_asset
+	desc = operation_nyto_pop_desc
+	target = none
+	resources = {
+		category = operations
+		cost = {
+			influence = 15
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	stages = 3
+	spy_power_cost = 20
+	potential = {
+		has_nemesis = yes
+		owner_main_species = {
+			is_species_class = nyto
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+		custom_tooltip = {
+			target = {
+				NOT = {
+					owner_main_species = {
+						is_species_class = nyto
+					}
+				}
+			}
+			fail_text = operation_nyto_pop_desc
+		}
+	}
+	stage = {
+		difficulty = 3
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = operation.1000
+	}
+	stage = {
+		difficulty = 3
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = operation.1001
+	}
+	stage = {
+		difficulty = 6
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.01
+	}
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_generic
+		}
+	}
+	on_create = { }
+}
+
+# 煽动暴乱
+operation_nyto_pop2 = {
+	categories = {
+		op_cat_manipulation
+		op_cat_provocation
+	}
+	picture = GFX_evt_acquire_asset
+	desc = operation_nyto_pop2_desc
+	target = none
+	resources = {
+		category = operations
+		cost = {
+			influence = 45
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	stages = 3
+	spy_power_cost = 50
+	potential = {
+		has_nemesis = yes
+		owner_main_species = {
+			is_species_class = nyto
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+	}
+	stage = {
+		difficulty = 5
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.02
+	}
+	stage = {
+		difficulty = 5
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.03
+	}
+	stage = {
+		difficulty = 5
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.04
+	}
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_generic
+		}
+	}
+	on_create = { }
+}

@@ -1,0 +1,23 @@
+﻿l_english:
+ ### GFnyto Species Classes ###
+ nyto_machine:0 "Nyto(Mech)"
+ nyto_machine_desc:0 "A machine-bodied Nyto subspecies used for synthetic or drone-compatible branches."
+ nyto_machine_plural:0 "Nyto(Mech)"
+ nyto_machine_insult_01:0 "faulty unit"
+ nyto_machine_insult_plural_01:0 "faulty units"
+ nyto_machine_compliment_01:0 "optimized unit"
+ nyto_machine_compliment_plural_01:0 "optimized units"
+ nyto_machine_spawn:0 "unit"
+ nyto_machine_spawn_plural:0 "units"
+ nyto_machine_sound_01:0 "beep"
+ nyto_machine_sound_02:0 "whirr"
+ nyto_machine_sound_03:0 "click"
+ nyto_machine_sound_04:0 "buzz"
+ nyto_machine_sound_05:0 "tone"
+ ### GFnyto Species Names ###
+ eild_name:0 "EILD"
+ eild_plural:0 "EILDs"
+ nyto_planet:0 "Nyto Prime"
+ nyto_system:0 "Nyto System"
+ nyto_plural:0 "Nytos"
+ GFNYTO_START_SCREEN_2:0 "Exiled from the old order, our remnant drifts at the edge of collapse. Yet in exile, the Nyto still endure, and a harsher beginning may yet forge a stronger future."

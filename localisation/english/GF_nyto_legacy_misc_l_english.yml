@@ -1,0 +1,14 @@
+﻿l_english:
+ ### Legacy Ascension Tooltips ###
+ ap_GF_nyto_resurrection_text:0 "Allows Tomb world to be terraformed into §YDimmened Ash worlds§!, allows construction of §YMobile cities§!, unlocks bombardment stance §YMarines Disembark§!."
+ ap_GF_nyto_conquer_hell_text:0 "§RWarning: This ascension is very challenging! You must continuously perish other countries, or you will lose the game. For details please refer to the event chain created after the ascension selection.§!"
+ ap_GF_nyto_noussphere_desc2:0 "It will seperate you and history, only history is eternal, you are but temporary."
+ Failed_to_complete_the_capital_ruins:1 "Need to complete Homeworld Relic site event chain to select this ascension perk."
+ 需要完成未知文明遗迹群发掘:0 "Need to complete the Unknown Civilization ruins excavation to select this ascension perk."
+ ### War Goals ###
+ casus_belli_cb_GFnyto_assimilation:0 "Cognition Perfusion"
+ war_goal_wg_GFnyto_assimilation:0 "Cognition Perfusion"
+ war_goal_wg_GFnyto_assimilation_desc:0 "The wargoal is to integrate target empire pops."
+ ### GFnyto Fake Jobs ###
+ mod_job_GFnyto_sp_job_gray_add:0 "Gray Institute Director Jobs"
+ mod_job_GFnyto_sp_job_gray_per_pop:0 "§G+1§! Gray Institute Director Job per $VALUE$ Pops"

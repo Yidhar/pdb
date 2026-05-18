@@ -1,0 +1,21 @@
+﻿l_simp_chinese:
+ ### GF Nyto Espionage Assets ###
+ GF_nyto_asset_bureaucrat:0 "被替代的官僚"
+ GF_nyto_asset_bureaucrat_desc:0 "生前清廉为民的官僚已经不再是他自己了。"
+ GF_nyto_asset_clerk:0 "被替代的职员"
+ GF_nyto_asset_clerk_desc:0 "曾经小而美好的家庭，如今已是物是人非。"
+ GF_nyto_asset_economist:0 "被替代的经济学家"
+ GF_nyto_asset_economist_desc:0 "潜伏的经济专家会悄然改写目标帝国的商业秩序。"
+ GF_nyto_asset_scientist:0 "被替代的科学家"
+ GF_nyto_asset_scientist_desc:0 "被渗透的研究人员会持续向我们输送内部数据。"
+ GF_nyto_asset_officer:0 "被替代的军官"
+ GF_nyto_asset_officer_desc:0 "被策反的军官能够扭转 doctrine、后勤与指挥优先级。"
+ ### GF Nyto Espionage Operations ###
+ operation_nyto_pop:0 "人口替代"
+ operation_nyto_pop_desc:0 "我们可以通过替代关键人物与悄然埋入渗透者，在目标帝国内部播下灾祸的种子，甚至连高层官员也不例外。"
+ operation_nyto_pop2:0 "煽动群众"
+ operation_nyto_pop2_desc:0 "通过潜伏在目标帝国内部的个体，我们可以组织游行、暴乱，乃至更广泛的社会失序。"
+ operation_nyto_leader:0 "领袖策反"
+ operation_nyto_leader_desc:0 "一名被渗透的领袖，会成为敌方指挥体系中最隐蔽也最锋利的刀。"
+ ### GF Nyto Operation Fix Tooltips ###
+ GF_nyto_operation.063.tooltip:0 "大量人口被肃清"

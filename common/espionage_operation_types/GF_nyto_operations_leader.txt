@@ -1,0 +1,56 @@
+# 舰队叛乱 / 领袖替代
+operation_nyto_leader = {
+	categories = {
+		op_cat_subterfuge
+		op_cat_government
+	}
+	picture = GFX_evt_acquire_asset
+	desc = operation_nyto_leader_desc
+	target = none
+	resources = {
+		category = operations
+		cost = {
+			influence = 15
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	stages = 1
+	spy_power_cost = 20
+	potential = {
+		has_nemesis = yes
+		owner_main_species = {
+			is_species_class = nyto
+		}
+		target = {
+			any_owned_leader = {
+				has_leader_flag = operation_nyto_leader
+			}
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+		target = {
+			NOT = {
+				owner_main_species = {
+					is_species_class = nyto
+				}
+			}
+		}
+	}
+	stage = {
+		difficulty = 3
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.06
+	}
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_generic
+		}
+	}
+	on_create = { }
+}

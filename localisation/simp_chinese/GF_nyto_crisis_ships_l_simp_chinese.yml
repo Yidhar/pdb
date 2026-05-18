@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ ### Nyto Crisis Ship Sizes ###
+ starbase_revelation1:0 "启示权柄"
+ starbase_revelation1_plural:0 "启示权柄"
+ battleship_revelation:0 "启示战列舰"
+ battleship_revelation_plural:0 "启示战列舰"
+ Aberrant_Core:0 "畸变核心"
+ Aberrant_Core_plural:0 "畸变核心"
+ ### Nyto Crisis Sections ###
+ revelation_mid:0 "启示中段"
+ Aberrant_Core_bow:0 "畸变核心舰艏"
+ Aberrant_Core_core:0 "畸变核心舰体"
+ Aberrant_Core_stern:0 "畸变核心舰艉"

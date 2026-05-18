@@ -1,0 +1,32 @@
+councilor_90wish = {
+    leader_class = { commander scientist }
+    is_leader_possible = {
+        OR = {
+            leader_class = commander
+            leader_class = scientist
+        }
+    }
+    civic = civic_GF_nyto_90wish
+    modifier = {
+        category_military_theory_research_speed_mult = 0.05
+        army_attack_damage_mult = 0.05
+        army_health = -0.05
+        ship_weapon_damage = 0.05
+        pop_happiness = -0.03
+    }
+}
+councilor_armor_train = {
+    leader_class = {
+        official
+    }
+    is_leader_possible = {
+        leader_class = official
+    }
+    civic = civic_GF_nyoto_armor_train
+    modifier = {
+        planet_building_build_speed_mult = 0.05
+        megastructure_build_speed_mult = 0.1
+        shipclass_starbase_hull_mult = 0.1
+        army_defense_health_mult = 0.1
+    }
+}

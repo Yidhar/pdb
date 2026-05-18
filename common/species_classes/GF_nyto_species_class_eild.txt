@@ -1,0 +1,13 @@
+EILD = {
+    archetype = EILD
+    possible = {
+        always = no
+    }
+    randomized = no
+    playable = {
+        always = no
+    }
+    gender = no
+    portrait_modding = no
+    portraits = {"GFnyto_eild"}
+}

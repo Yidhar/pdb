@@ -1,0 +1,27 @@
+﻿l_simp_chinese:
+ ### Defense Decisions ###
+ decision_pc_GF_nyto_embers_gloomy_project:0 "春天唤醒"
+ decision_pc_GF_nyto_embers_gloomy_project_effects:1 "建造一个包裹着§Y余烬黯然星球§!的坍缩堆框架。每次升级坍缩堆都可以增加行星规模，以及一次选择新类型区划的机会。"
+ decision_pc_GF_nyto_embers_gloomy_project_desc:1 "笼罩在行星上的巨型空间站将整个行星变为坍缩反应堆。"
+ decision_GFnyto_planetary_defense:0 "行星防御"
+ decision_GFnyto_planetary_defense_effects:1 "为行星添加行星轨道防御系统和行星地表防御系统。"
+ decision_GFnyto_planetary_defense_desc:1 "停留在这个星球轨道上的敌方舰队会不断受到伤害。"
+ decision_GFnyto_yaosai:0 "要塞化计划"
+ decision_GFnyto_yaosai_desc:0 "打造一个永恒钢铁要塞星球"
+ decision_GFnyto_yaosai_desc1:0 "通过决议将允许建造永固要塞，将我们的城市打造成钢铁要塞。"
+ ### Legacy Ascension Perks ###
+ ap_GF_nyto_resurrection:0 "§Y起死回骸§!"
+ ap_GF_nyto_resurrection_desc:0 "§v谁知行路之人是人是影，谁知归途之人是人是鬼。§!\n§V来时知是人来梦里，去时知是人去梦外。§!\n§T不知其中生者为人为械，死者为人为梦。§!"
+ ap_GF_nyto_conquer_hell:0 "§R征服地狱§!"
+ ap_GF_nyto_conquer_hell_desc:0 "§R明镜已变得昏暗不清，生命之舟漂泊在海上；去往天堂的道路荒芜难行，下入地狱的小路充斥杂草。§!"
+ ap_GF_nyto_noussphere:0 "§YNoussphere§!"
+ ap_GF_nyto_noussphere_desc:0 "自由的代价是什么，指挥官？"
+ ### GF Nyto Legacy Common ###
+ bombardment_gfnyto_collapse_liquid:0 "坍缩液轨道抛射"
+ bombardment_gfnyto_collapse_liquid_desc:0 "解锁一种新的轨道轰炸姿态，可将目标世界轰炸为余烬黯然星球。"
+ triggered_GFnyto_disaster:0 "恶魔"
+ personality_GF_nyto_warrior:0 "战争国度"
+ personality_GF_nyto_warrior_desc:0 "一切为了帕拉蒂斯"
+ ### GF Nyto Crisis Country Type ###
+ starbase_revelation1:0 "启示"
+ starbase_revelation1_plural:0 "启示战斗站"

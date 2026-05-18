@@ -1,0 +1,4 @@
+GFnyto_planetary_defense_ready = {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_planetary_defense_ready.dds"
+	icon_frame = 1
+}

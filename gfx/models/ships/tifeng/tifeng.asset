@@ -1,0 +1,26 @@
+entity = {
+	name = "tifeng_entity"
+	#pdxmesh = "tifeng_mesh"
+	scale = 10
+	locator = {
+		name = t_gun01
+		position = {
+			0 2.2 0
+		}
+	}
+	locator = {
+		name = part1
+		rotation = {
+			-90 0 0
+		}
+	}
+	attach = {
+		#name = part1
+		part1 = tifeng_entity2
+	}
+}
+entity = {
+	name = tifeng_entity2
+	pdxmesh = "tifeng_mesh"
+	scale = 1
+}

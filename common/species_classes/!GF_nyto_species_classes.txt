@@ -1,0 +1,109 @@
+#eild= {
+#	archetype = LITHOID
+#	randomized = no
+#	gender = no
+#	use_climate_preference = no
+#	portrait_modding = yes
+#	possible = {always=no}
+#	portraits = {"GFnyto_eild"}
+#	leader_age_min = 5
+#	leader_age_max = 50
+#	graphical_culture = humanoid_01
+#	move_pop_sound_effect = "robot_pops_move"
+#	resources = {
+#		category = planet_pops
+#		upkeep = {
+#			GF_nyto_collapse_liquid = 0.1
+#		}
+#	}
+#	playable = {
+#		always = no
+#	}
+#}
+# The Species Classes defined here are generally not available to the character creator, but will instead appear in AI empires across the galaxy.
+# There is also portrait_sets database that contains sets of portraits associated with species classes.
+# 'graphical_culture' is connected to the looks used for ships and cities; see "common/graphical_culture/".
+# playable = yes/no/trigger (default: yes)		if this species class can is playable
+# randomized = yes/no/trigger (default: yes)	if this species class is randomized
+# species_trait_points							base number of species trait points available for this species class
+# species_max_traits							maximum number of traits that species of this class can have (doesn't count those with cost == 0)
+# possible										ethics/government requirements; see common/governments/readme_requirements.txt
+# gender = yes/no (default: yes)				whether the species has a gender
+# portrait_modding yes/no (default: yes)		whether the portrait can be modified with e.g. genemodding or robomodding
+EILD ={
+	archetype = EILD
+	possible = {
+		always = no
+	}
+	randomized = no
+	playable = {
+		always = no
+	}
+	gender = no
+	portrait_modding = no
+	portraits = {"GFnyto_eild"}
+}
+
+
+#nyto= {
+#	archetype = NYTO
+#	randomized = yes
+#	gender = yes
+#	portrait_modding = yes
+#	possible = {authority = {value = auth_GF_paradeus}}
+#	portraits = {"GFnyto_nyto"}
+#	#custom_portraits = {portraits = {"GFnyto_nyto"}}
+#	#leader_age_min = 5
+#	leader_age_max = 50
+#	graphical_culture = GF_nyto_02
+#	move_pop_sound_effect = "robot_pops_move"
+#	#species_trait_points = 5
+#	#species_max_traits = 20
+#	resources = {
+#		category = planet_pops
+#		upkeep = {
+#			energy = 0.2
+#			food = 0.1
+#			alloys = 0.05
+#
+#		}
+#		upkeep = {
+#			trigger = {
+#				owner ={
+#					has_origin = origin_GF_nyto_the_last_light
+#				}
+#			}
+#			GF_nyto_collapse_liquid = 0.1
+#		}
+#		produces = {
+#			trigger = {
+#				has_trait = trait_GF_nyto_Self_directed_development
+#			}
+#			physics_research = 1
+#			society_research = 1
+#			engineering_research = 1
+#		}
+#	}
+#	playable = {
+#		always = yes
+#	}
+#	trait = "trait_GF_nyto_ogas_agreement"
+#	uplifted_into = nyto
+#}
+
+#NYTO = {
+#	archetype = NYTO
+#
+#	possible = {
+#		#authority = {
+#		#	NOT = {
+#		#		value = auth_machine_intelligence
+#		#		text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE
+#		#	}
+#		#}
+#	}
+#
+#	graphical_culture = GF_nyto_02
+#	move_pop_sound_effect = "moving_pop_confirmation"
+#	resources = {}
+#}

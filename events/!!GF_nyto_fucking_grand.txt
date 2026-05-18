@@ -1,0 +1,56 @@
+namespace = grand_archive
+
+# This = damaged ship
+# From = attacker ship
+ship_event = {
+    id = grand_archive.10095
+    hide_window = yes
+
+    is_triggered_only = yes
+
+    trigger = {
+        always = no
+    }
+    immediate = {
+    }
+}
+ship_event = {
+    id = grand_archive.10096
+    hide_window = yes
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_berserker_glands_mutation = yes
+    }
+
+    immediate = {
+        from ={ remove_ship_flag = GF_nyto_damage_taken_f_cd }
+        add_modifier = {
+            modifier = berserker_glands_modifier
+            days = @unique_mutation_berserker_glands_days
+        }
+    }
+}
+
+namespace = GF_nyto_damage_taken_f
+ship_event = {
+    id = GF_nyto_damage_taken_f.0
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {  from ={  not = {   has_ship_flag = GF_nyto_damage_taken_f_cd } }  }
+    immediate = {
+        from ={ set_timed_ship_flag = { flag = GF_nyto_damage_taken_f_cd days = 1 } }
+        set_update_modifiers_batch = begin
+        ship_event = { id = grand_archive.10096 }
+        set_update_modifiers_batch = end
+    }
+}
+ship_event = {
+    id = GF_nyto_damage_taken_f.1
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        remove_ship_flag = GF_nyto_damage_taken_f_cd
+    }
+}

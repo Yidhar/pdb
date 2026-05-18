@@ -1,0 +1,7 @@
+# 领袖出身伪职业
+GFnyto_sp_job_gray = {
+    icon = fe_archivist
+    possible = {
+        always = no
+    }
+}

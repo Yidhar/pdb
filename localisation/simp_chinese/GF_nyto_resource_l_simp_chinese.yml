@@ -44,3 +44,7 @@
  GF_nyto_superstar_core_desc:0 "身上落下的闪亮星辰,闪耀之物并非玩具。"
  GF_nyto_developing_petri_dishes:0 "开发培养皿"
  GF_nyto_developing_petri_dishes_desc:0 "以太开发的必要物品,培育事物必须的温床。"
+ ### GF Nyto Strategic Resources ###
+ resource_gf_nyto_industrial_parts:0 "工业零件"
+ resource_gf_nyto_industrial_parts_desc:0 "用于涅托维护与建筑运转的基础帕拉蒂斯工业部件。"
+ GF_nyto_collapse_epiphyllum_desc:0 "被坍塌辐射诱变的特殊植物，能够吸收辐射并在花期释放能量。"

@@ -1,0 +1,5 @@
+entity = {
+	name = "mefs_entity"
+	pdxmesh = "mefs_mesh"
+	scale = 10
+}

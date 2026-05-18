@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_crisis_spectre_mesh"
+		file = "gfx/models/ships/GF_nyto_crisis/ship_03/cruiser/GF_nyto_crisis_spectre.mesh"
+
+		meshsettings = {
+			name = "mod_1Shape"
+			index = 0
+			texture_diffuse = "S_00PiratesCruiser_B_lod_0.dds"
+			texture_normal = "S_00PiratesCruiser_N_lod_0.dds"
+			texture_specular = "S_00PiratesCruiser_s_lod_0.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

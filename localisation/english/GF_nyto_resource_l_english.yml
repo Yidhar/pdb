@@ -1,0 +1,14 @@
+﻿l_english:
+ ### GF Nyto Strategic Resources ###
+ resource_gf_nyto_industrial_parts:0 "Industrial Parts"
+ resource_gf_nyto_industrial_parts_desc:0 "Basic Paradeus industrial components used for Nyto maintenance and building operation."
+ GF_nyto_collapse_fluid:0 "Collapse Fluid"
+ GF_nyto_collapse_fluid_desc:0 "A high-frequency particle wave sealed by annular polarizers. It disrupts strong and weak interactions between microscopic particles and forces matter into ordered collapse."
+ GF_nyto_collapse_crystal:0 "Collapse Crystal"
+ GF_nyto_collapse_crystal_desc:0 "A silicified crystal formed when ordinary matter is exposed to collapse radiation. After purification it provides excellent insulation against collapse radiation and is useful in protection and construction."
+ GF_nyto_collapse_epiphyllum:0 "Collapse Epiphyllum"
+ GF_nyto_collapse_epiphyllum_desc:0 "A mutated plant born from collapse radiation. It absorbs radiation and releases stored energy when it blooms."
+ GF_nyto_training_keys:0 "Training Keys"
+ GF_nyto_training_keys_desc:0 "Encrypted advanced training templates prepared for elite Nyto combat and control units."
+ GF_nyto_new_fire_control_unit:0 "New Fire Control Unit"
+ GF_nyto_new_fire_control_unit_desc:0 "An enhanced component designed for Nytos with sufficient expansion space. Production remains limited while calibration is still underway."

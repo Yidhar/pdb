@@ -1,0 +1,117 @@
+creat_nyto_leader = {
+	# TODO: [USER INTERVENTION REQUIRED] legacy bespoke leader creation block depends on unmigrated 3.14 leader class / trait content.
+	# It is currently not referenced outside this file, so it is temporarily disabled during the common-first 4.3 migration pass.
+}
+
+random_6_leader = {
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_1
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_2
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_3
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_4
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_5
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_6
+	}
+}
+
+GF_nyto_leader_init_species_effect = {
+	optimize_memory
+	create_species = {
+		name = NYTO
+		class = nyto
+		portrait = GFnyto_$ID$
+		namelist = random
+		traits = { }
+		allow_negative_traits = no
+		effect = {
+			set_species_flag = GF_nyto_sp_leader_species
+			set_species_flag = GF_nyto_sp_leader_species_$ID$
+			save_event_target_as = GF_nyto_sp_leader_species_$ID$
+		}
+	}
+}
+GF_nyto_leader_init_spawner_effect = {
+	optimize_memory
+	GF_nyto_leader_init_species_effect = { ID = $ID$ }
+	create_leader = {
+		class = $CLASS$
+		species = event_target:GF_nyto_sp_leader_species_$ID$
+		name = NAME_GFnyto_$ID$
+		custom_description = GFnyto_$ID$_background
+		gender = $GENDER|female$
+		skill = 1
+		set_age = $AGE|20$
+		immortal = yes
+		hide_age = $HIDE_AGE|yes$
+		randomize_traits = no
+		event_leader = no # Leader is allowed to lead factions and win elections
+		skip_background_generation = $BG_GENERATE|yes$
+		traits = {
+			[[trait1] trait = $trait1$]
+			[[trait2] trait = $trait2$]
+			trait = leader_trait_GF_nyto_$ID$
+		}
+		effect = {
+			freeze_leader_age = yes
+			set_leader_flag = GF_nyto_sp_leader
+			set_leader_flag = legendary_leader
+			set_leader_flag = should_not_have_upkeep
+			set_leader_flag = GF_nyto_flag_$ID$
+			change_leader_portrait = GFnyto_$ID$
+			change_background_job = GFnyto_sp_job_$ID$
+			add_skill_without_trait_selection = @\[ $SKILL|5$ - 1 ]
+		}
+	}
+}

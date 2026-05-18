@@ -1,0 +1,509 @@
+namespace = GF_nyto_operation
+espionage_operation_event = {
+	id = GF_nyto_operation.01
+	title = GF_nyto_operation.01.name
+	desc = GF_nyto_operation.01.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	# this = operation; target = target country
+	immediate = {
+		set_espionage_operation_progress_locked = yes
+		target = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_planet = {
+							is_variable_set = operation_nyto_pop
+						}
+					}
+				}
+				random_owned_planet = {
+					limit = {
+						count_owned_pop_amount = {
+							count > 0
+						}
+					}
+					root.owner = {
+						country_event = { id = GF_nyto_operation.10001 days = 1 }
+					}
+					set_variable = { which = operation_nyto_pop value = 1 }
+					root.owner = {
+						create_message = {
+							type = EVENT_MESSAGE_TYPE
+							localization = operation_nyto_pop_message
+							days = 5
+							target = prev
+						}
+					}
+				}
+				random = {
+					chance = 5
+					random_owned_leader = {
+						set_leader_flag = operation_nyto_leader
+						root.owner = {
+							create_message = {
+								type = EVENT_MESSAGE_TYPE
+								localization = operation_nyto_pop_message3
+								days = 30
+								target = prev
+							}
+						}
+					}
+				}
+				reroll_random = yes
+			}
+			else = {
+				every_owned_planet = {
+					if = {
+						limit = {
+							is_variable_set = operation_nyto_pop
+						}
+						export_trigger_value_to_variable = {
+							trigger = count_owned_pop_amount
+							variable = operation_nyto_pop_total
+						}
+						while = {
+							limit = {
+								check_variable = { which = operation_nyto_pop value > 0 }
+								check_variable = { which = operation_nyto_pop_total value > operation_nyto_pop }
+							}
+							change_variable = { which = operation_nyto_pop value = 1 }
+							root.owner = {
+								country_event = { id = GF_nyto_operation.10001 days = 1 }
+								create_message = {
+									type = EVENT_MESSAGE_TYPE
+									localization = operation_nyto_pop_message
+									days = 5
+									target = prev
+								}
+							}
+							random = {
+								chance = 5
+								prev = {
+									random_owned_leader = {
+										limit = {
+											NOT = { has_leader_flag = operation_nyto_leader }
+										}
+										set_leader_flag = operation_nyto_leader
+										root.owner = {
+											create_message = {
+												type = EVENT_MESSAGE_TYPE
+												localization = operation_nyto_pop_message3
+												days = 30
+												target = prev
+											}
+										}
+									}
+									reroll_random = yes
+								}
+							}
+							reroll_random = yes
+						}
+						clear_variable = operation_nyto_pop_total
+					}
+					else = {
+						if = {
+							limit = {
+								count_owned_pop_amount = {
+									count > 0
+								}
+							}
+							set_variable = { which = operation_nyto_pop value = 1 }
+							root.owner = {
+								country_event = { id = GF_nyto_operation.10001 days = 1 }
+								create_message = {
+									type = EVENT_MESSAGE_TYPE
+									localization = operation_nyto_pop_message
+									days = 5
+									target = prev
+								}
+							}
+							prev = {
+								random = {
+									chance = 5
+									random_owned_leader = {
+										limit = {
+											NOT = { has_leader_flag = operation_nyto_leader }
+										}
+										set_leader_flag = operation_nyto_leader
+										root.owner = {
+											create_message = {
+												type = EVENT_MESSAGE_TYPE
+												localization = operation_nyto_pop_message3
+												days = 30
+												target = prev
+											}
+										}
+									}
+								}
+							}
+						}
+						reroll_random = yes
+					}
+
+				}
+			}
+		}
+
+	}
+	option = {
+		name = ACKNOWLEDGED
+	}
+	after = {
+		set_espionage_operation_progress_locked = no
+		destroy_espionage_operation = this
+	}
+}
+
+
+espionage_operation_event = {
+	id = GF_nyto_operation.02
+	title = GF_nyto_operation.02.name
+	desc = GF_nyto_operation.02.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+espionage_operation_event = {
+	id = GF_nyto_operation.03
+	title = GF_nyto_operation.03.name
+	desc = GF_nyto_operation.03.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+espionage_operation_event = {
+	id = GF_nyto_operation.04
+	title = GF_nyto_operation.04.name
+	desc = GF_nyto_operation.04.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+		#创建暴乱or游行
+		target = {
+			#每个渗透人口有20%概率触发游行 10%触发暴乱
+			every_owned_planet = {
+				limit = {
+					is_variable_set = operation_nyto_pop
+				}
+					export_trigger_value_to_variable = {
+					trigger = count_owned_pop_amount
+					variable = operation_nyto_pop_total
+				}
+				set_variable = { which = operation_nyto_pop_ratio value = 0 }
+				change_variable = { which = operation_nyto_pop_ratio value = operation_nyto_pop }
+				divide_variable = { which = operation_nyto_pop_ratio value = operation_nyto_pop_total }
+				if = {
+
+					limit = {
+						check_variable = { which = operation_nyto_pop_ratio value > 0.3 }
+						has_ground_combat = no
+						is_owned_by = controller
+					}
+					root.owner = {
+						create_message = {
+							type = EVENT_MESSAGE_TYPE
+							localization = operation_nyto_pop_message_2
+							days = 30
+							target = prev
+						}
+					}
+					planet_event = {
+						id = GF_nyto_operation.40001
+						days = 1
+					}
+				}
+				else_if = {
+					limit = {
+						not = {
+							has_modifier = GF_nyto_oper_pop
+						}
+					}
+					root.owner = {
+						create_message = {
+							type = EVENT_MESSAGE_TYPE
+							localization = operation_nyto_pop_message_3
+							days = 30
+							target = prev
+						}
+					}
+					planet_event = {
+						id = GF_nyto_operation.40002
+						days = 1
+					}
+				}
+
+				clear_variable = operation_nyto_pop_total
+				clear_variable = operation_nyto_pop_ratio
+			}
+		}
+	}
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+#暴乱
+planet_event = {
+	id = GF_nyto_operation.40001
+	title = GF_nyto_operation.40001.name
+	desc = GF_nyto_operation.40001.desc
+	picture = GFX_evt_burning_settlement
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		set_planet_flag = retrovirus_armies
+		random_owned_pop_group = {
+			limit = {
+				has_modifier = erratic_behavior
+			}
+			species = {
+				save_event_target_as = infected_species
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:enraged_colonists_country
+				}
+			}
+				create_country = {
+					name = "NAME_Enraged_Colonists"
+					type = faction
+					auto_delete = yes
+					flag = {
+						background = {
+							category = "backgrounds"
+							file = "00_solid.dds"
+						}
+						colors = {
+							"red"
+							"red"
+							"null"
+							"null"
+						}
+					}
+					effect = {
+						establish_communications_no_message = root.owner
+						establish_contact = {
+							who = root.owner
+							location = root.solar_system
+						}
+						copy_techs_from = {
+							target = root.owner
+						}
+					}
+				}
+			last_created_country = {
+				save_global_event_target_as = enraged_colonists_country
+			}
+		}
+		while = {
+			count = planet.operation_nyto_pop
+			create_army = {
+				name = "rebel_army"
+				owner = event_target:enraged_colonists_country
+				species = event_target:infected_species
+				type = "rebel_army"
+				land_army = yes
+			}
+			create_army = {
+				name = "rebel_army"
+				owner = event_target:enraged_colonists_country
+				species = event_target:infected_species
+				type = "rebel_army"
+				land_army = yes
+			}
+		}
+	}
+	option = {
+		name = GF_nyto_operation.40001.a
+	}
+	after = {
+		destroy_espionage_operation = from
+	}
+}
+
+#游行
+planet_event = {
+	id = GF_nyto_operation.40002
+	title = GF_nyto_operation.40002.name
+	desc = GF_nyto_operation.40002.desc
+	picture = GFX_evt_grand_speech #a name of a picture to display
+	is_triggered_only = yes 
+	immediate = {
+		add_modifier = {
+			modifier = GF_nyto_oper_pop
+			days = 10
+			time_multiplier = planet.operation_nyto_pop
+		}
+	}
+	option = {
+		name = GF_nyto_operation.40002.a
+	}
+	after = {
+		destroy_espionage_operation = from
+	}
+}
+
+
+#获得领袖时发送通知
+country_event = {
+	id = GF_nyto_operation.10001
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		GF_nyto_creat_esp_asset = yes
+	}
+	after = {
+		destroy_espionage_operation = from
+	}
+}
+
+
+#领袖判出
+espionage_operation_event ={
+	id = GF_nyto_operation.06
+	title = GF_nyto_operation.06.name
+	desc = GF_nyto_operation.06.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+		target ={
+			every_owned_leader = {
+				limit = {
+					has_leader_flag = operation_nyto_leader
+				}
+				remove_leader_flag = operation_nyto_leader
+				change_species = root.owner_main_species
+				set_owner = root.owner
+				leader.fleet ={
+					set_owner = root.owner
+					set_location = root.owner.home_planet
+				}
+			}
+			country_event = {
+				id = GF_nyto_operation.061
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ACKNOWLEDGED
+	}
+	after = {
+		destroy_espionage_operation = this
+	}
+}
+
+country_event = {
+	id = GF_nyto_operation.061
+	title = GF_nyto_operation.061.name
+	picture = GFX_evt_spy_network
+	desc =  GF_nyto_operation.061.desc
+	is_triggered_only = yes
+	option = {
+		name = GF_nyto_operation.061.a
+		from.owner ={
+			country_event = {
+				id = GF_nyto_operation.062
+				days = 15
+			}
+		}
+		country_event = {
+			id = GF_nyto_operation.063
+			days = 5
+		}
+		from.spynetwork ={
+			every_espionage_asset = {
+				prev={
+					destroy_espionage_asset = GF_nyto_asset_clerk
+					destroy_espionage_asset = GF_nyto_asset_bureaucrat
+					destroy_espionage_asset = GF_nyto_asset_economist
+					destroy_espionage_asset = GF_nyto_asset_officer
+					destroy_espionage_asset = GF_nyto_asset_scientist
+				}
+
+			}
+		}
+	}
+}
+country_event = {
+	id = GF_nyto_operation.062
+	title = GF_nyto_operation.062.name
+	picture = GFX_evt_spy_network
+	desc =  GF_nyto_operation.062.desc
+	is_triggered_only = yes
+	option = {
+		name = GF_nyto_operation.062.a
+	}
+}
+
+country_event = {
+	id = GF_nyto_operation.063
+	title = GF_nyto_operation.063.name
+	picture = GFX_evt_spy_network
+	desc =  GF_nyto_operation.063.desc
+	is_triggered_only = yes
+	option = {
+		name = GF_nyto_operation.063.a
+		custom_tooltip = GF_nyto_operation.063.tooltip
+		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					is_variable_set = operation_nyto_pop
+				}
+				while = {
+					limit = {
+						check_variable = { which = operation_nyto_pop value > 0 }
+					}
+					random_list = {
+						50 = {
+							random_owned_pop_group = {
+								kill_pop_group = {
+									pop_group = this
+									percentage = 1
+								}
+							}
+							change_variable = { which = operation_nyto_pop value = -1 }
+						}
+						50 = {
+							change_variable = { which = operation_nyto_pop value = -1 }
+						}
+						10 = {
+							clear_variable = operation_nyto_pop
+							break = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { which = operation_nyto_pop value <= 0 }
+					}
+					clear_variable = operation_nyto_pop
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,398 @@
+ship_section_template = {
+	key = "GFnyto_mobile_city_1"
+	ship_size = GFnyto_mobile_city
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = homeship_entity
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+	component_slot = {
+		name = "L01"
+		template = invisible_large_turret
+		locatorname = "L01"
+	}
+	component_slot = {
+		name = "L02"
+		template = invisible_large_turret
+		locatorname = "L02"
+	}
+	component_slot = {
+		name = "L03"
+		template = invisible_large_turret
+		locatorname = "L03"
+	}
+	component_slot = {
+		name = "L04"
+		template = invisible_large_turret
+		locatorname = "L04"
+	}
+	component_slot = {
+		name = "L05"
+		template = invisible_large_turret
+		locatorname = "L05"
+	}
+	component_slot = {
+		name = "L06"
+		template = invisible_large_turret
+		locatorname = "L06"
+	}
+	component_slot = {
+		name = "L07"
+		template = invisible_large_turret
+		locatorname = "L07"
+	}
+	component_slot = {
+		name = "L08"
+		template = invisible_large_turret
+		locatorname = "L08"
+	}
+	component_slot = {
+		name = "L09"
+		template = invisible_large_turret
+		locatorname = "L09"
+	}
+	component_slot = {
+		name = "L010"
+		template = invisible_large_turret
+		locatorname = "L010"
+	}
+	component_slot = {
+		name = "L011"
+		template = invisible_large_turret
+		locatorname = "L011"
+	}
+	component_slot = {
+		name = "L012"
+		template = invisible_large_turret
+		locatorname = "L012"
+	}
+	component_slot = {
+		name = "L013"
+		template = invisible_large_turret
+		locatorname = "L013"
+	}
+	component_slot = {
+		name = "L014"
+		template = invisible_large_turret
+		locatorname = "L014"
+	}
+	component_slot = {
+		name = "L015"
+		template = invisible_large_turret
+		locatorname = "L015"
+	}
+	component_slot = {
+		name = "L016"
+		template = invisible_large_turret
+		locatorname = "L016"
+	}
+	component_slot = {
+		name = "L017"
+		template = invisible_large_turret
+		locatorname = "L017"
+	}
+	component_slot = {
+		name = "L018"
+		template = invisible_large_turret
+		locatorname = "L018"
+	}
+	component_slot = {
+		name = "L019"
+		template = invisible_large_turret
+		locatorname = "L019"
+	}
+	component_slot = {
+		name = "L020"
+		template = invisible_large_turret
+		locatorname = "L020"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 2
+	ai_weight = {
+		weight = 1
+	}
+	prerequisites = {
+		"tech_GF_nyto_mobile_city_1"
+	}
+}
+
+ship_section_template = {
+	key = "GFnyto_mobile_city_2"
+	ship_size = GFnyto_mobile_city
+	fits_on_slot = meidm
+	should_draw_components = yes
+	entity = homeship_entity_loctor_mesh_entity
+	icon = "GFX_ship_part_core_mid"
+	icon_frame = 1
+	component_slot = {
+		name = "L021"
+		template = invisible_large_turret
+		locatorname = "L021"
+	}
+	component_slot = {
+		name = "L022"
+		template = invisible_large_turret
+		locatorname = "L022"
+	}
+	component_slot = {
+		name = "L023"
+		template = invisible_large_turret
+		locatorname = "L023"
+	}
+	component_slot = {
+		name = "L024"
+		template = invisible_large_turret
+		locatorname = "L024"
+	}
+	component_slot = {
+		name = "L025"
+		template = invisible_large_turret
+		locatorname = "L025"
+	}
+	component_slot = {
+		name = "L026"
+		template = invisible_large_turret
+		locatorname = "L026"
+	}
+	component_slot = {
+		name = "L027"
+		template = invisible_large_turret
+		locatorname = "L027"
+	}
+	component_slot = {
+		name = "L028"
+		template = invisible_large_turret
+		locatorname = "L028"
+	}
+	component_slot = {
+		name = "L029"
+		template = invisible_large_turret
+		locatorname = "L029"
+	}
+	component_slot = {
+		name = "L030"
+		template = invisible_large_turret
+		locatorname = "L030"
+	}
+	component_slot = {
+		name = "L031"
+		template = invisible_large_turret
+		locatorname = "L031"
+	}
+	component_slot = {
+		name = "L032"
+		template = invisible_large_turret
+		locatorname = "L032"
+	}
+	component_slot = {
+		name = "L033"
+		template = invisible_large_turret
+		locatorname = "L033"
+	}
+	component_slot = {
+		name = "L034"
+		template = invisible_large_turret
+		locatorname = "L034"
+	}
+	component_slot = {
+		name = "L035"
+		template = invisible_large_turret
+		locatorname = "L035"
+	}
+	component_slot = {
+		name = "L036"
+		template = invisible_large_turret
+		locatorname = "L036"
+	}
+	component_slot = {
+		name = "L037"
+		template = invisible_large_turret
+		locatorname = "L037"
+	}
+	component_slot = {
+		name = "L038"
+		template = invisible_large_turret
+		locatorname = "L038"
+	}
+	component_slot = {
+		name = "L039"
+		template = invisible_large_turret
+		locatorname = "L039"
+	}
+	component_slot = {
+		name = "L040"
+		template = invisible_large_turret
+		locatorname = "L040"
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1000
+		}
+	}
+	large_utility_slots = 15
+	aux_utility_slots = 2
+	ai_weight = {
+		weight = 1
+	}
+	prerequisites = {
+		"tech_GF_nyto_mobile_city_1"
+	}
+}
+
+ship_section_template = {
+	key = "GFnyto_mobile_city_3"
+	ship_size = GFnyto_mobile_city
+	fits_on_slot = end
+	should_draw_components = yes
+	entity = homeship_entity_loctor_mesh_entity
+	icon = "GFX_ship_part_core_stern"
+	icon_frame = 1
+	component_slot = {
+		name = "L041"
+		template = invisible_large_turret
+		locatorname = "L041"
+	}
+	component_slot = {
+		name = "L042"
+		template = invisible_large_turret
+		locatorname = "L042"
+	}
+	component_slot = {
+		name = "L043"
+		template = invisible_large_turret
+		locatorname = "L043"
+	}
+	component_slot = {
+		name = "L044"
+		template = invisible_large_turret
+		locatorname = "L044"
+	}
+	component_slot = {
+		name = "L045"
+		template = invisible_large_turret
+		locatorname = "L045"
+	}
+	component_slot = {
+		name = "L046"
+		template = invisible_large_turret
+		locatorname = "L046"
+	}
+	component_slot = {
+		name = "L047"
+		template = invisible_large_turret
+		locatorname = "L047"
+	}
+	component_slot = {
+		name = "L048"
+		template = invisible_large_turret
+		locatorname = "L048"
+	}
+	component_slot = {
+		name = "L049"
+		template = invisible_large_turret
+		locatorname = "L049"
+	}
+	component_slot = {
+		name = "L050"
+		template = invisible_large_turret
+		locatorname = "L050"
+	}
+	component_slot = {
+		name = "L051"
+		template = invisible_large_turret
+		locatorname = "L051"
+	}
+	component_slot = {
+		name = "L052"
+		template = invisible_large_turret
+		locatorname = "L052"
+	}
+	component_slot = {
+		name = "L053"
+		template = invisible_large_turret
+		locatorname = "L053"
+	}
+	component_slot = {
+		name = "L054"
+		template = invisible_large_turret
+		locatorname = "L054"
+	}
+	component_slot = {
+		name = "L055"
+		template = invisible_large_turret
+		locatorname = "L055"
+	}
+	component_slot = {
+		name = "L056"
+		template = invisible_large_turret
+		locatorname = "L056"
+	}
+	component_slot = {
+		name = "L057"
+		template = invisible_large_turret
+		locatorname = "L057"
+	}
+	component_slot = {
+		name = "L058"
+		template = invisible_large_turret
+		locatorname = "L058"
+	}
+	component_slot = {
+		name = "L059"
+		template = invisible_large_turret
+		locatorname = "L059"
+	}
+	component_slot = {
+		name = "L060"
+		template = invisible_large_turret
+		locatorname = "L060"
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1500
+		}
+	}
+	large_utility_slots = 20
+	aux_utility_slots = 2
+	ai_weight = {
+		weight = 1
+	}
+	prerequisites = {
+		"tech_GF_nyto_mobile_city_1"
+	}
+}
+
+ship_section_template = {
+	key = "GFnyto_shiledship_core"
+	ship_size = GFnyto_shiled_ship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "shiledship_entity"
+	icon = "GFX_ship_part_core_stern"
+	icon_frame = 1
+	resources = {
+		category = ships
+		cost = {
+			alloys = 1000
+			minerals = 2000
+		}
+		upkeep = {
+			energy = 500
+		}
+		upkeep = {
+			trigger = {
+				fleet = {
+					is_in_combat = yes
+				}
+			}
+			energy = 2000
+		}
+	}
+	large_utility_slots = 20
+	aux_utility_slots = 3
+	ai_weight = {
+		weight = 1
+	}
+}

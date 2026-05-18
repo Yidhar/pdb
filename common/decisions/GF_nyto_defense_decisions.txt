@@ -1,0 +1,115 @@
+decision_pc_GF_nyto_embers_gloomy_project = {
+	owned_planets_only = yes
+	icon = decision_pc_GF_nyto_embers_gloomy_project
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			GF_nyto_collapse_fluid = 100
+			influence = 50
+			alloys = 1000
+		}
+	}
+	potential = {
+		is_planet_class = pc_GF_nyto_embers_gloomy
+		habitable_structure = no
+		exists = owner
+		owner = {
+			has_technology = tech_climate_restoration
+			has_technology = tech_GFnyto_tansuo
+			NOT = {
+				has_civic = civic_GF_nyto_heart_of_suffering
+			}
+		}
+		NOT = {
+			has_planet_flag = GFnyto_Spring_wakes_up
+		}
+	}
+	effect = {
+		custom_tooltip = decision_pc_GF_nyto_embers_gloomy_project_effects
+		hidden_effect = {
+			add_district = district_GF_nyto_pc_toxic_house
+			add_district = district_GF_nyto_pc_toxic_alloy
+			add_district = district_GF_nyto_pc_toxic_energy
+			change_planet_size = 10
+			save_event_target_as = set_pc_GF_nyto_embers_gloomy
+			add_deposit = d_GFnyto_black_zone
+			set_planet_entity = {
+				entity = "GFnyto_planet03_entity"
+			}
+			set_planet_flag = GFnyto_Spring_wakes_up
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_GFnyto_planetary_defense = {
+	owned_planets_only = yes
+	icon = decision_GFnyto_planetary_defense
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			GF_nyto_collapse_fluid = 10
+			alloys = 100
+		}
+	}
+	potential = {
+		NOT = {
+			has_modifier = GFnyto_planetary_defense_ready
+		}
+		owner = {
+			is_nyto_country = yes
+		}
+		habitable_structure = no
+		exists = owner
+	}
+	effect = {
+		custom_tooltip = decision_GFnyto_planetary_defense_effects
+		add_deposit = d_GFnyto_planetary_orbit_defense_zone
+		add_deposit = d_GFnyto_planetary_surface_defense_zone
+		add_modifier = {
+			modifier = GFnyto_planetary_defense_ready
+		}
+		set_planet_flag = has_GFnyto_planetary_defense
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_GFnyto_yaosai = {
+	enactment_time = 720
+	owned_planets_only = yes
+	icon = decision_GFnyto_planetary_defense
+	potential = {
+		owner = {
+			is_nyto_country = yes
+		}
+		OR = {
+			NOT = {
+				has_planet_flag = GF_nyto_yaosai
+			}
+			owner = {
+				has_civic = civic_GF_nyoto_armor_train
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = decision_GFnyto_yaosai_desc1
+		set_planet_flag = GF_nyto_yaosai
+		create_army = {
+			owner = root
+			type = GF_nyto_yaosai
+		}
+	}
+	resources = {
+		category = decisions
+		cost = {
+			unity = 500
+			influence = 50
+		}
+	}
+}

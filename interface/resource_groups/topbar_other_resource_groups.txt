@@ -7,9 +7,9 @@ tb_others_group = {
 		sr_zro
 		sr_dark_matter
 		nanites
-		# corechip
+		corechip
 		#我草怎么这么多？
-		GF_nyto_collapse_fluid#坍缩液
+		GF_nyto_collapse_liquid#坍缩液
 		# GF_nyto_diamonds
 		# GF_nyto_superconducting_kinetic_energy
 		# GF_nyto_superconducting_potential_energy
@@ -23,7 +23,7 @@ tb_others_group = {
 		#GF_nyto_mental_fragments #记忆碎片
 		GF_nyto_new_fire_control_unit #火控单元
 		# GF_nyto_power_of_attorney
-		# GF_nyto_dark_star_core#暗星内核
+		GF_nyto_dark_star_core#暗星内核
 		#GF_nyto_superstar_core	#超星内核
 		#GF_nyto_developing_petri_dishes
 		GF_nyto_training_key #训练密钥

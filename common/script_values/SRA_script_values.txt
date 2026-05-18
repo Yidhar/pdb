@@ -1,0 +1,108 @@
+# #星规深渊产业链
+# ###通用深渊污染影响 抛物线函数  给区划挂上记得排除下电站
+# SRA_Abyssal_Contamination_Bonus ={
+#     base = 10
+#     mult = $ACB|10$ #收益倍率
+#     mult = value:SRA_Abyssal_Contamination_Bonus_2|ABC_MAX_P|$ABC_MAX_P|600$|ABC_MAX_D|$ABC_MAX_D|400$|
+#     add =  $Offset_point|0$
+#
+# }
+# SRA_Abyssal_Contamination_Bonus_2 ={
+#     base = 1
+#     subtract = value:SRA_Abyssal_Contamination_Bonus_3|ABC_MAX_P|$ABC_MAX_P|600$|ABC_MAX_D|$ABC_MAX_D|400$|
+#
+# }
+# SRA_Abyssal_Contamination_Bonus_3 ={
+#     base = 0
+#     add = Abyssal_Contamination #污染度
+#     subtract = $ABC_MAX_P|600$  #最佳收益点
+#     divide =$ABC_MAX_D|400$  #max和收益点的差值 越小曲线弧度越极端
+#     pow = 2
+# }
+#
+# #通用建筑区划效果
+# SRA_planet_districts_modifier ={
+#     base = 1
+#     [[districts]
+#         complex_trigger_modifier = {
+#             trigger_scope = planet
+#             trigger = num_districts
+#             parameters = {
+#                 type = $districts$
+#             }
+#             mode = set
+#         }
+#     ]
+#     [[BaseProduction]  #产出
+#         square_root = yes
+#         mult = $ProductionScaleFactor|1.5$ #缩放倍率
+#         add = 1
+#         mult = $BaseProduction|10$  #基础值
+#     ]
+#     [[BaseMaintenance]  #维护
+#         mult = $MaintenanceGrowthFactor|0.11$
+#         pow = $MaintenancePower|2.1$
+#         add = 1
+#         mult = $BaseMaintenance|2$
+#     ]
+#     min = 1
+# }
+#
+#
+# #载荷效果
+# SRA_engery_effective_load ={
+#     base = 0
+#     add = $base_effective|5$  #基础载荷
+#     add = modifier:zaihe  #载荷增加buff
+#     min = 0
+# }
+#
+# SRA_engery_effective_load_2 ={
+#     base = 0
+#     set = modifier:shiyong  #使用的载荷
+#     divide =value:SRA_engery_effective_load
+# }
+#
+# SRA_engery_effective_upkeep = {
+#     base = 0
+#     set = value:SRA_engery_effective_load_2
+#     modifier = {
+#         check_variable_arithmetic = {
+#             which = value:SRA_engery_effective_load_2
+#             value < 1
+#         }
+#         mult = 0.5
+#         add =  0.5
+#     }
+#     modifier = {
+#         check_variable_arithmetic = {
+#             which = value:SRA_engery_effective_load_2
+#             value > 1
+#         }
+#         subtract = $MAX|2$
+#         pow = 2
+#         mult = -1.5
+#         add = 2.5
+#     }
+#     min = 0
+# }
+#
+# #大电塔的产出维护
+# SRA_planet_engery_building = {
+#     base = 0
+#     add = value:SRA_Abyssal_Contamination_Bonus|ACB|$ACB|10$|ABC_MAX_P|$ABC_MAX_P|600$|ABC_MAX_D|$ABC_MAX_D|400$|Offset_point|$Offset_point|0$|
+#         [[BaseProduction]
+#         mult = value:SRA_planet_districts_modifier|districts|$districts$|BaseProduction|$BaseProduction|10$|ProductionScaleFactor|$ProductionScaleFactor|1.5$|
+#             ]
+#         [[BaseMaintenance]
+#         mult = value:SRA_planet_districts_modifier|districts|$districts$|BaseMaintenance|$BaseMaintenance|2$|MaintenanceGrowthFactor|$MaintenanceGrowthFactor|0.11$|MaintenancePower|$MaintenancePower|2.1$|
+#             ]
+#     modifier = {
+#         check_variable_arithmetic = {
+#             which = value:SRA_engery_effective_upkeep
+#             value < 0
+#         }
+#         mult = value:SRA_engery_effective_upkeep
+#     }
+#     min = 1
+# }

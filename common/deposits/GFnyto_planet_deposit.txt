@@ -1,0 +1,98 @@
+d_GFnyto_ancient_land_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_land_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		job_soldier_add = 1
+		planet_housing_add = 1
+		army_health = 0.1
+	}
+	drop_weight = { weight = 0 }
+}
+
+d_GFnyto_ancient_city_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_city_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		job_technician_add = 2
+		job_miner_add = 2
+		job_farmer_add = 2
+		planet_housing_add = 5
+	}
+	resources = {
+		category = planet_deposits
+		produces = {
+			energy = 100
+			food = 50
+			consumer_goods = 50
+		}
+	}
+	drop_weight = { weight = 0 }
+}
+
+d_GFnyto_ancient_industry_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_industry_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		job_foundry_add = 1
+		job_artisan_add = 1
+		planet_housing_add = 5
+	}
+	resources = {
+		category = armies
+		produces = {
+			alloys = 10
+		}
+	}
+	drop_weight = { weight = 0 }
+}
+
+d_GFnyto_black_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_black_zone
+	category = deposit_cat_rare
+	resources = {
+		produces = {
+			GF_nyto_collapse_liquid = 20
+		}
+	}
+	planet_modifier = { }
+	drop_weight = { weight = 0 }
+}
+
+d_GFnyto_planetary_surface_defense_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_planetary_surface_defense_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		job_soldier_add = 2
+		planet_housing_add = 10
+		army_health = 0.2
+	}
+	drop_weight = { weight = 0 }
+}
+
+d_GFnyto_planetary_orbit_defense_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_planetary_orbit_defense_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		job_soldier_add = 2
+		army_damage_mult = 0.2
+	}
+	drop_weight = { weight = 0 }
+}
+
+d_GFnyto_potato_server_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_city_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		planet_housing_mult = 0.1
+		pop_happiness = -0.01
+	}
+	drop_weight = { weight = 0 }
+}
+

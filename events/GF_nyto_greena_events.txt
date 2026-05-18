@@ -1,0 +1,45 @@
+namespace = GFnyto_greena
+#country_event = {
+#	id = GFnyto_greena.1
+#	title = "GFnyto_greena.1.name"
+#	desc = "GFnyto_greena.1.desc"
+#	picture = GFX_evt_wormhole
+#	show_sound = event_engineered_evolution
+#	hide_window = no
+#	is_triggered_only = yes
+#	immediate = {
+#		random_system = {
+#			create_country = {
+#				auto_delete = yes
+#				type = gray_goo
+#				name = "回归者"
+#
+#			}
+#			create_fleet = {
+#				name = "耶利米哀歌"
+#				settings = {
+#					can_upgrade = no
+#					can_change_composition = no
+#					can_change_leader = no
+#					uses_naval_capacity = no
+#					spawn_debris = no
+#					is_boss = yes
+#					can_disband = no
+#				}
+#				effect = {
+#					set_location = prev
+#					set_owner = last_created_country
+#					create_ship = {
+#						name = "耶利米哀歌"
+#						design = GF_Nyto_mather_ship
+#						prefix = no
+#						upgradable = no
+#					}
+#				}
+#			}
+#		}
+#	}
+#	option = {
+#		name = "GFnyto_greena.1.a"
+#	}
+#}

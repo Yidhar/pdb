@@ -1,0 +1,77 @@
+automate_GFnyto_planet_capital_buildings = {
+    category = "planet_automation_GFnyto_building_space"
+    available = {
+        is_capital = yes
+    }
+    emergency = yes
+}
+automate_GFnyto_planet_capital_buildings_wakes_up = {
+    category = "planet_automation_GFnyto_building_space"
+    available = {
+        has_designation = col_GF_nyto_capital
+    }
+    emergency = yes
+}
+# 普通球，造污染建筑
+# 铸造工厂=逆向坍塌
+automate_GFnyto_foundry_planet = {
+    category = "planet_automation_GFnyto_building_space"
+    available = {
+        OR = {
+            has_designation = col_foundry
+            has_designation = col_factory
+        }
+    }
+    buildings = {
+        building_capital = {
+            building = building_capital
+            available = { always = yes }
+        }
+        building_GFnyto_collapse_change_center = {
+            building = building_GFnyto_collapse_change_center
+            available = {
+                owner = {
+                    has_technology = tech_GF_nyto_collapse_stability
+                    NOT = { has_ascension_perk = ap_GF_nyto_conquer_hell }
+                }
+            }
+        }
+        building_GFnyto_transportation_hub = {
+            building = building_GFnyto_transportation_hub
+            available = { always = yes }
+        }
+        building_GFnyto_nano_forge = {
+            building = building_GFnyto_nano_forge
+            available = { owner = { has_technology = tech_GF_nyto_storage_of_ancient_technology } }
+        }
+        building_GFnyto_collapse_tower = {
+            building = building_GFnyto_collapse_tower
+            available = {
+                owner = { resource_income_compare = { resource = GF_nyto_collapse_fluid value < 10 } }
+            }
+        }
+        building_GFnyto_dimensional_fabricator = {
+            building = building_GFnyto_dimensional_fabricator
+            available = {
+                owner = {
+                    has_technology = tech_GFnyto_tansuo
+                    resource_income_compare = { resource = GF_nyto_collapse_fluid value >= 10 }
+                    resource_income_compare = { resource = energy value >= 20 }
+                }
+            }
+        }
+    }
+}
+automate_GFnyto_foundry_planet_districts = {
+    category = "planet_automation_GFnyto_building_space"
+    available = {
+        OR = {
+            has_designation = col_foundry
+            has_designation = col_factory
+        }
+        free_district_slots > 0
+    }
+    prio_districts = {
+        district_city
+    }
+}

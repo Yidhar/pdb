@@ -1,0 +1,71 @@
+particle=
+{
+	name="GF_nyto_T101_weapon_file"
+	subsystem=
+	{
+		name="Force"
+		max_amount=10000
+		slave_particles=0
+		sort="age"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=yes
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture=
+		{
+			file="gfx/particles/waepons_skill_101.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color=
+		{
+			alpha=10
+		}
+		position=
+		{
+		}
+		duration=2
+		life=1
+		emission=200
+		size=50,size
+		rotation_speed=6
+		force=0
+	}
+	animation=
+	{
+		name="size"
+		start=0
+		duration=2
+		repeat=yes
+		minValue=0
+		maxValue=10
+		curve=
+		{
+			0 0 0.73235 1 1 0 
+		}
+		op="MUL"
+		time="spawn"
+	}
+	force=
+	{
+		type="planar"
+		name="force0"
+		position=
+		{
+			0 0 0 
+		}
+		direction=
+		{
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

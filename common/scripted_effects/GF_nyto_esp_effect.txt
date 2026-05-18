@@ -1,0 +1,21 @@
+GF_nyto_creat_esp_asset = {
+    from.spynetwork = {
+        random_list = {
+            50 = {
+                create_espionage_asset = { type = GF_nyto_asset_clerk }
+            }
+            33 = {
+                create_espionage_asset = { type = GF_nyto_asset_bureaucrat }
+            }
+            20 = {
+                create_espionage_asset = { type = GF_nyto_asset_economist }
+            }
+            20 = {
+                create_espionage_asset = { type = GF_nyto_asset_officer }
+            }
+            10 = {
+                create_espionage_asset = { type = GF_nyto_asset_scientist }
+            }
+        }
+    }
+}

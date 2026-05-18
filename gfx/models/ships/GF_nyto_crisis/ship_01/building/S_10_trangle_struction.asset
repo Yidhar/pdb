@@ -1,0 +1,4 @@
+entity = {
+	name = "S_10_trangle_struction_entity"
+	pdxmesh = "S_10_trangle_struction_mesh"
+}

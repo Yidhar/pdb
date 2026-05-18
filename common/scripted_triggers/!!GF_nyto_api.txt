@@ -1,0 +1,26 @@
+is_kuat_fallen_empire = {
+    # TODO: 该触发器依赖外部兼容模组的 country_type；当前 standalone PDB 中未定义，先安全降级为 no
+    always = no
+}
+is_cg_country ={
+    OR = {
+        has_country_flag = carnalism_flag
+        has_country_flag = asceticism_flag
+        has_country_flag = parasite_mind_flag
+        has_country_flag = lust_skynet_flag
+        has_country_flag = abstinence_flag
+    }
+}
+
+GF_allow_doll_leaders_military = {
+    # TODO: 该触发器依赖外部兼容模组的 policy_flag；当前 standalone PDB 中未定义，先安全降级为 no
+    always = no
+}
+
+#允许被旗舰保护的舰船
+nyto_is_standard_ship ={
+    or ={
+        is_ship_size = GFnyto_shiled_ship
+        is_ship_size = GF_nyto_super_battelship
+    }
+}

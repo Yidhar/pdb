@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+ ### Nyto Ship Components ###
+ GF_nyto_crisis_armor:0 "危机装甲"
+ GF_nyto_crisis_armor_desc:0 "专供危机舰体使用的超高强度装甲模块。"
+ ### Nyto Ship Components ###
+ GF_nyto_crisis_laser:0 "启示录光矛"
+ GF_nyto_crisis_laser_DESC:0 "危机舰船搭载的高能光矛武器。"
+ mod_GF_Nyto_T_weapon2_num:0 "涅托T槽武器强化"
+ GFnyto_power_lv0:0 "临时反应堆"
+ GFnyto_power_lv0_DESC:0 "用于维持特殊舰船基础系统运行的临时反应堆。"
+ GFnyto_additional_arithmetic_module4:0 "高级附加演算模块"
+ GFnyto_additional_arithmetic_module4_DESC:0 "为大型舰船提供更高层级的战术演算与武器校准能力。"
+ GFnyto_additional_arithmetic_module_base:0 "基础附加演算模块"
+ GFnyto_additional_arithmetic_module_base_DESC:0 "为舰船火控与战术系统提供基础附加算力。"
+ mod_GF_nyto_has_armor:0 "舰船装甲强度"

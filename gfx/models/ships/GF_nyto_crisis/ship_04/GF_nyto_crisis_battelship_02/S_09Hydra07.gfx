@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "S_09Hydra07_mesh"
+		file = "gfx/models/ships/GF_nyto_crisis/ship_04/GF_nyto_crisis_battelship_02/S_09Hydra07.mesh"
+		scale = 100
+		animation = { id = "idle" type = "S_09Hydra07_idle_animation" }
+		meshsettings = {
+			name = "S_09Hydra07_mod_lod_0_01Shape"
+			index = 0
+			texture_diffuse = "S_09Hydra07_B_lod_0_01.dds"
+			texture_normal = "S_09Hydra07_N_lod_0_01.dds"
+			texture_specular = "S_09Hydra07_S_lod_0_01.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "S_09Hydra07_mod_lod_0_02Shape"
+			index = 0
+			texture_diffuse = "S_09Hydra07_B_lod_0_02.dds"
+			texture_normal = "S_09Hydra07_N_lod_0_02.dds"
+			texture_specular = "S_09Hydra07_S_lod_0_02.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

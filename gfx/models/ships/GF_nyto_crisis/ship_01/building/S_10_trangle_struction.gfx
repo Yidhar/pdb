@@ -1,0 +1,6 @@
+objectTypes = {
+	pdxmesh = {
+		name = "S_10_trangle_struction_mesh"
+		file = "gfx/models/ships/GF_nyto_crisis/ship_01/building/S_10_trangle_struction.mesh"
+	}
+}

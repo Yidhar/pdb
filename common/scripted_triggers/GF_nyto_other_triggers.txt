@@ -1,4 +1,4 @@
-can_destroy_planet_with_tech_GFnyto_accelerating_coil3= {
+can_destroy_planet_with_tech_GFnyto_accelerating_coil3 = {
     optimize_memory
     custom_tooltip = {
         fail_text = is_not_a_standard_planet_or_megastructure
@@ -14,16 +14,15 @@ can_destroy_planet_with_tech_GFnyto_accelerating_coil3= {
     }
 }
 
-is_nyto_country ={
+is_nyto_country = {
     optimize_memory
     OR = {
-        owner_main_species ={
+        owner_main_species = {
             is_species_class = nyto
         }
         has_country_flag = nyto_empire
     }
 }
-
 
 is_mechanical_empire = {
     optimize_memory
@@ -36,8 +35,8 @@ is_mechanical_empire = {
 
 is_individual_machine = {
     optimize_memory
-    or = {
-        and = {
+    OR = {
+        AND = {
             founder_species = {
                 is_archetype = MACHINE
             }
@@ -47,4 +46,65 @@ is_individual_machine = {
     }
 }
 
+is_spring = {
+    optimize_memory
+    text = is_spring_desc
+    check_variable_arithmetic = {
+        which = month
+        add = value:GF_nyto_get_game_time_month
+        value >= 3
+    }
+    check_variable_arithmetic = {
+        which = month
+        add = value:GF_nyto_get_game_time_month
+        value <= 5
+    }
+}
+
+is_summer = {
+    optimize_memory
+    text = is_summer_desc
+    check_variable_arithmetic = {
+        which = month
+        add = value:GF_nyto_get_game_time_month
+        value >= 6
+    }
+    check_variable_arithmetic = {
+        which = month
+        add = value:GF_nyto_get_game_time_month
+        value <= 8
+    }
+}
+
+is_autumn = {
+    optimize_memory
+    text = is_autumn_desc
+    check_variable_arithmetic = {
+        which = month
+        add = value:GF_nyto_get_game_time_month
+        value >= 9
+    }
+    check_variable_arithmetic = {
+        which = month
+        add = value:GF_nyto_get_game_time_month
+        value <= 11
+    }
+}
+
+is_winter = {
+    optimize_memory
+    text = is_winter_desc
+    OR = {
+        check_variable_arithmetic = {
+            which = month
+            add = value:GF_nyto_get_game_time_month
+            value == 12
+        }
+        check_variable_arithmetic = {
+            which = month
+            add = value:GF_nyto_get_game_time_month
+            value <= 2
+        }
+    }
+}
 

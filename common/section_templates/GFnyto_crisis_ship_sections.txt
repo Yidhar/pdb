@@ -1,0 +1,136 @@
+ship_section_template = {
+	key = "revelation_mid"
+	ship_size = battleship_revelation
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "mammalian_01_battleship_entity"
+	icon = "GFX_ship_part_core_mid"
+	icon_frame = 1
+	component_slot = {
+		name = "T01"
+		template = "invisible_titanic_fixed"
+		locatorname = "gun1"
+	}
+	component_slot = {
+		name = "T02"
+		template = "invisible_titanic_fixed"
+		locatorname = "gun2"
+	}
+	component_slot = {
+		name = "X01"
+		template = invisible_extra_large_fixed
+		locatorname = "gun3"
+	}
+	component_slot = {
+		name = "X02"
+		template = invisible_extra_large_fixed
+		locatorname = "gun4"
+	}
+	small_utility_slots = 2
+	aux_utility_slots = 2
+	ai_weight = { weight = 1 }
+}
+
+ship_section_template = {
+	key = "Aberrant_Core_bow"
+	ship_size = Aberrant_Core
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "mammalian_01_titan_entity"
+	icon = "GFX_ship_part_core_mid"
+	icon_frame = 1
+	component_slot = {
+		name = "T01"
+		template = "invisible_titanic_fixed"
+		locatorname = "gun1"
+	}
+	component_slot = {
+		name = "T02"
+		template = "invisible_titanic_fixed"
+		locatorname = "gun2"
+	}
+	component_slot = {
+		name = "X01"
+		template = invisible_extra_large_fixed
+		locatorname = "gun3"
+	}
+	component_slot = {
+		name = "X02"
+		template = invisible_extra_large_fixed
+		locatorname = "gun4"
+	}
+	component_slot = {
+		name = "X03"
+		template = invisible_extra_large_fixed
+		locatorname = "gun5"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 2
+	ai_weight = { weight = 1 }
+}
+
+ship_section_template = {
+	key = "Aberrant_Core_core"
+	ship_size = Aberrant_Core
+	fits_on_slot = core
+	should_draw_components = no
+	entity = "mammalian_01_titan_entity"
+	icon = "GFX_ship_part_core_mid"
+	icon_frame = 1
+	component_slot = {
+		name = "T01"
+		template = "invisible_titanic_fixed"
+		locatorname = "gun1"
+	}
+	component_slot = {
+		name = "T02"
+		template = "invisible_titanic_fixed"
+		locatorname = "gun2"
+	}
+	component_slot = {
+		name = "X01"
+		template = invisible_extra_large_fixed
+		locatorname = "gun3"
+	}
+	component_slot = {
+		name = "X02"
+		template = invisible_extra_large_fixed
+		locatorname = "gun4"
+	}
+	component_slot = {
+		name = "X03"
+		template = invisible_extra_large_fixed
+		locatorname = "gun5"
+	}
+	small_utility_slots = 4
+	aux_utility_slots = 2
+	ai_weight = { weight = 1 }
+}
+
+ship_section_template = {
+	key = "Aberrant_Core_stern"
+	ship_size = Aberrant_Core
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "mammalian_01_titan_entity"
+	icon = "GFX_ship_part_core_mid"
+	icon_frame = 1
+	component_slot = {
+		name = "T01"
+		template = "invisible_titanic_fixed"
+		locatorname = "gun1"
+	}
+	component_slot = {
+		name = "X01"
+		template = invisible_extra_large_fixed
+		locatorname = "gun2"
+	}
+	component_slot = {
+		name = "X02"
+		template = invisible_extra_large_fixed
+		locatorname = "gun3"
+	}
+	small_utility_slots = 2
+	aux_utility_slots = 2
+	ai_weight = { weight = 1 }
+}

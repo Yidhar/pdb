@@ -1,0 +1,32 @@
+should_force_decline_species = {
+	OR = {
+		custom_tooltip = {
+			success_text = CLONE_ARMY_FORCE_DECLINE
+			OR = {
+				has_trait = trait_clone_soldier_infertile
+				has_trait = trait_clone_soldier_infertile_full_potential
+			}
+			from = {
+				OR = {
+					AND = {
+						exists = owner
+						owner = {
+							OR = {
+								NOT = { has_origin = origin_clone_army }
+								has_country_flag = clone_army_fertility_unlocked
+								NOT = { owner_main_species = { is_same_species = root } }
+							}
+						}
+					}
+					check_variable = { which = clone_pops_missing value < 0 }
+				}
+			}
+		}
+		custom_tooltip = {
+			success_text = "GF_nyto_decline"
+			from = {
+				colony_type = col_GF_nyto_capital
+			}
+		}
+	}
+}

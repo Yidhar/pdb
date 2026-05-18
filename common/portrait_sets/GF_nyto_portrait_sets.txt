@@ -4,3 +4,14 @@ nyto ={
         "GF_nyto"
     }
 }
+
+elid ={
+    species_class = EILD
+    portraits ={
+        "GFnyto_eild"
+    }
+    randomizable = no
+    conditional_portraits ={
+        "GFnyto_eild"
+    }
+}

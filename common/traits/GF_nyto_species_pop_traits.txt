@@ -454,8 +454,7 @@ trait_GF_nyto_collapse_radiation_adaptation = {
 	cost = 2
 	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_collapse_radiation_adaptation.png"
 	initial = no
-	randomize = no
-	modification = yes
+	randomized = no
 	allowed_archetypes = {
 		BIOLOGICAL NYTO
 	}

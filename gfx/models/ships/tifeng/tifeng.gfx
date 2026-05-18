@@ -1,0 +1,916 @@
+objectTypes = {
+	pdxmesh = {
+		name = "tifeng_mesh"
+		file = "gfx/models/ships/tifeng/tifeng.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "qiantui6Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "qiandengzhaoShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder4Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube2Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube10Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface6Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "wobaShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder5Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube16Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "qiandengShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "lianjieShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube27Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface7Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube63Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "zhuti_zhutiShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "bashouShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "paoguandeng2Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "paoguandeng1Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube80Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube81Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube82Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube83Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "dengguaiShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "dengzhaoShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder2Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube1Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "dipanShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder3Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "zhuangjia1Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "zhuangjiaShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "guanchachaung|guanchachuang|guanchachuangShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube26Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface8Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder6Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "fangxiangjiShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube47Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "waikeShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "zhuangshiShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "paota_shang|guanchachuang|guanchachuangShape"
+			index = 0
+			texture_diffuse = "tifeng_pao.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "paoguandengShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder10Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "paotaidangbanShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "keidaShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder14Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder13Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder11Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder12Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder15Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder16Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "daodan1Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "daodanShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder17Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube78Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder18Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder19Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "dianxiangShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "danyaochang1Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube14Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube13Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube12Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube11Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface9Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface10Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube62Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube61Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube60Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube59Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube58Shape"
+			index = 0
+			texture_diffuse = "tifeng_led_d.dds"
+			texture_normal = "tifeng_led_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "weibu1Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube49Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube50Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube51Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube52Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube53Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube54Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "paota_shang|paoguan|paoguan|paoguanShape"
+			index = 0
+			texture_diffuse = "tifeng_pao.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "pCube55Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCylinder7Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "yanwudanShape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "yanwudan1Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube43Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube41Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube40Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube42Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube29Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube66Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube67Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube70Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube71Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube73Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube75Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube77Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube46|paoguan|paoguanShape"
+			index = 0
+			texture_diffuse = "tifeng_pao.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "pCube30Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube32Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube33Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube35Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube36Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube37Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube38Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "pCube39Shape"
+			index = 0
+			texture_diffuse = "tifeng_d.dds"
+			texture_normal = "tifeng_n.dds"
+			texture_specular = "tifeng_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

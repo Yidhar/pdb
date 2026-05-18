@@ -1,9 +1,17 @@
 part = {
     location = 0
-    localization = "START_SCREEN_NYTO01"
+    localization = "GFNYTO_START_SCREEN_1"
 
     trigger = {
-        has_country_flag = custom_start_screen
-        has_origin = origin_gf_nyto_attractor_field
+        has_origin = origin_GF_nyto_the_last_light
+    }
+}
+
+part = {
+    location = 0
+    localization = "GFNYTO_START_SCREEN_2"
+
+    trigger = {
+        has_origin = origin_GF_nyto_the_beginning_of_exile
     }
 }

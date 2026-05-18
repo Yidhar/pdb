@@ -1,0 +1,21 @@
+nyto ={
+    species_class = nyto
+    portraits ={
+        "GFnyto_nyto"
+    }
+    randomizable = no
+    conditional_portraits ={
+        "GFnyto_nyto"
+    }
+}
+
+elid ={
+    species_class = EILD
+    portraits ={
+        "GFnyto_eild"
+    }
+    randomizable = no
+    conditional_portraits ={
+        "GFnyto_eild"
+    }
+}

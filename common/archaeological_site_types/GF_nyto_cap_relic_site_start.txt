@@ -1,0 +1,50 @@
+# 首都遗迹
+site_nyto_unknown_civilization_202055 = {
+	desc = "site_nyto_unknown_civilization_202055_desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	stages = 6
+	max_instances = 10
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		owner = { has_authority = auth_GF_paradeus }
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C1
+		event = gfnytoparadeusancrel.2001
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C2
+		event = gfnytoparadeusancrel.2002
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_C3
+		event = gfnytoparadeusancrel.2003
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_C4
+		event = gfnytoparadeusancrel.2004
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_C5
+		event = gfnytoparadeusancrel.2005
+	}
+	stage = {
+		difficulty = 8
+		icon = GFX_archaeology_runes_C6
+		event = gfnytoparadeusancrel.2006
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

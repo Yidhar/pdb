@@ -1,0 +1,17 @@
+﻿l_english:
+ ### Legacy Civics ###
+ civic_GF_nyto_forward_base:0 "Galactical Expedition"
+ civic_GF_nyto_forward_base_desc:0 "The long Night shall come to an end! Being rid of the harsh enviroments of our home planet, the most important thing for us is to find a new colony!\nEvery time a new planet is conquered receive building with 5 year limited life Forward base\nRecieve 5 year national modifier "Expedition" on game start"
+ civic_GF_nyto_special_operations_command:0 "Spec Ops Command"
+ civic_GF_nyto_special_operations_command_desc:0 "Every man is born for the victory of battle. No one is innocent in each loss.\nAllows pops to generate White Knight Army."
+ civic_GF_nyoto_armor_train:0 "Eternal State"
+ civic_GF_nyoto_armor_train_desc:0 "Mankind are beings with a permanent sense of insecurity. No matter what kind of iron curtains we weld, it's all but too miniscule in this boundless universe.\nAllows construction of Permanent Fortresses with no limits."
+ civic_Gf_nyto_tanhua_pluse:0 "Epiphyllum Symbiosis"
+ civic_Gf_nyto_tanhua_pluse_desc:0 "Flirtatious flowers freely blooms on people's bodies.\nEpiphyllum Plantations will now provide extra 1 job."
+ civic_GF_nyto_reup:0 "High Efficiency Recycling"
+ civic_GF_nyto_reup_desc:0 "We must use well every slice of resource we have on our hands, to have a chance to see the light of dawn.\nSuccessfully defending ELID invasions will receive extra resources."
+ civic_GF_nyto_heart_of_suffering:0 "Heart of Suffering"
+ civic_GF_nyto_heart_of_suffering_desc:0 "Call me by my name, feed me with fountain youth, will your boundless indescribable heart, ever do respond?"
+ civic_GF_nyto_heart_of_suffering_modif:0 "Starts game with ELID pop and no longer triggers ELID invasion events. Every time you conquer a new planet will convert half the pop into ELID.\nIf has Policy Galactical Expedition then will become Vengeance Crusade on game start.\n§RWill be exempt from using Bloomed Awakens Decision.§!"
+ civic_GF_nyto_Vengeance_Crusade:0 "Vengeance Crusade"
+ civic_GF_nyto_Vengeance_Crusade_desc:0 "May god one day finally forgive me, may I be worthy of this crown"

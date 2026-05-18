@@ -1,0 +1,4 @@
+entity = {
+	name = "lastexile_entity"
+	pdxmesh = "lastexile_mesh"
+}

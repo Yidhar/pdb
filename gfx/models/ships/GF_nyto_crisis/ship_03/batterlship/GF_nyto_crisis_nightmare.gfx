@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_crisis_nightmare_mesh"
+		file = "gfx/models/ships/GF_nyto_crisis/ship_03/batterlship/GF_nyto_crisis_nightmare.mesh"
+
+		meshsettings = {
+			name = "mod_1_2Shape"
+			index = 0
+			texture_diffuse = "S_00PiratesBattleship_B_lod_0_02.dds"
+			texture_normal = "S_00PiratesBattleship_B_lod_0_02_n.dds"
+			texture_specular = "S_00PiratesBattleship_B_lod_0_02_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

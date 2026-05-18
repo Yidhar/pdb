@@ -8,6 +8,7 @@ tech_GF_nyto_robomodding_points_1= {
 	category = { industry }
 	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
 	weight = 5
+	# TODO: [USER INTERVENTION REQUIRED] - LSP error: EILD_species_trait_points_add is unexpected in modifier
 	modifier = {NYTO_species_trait_points_add = 2 EILD_species_trait_points_add = 2 }
 	potential = {is_nyto_country =yes}
 	ai_weight = {weight = 2}
@@ -22,6 +23,7 @@ tech_GF_nyto_robomodding_points_2 = {
 	category = { industry }
 	prerequisites = { "tech_GF_nyto_robomodding_points_1" }
 	weight = 5
+	# TODO: [USER INTERVENTION REQUIRED] - LSP error: EILD_species_trait_points_add is unexpected in modifier
 	modifier = {NYTO_species_trait_points_add = 2 EILD_species_trait_points_add = 2 }
 	potential = {is_nyto_country =yes}
 	ai_weight = {weight = 2}
@@ -252,9 +254,10 @@ tech_template_GF_nyto_stions_fortress_HP = {
 	prerequisites = {
 		tech_template_stions_fortress
 	}
+	# TODO: [USER INTERVENTION REQUIRED] - LSP error: GF_nyto_stions_HP_nums is unexpected in modifier
 	modifier = {
-		GF_nyto_stions_HP_nums =1
-		#custom_tooltip ="tech_template_GF_nyto_stions_fortress_HP_titl"
+		GF_nyto_stions_HP_nums = 1
+		custom_tooltip = "tech_template_GF_nyto_stions_fortress_HP_titl"
 	}
 }
 
@@ -274,8 +277,9 @@ tech_template_GF_nyto_stions_fortress_commn = {
 	prerequisites = {
 		tech_template_stions_fortress
 	}
+	# TODO: [USER INTERVENTION REQUIRED] - LSP error: GF_nyto_stions_weapon_num is unexpected in modifier
 	modifier = {
 		GF_nyto_stions_weapon_num = 1
-		#custom_tooltip="tech_template_GF_nyto_stions_fortress_commn_titl"
+		custom_tooltip = "tech_template_GF_nyto_stions_fortress_commn_titl"
 	}
 }

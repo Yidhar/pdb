@@ -27,3 +27,29 @@ nyto= {
     trait = "trait_GF_nyto_ogas_agreement"
 
 }
+
+nyto_machine = {
+    archetype = MACHINE
+    randomized = no
+    possible = {
+        authority = {
+            value = auth_machine_intelligence
+        }
+    }
+    possible_secondary = {
+        always = no
+        text = SECONDARY_SPECIES_CLASS_INVALID
+    }
+    gender = no
+    use_climate_preference = no
+    portrait_modding = no
+    leader_age_min = 2
+    leader_age_max = 10
+    custom_portraits = {
+        portraits = { "GF_nyto" }
+    }
+    graphical_culture = humanoid_01
+    move_pop_sound_effect = "robot_pops_move"
+    trait = "trait_machine_unit"
+    resources = { }
+}

@@ -1,0 +1,137 @@
+tech_GFnyto_war_theory_a3 = {
+	icon = tech_GFnyto_war_theory_a3
+	cost = 45000
+	area = society
+	tier = 5
+	is_rare = yes
+	category = { military_theory }
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_2" }
+	weight = 40
+	modifier = { ship_ftl_jumpdrive_range_mult = 0.3 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_b1 = {
+	icon = tech_GFnyto_war_theory_b1
+	cost = 10000
+	area = society
+	tier = 1
+	category = { military_theory }
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+	weight = 80
+	modifier = { ship_weapon_range_mult = 0.3 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_b2 = {
+	icon = tech_GFnyto_war_theory_b2
+	cost = 30000
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_GFnyto_war_theory_b1" }
+	weight = 75
+	modifier = { ship_weapon_damage = 0.1 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_b3 = {
+	icon = tech_GFnyto_war_theory_b3
+	cost = 50000
+	area = society
+	tier = 3
+	is_rare = yes
+	category = { military_theory }
+	prerequisites = { "tech_GFnyto_war_theory_b2" }
+	weight = 5
+	modifier = { ship_fire_rate_mult = 0.05 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_c1 = {
+	icon = tech_GFnyto_war_theory_c1
+	cost = 10000
+	area = society
+	tier = 1
+	category = { military_theory }
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+	weight = 5
+	modifier = { ship_speed_mult = 0.1 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_c2 = {
+	icon = tech_GFnyto_war_theory_c2
+	cost = 30000
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_GFnyto_war_theory_c1" }
+	weight = 5
+	modifier = { ship_shield_hardening_add = 0.05 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_c3 = {
+	icon = tech_GFnyto_war_theory_c3
+	cost = 50000
+	area = society
+	tier = 5
+	is_rare = yes
+	category = { military_theory }
+	prerequisites = { "tech_GFnyto_war_theory_c2" }
+	weight = 5
+	modifier = { ship_hull_mult = 0.05 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_d3 = {
+	icon = tech_GFnyto_war_theory_d3
+	cost = 50000
+	area = society
+	tier = 5
+	is_rare = yes
+	category = { military_theory }
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_2" "tech_GFnyto_war_theory_c3" }
+	weight = 5
+	modifier = { ship_hull_regen_add_perc = 1 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_e2 = {
+	icon = tech_GFnyto_war_theory_e2
+	cost = 30000
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_GFnyto_war_theory_b3" }
+	weight = 5
+	modifier = { ship_disengage_chance_mult = 1 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}
+
+tech_GFnyto_war_theory_e3 = {
+	icon = tech_GFnyto_war_theory_e3
+	cost = 50000
+	area = society
+	tier = 4
+	is_rare = yes
+	category = { military_theory }
+	prerequisites = { "tech_GFnyto_war_theory_e2" }
+	weight = 85
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 1
+		weapon_type_strike_craft_weapon_fire_rate_mult = 1
+	}
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 5 }
+}

@@ -1,0 +1,13 @@
+tech_GF_nyto_collapse_stability_bomb = {
+	icon = tech_GF_nyto_collapse_stability
+	cost = 4000
+	area = society
+	tier = 3
+	is_rare = yes
+	category = { military_theory }
+	prerequisites = { "tech_GF_nyto_collapse_stability" }
+	weight = 80
+	modifier = { planet_jobs_GF_nyto_collapse_liquid_produces_mult = 1 }
+	potential = { is_nyto_country = yes }
+	ai_weight = { weight = 100 }
+}

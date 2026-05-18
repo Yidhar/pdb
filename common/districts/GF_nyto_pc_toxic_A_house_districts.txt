@@ -112,7 +112,8 @@ district_GFnyto_pc_Epiphyllum = {
 	show_on_uncolonized = {
 		exists = owner
 		owner_main_species = {
-			has_trait = trait_GFnyto_tanhua
+			# TODO: 缺失的 trait_GFnyto_tanhua 尚未在当前工程中恢复，先禁用该入口条件避免 4.3 校验报错
+			always = no
 		}
 		NOT = {
 			is_planet_class = pc_GFnytp_habitis
@@ -121,7 +122,8 @@ district_GFnyto_pc_Epiphyllum = {
 	potential = {
 		exists = owner
 		owner_main_species = {
-			has_trait = trait_GFnyto_tanhua
+			# TODO: 缺失的 trait_GFnyto_tanhua 尚未在当前工程中恢复，先禁用该入口条件避免 4.3 校验报错
+			always = no
 		}
 	}
 	conversion_ratio = 1

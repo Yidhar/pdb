@@ -1,0 +1,21 @@
+﻿l_english:
+ ### GF Nyto Espionage Assets ###
+ GF_nyto_asset_bureaucrat:0 "Replaced Bureaucrats"
+ GF_nyto_asset_bureaucrat_desc:0 "The once incorruptible bureaucrat no longer serves their original self."
+ GF_nyto_asset_clerk:0 "Replaced Clerks"
+ GF_nyto_asset_clerk_desc:0 "A once modest and warm household now exists only as a memory."
+ GF_nyto_asset_economist:0 "Replaced Economists"
+ GF_nyto_asset_economist_desc:0 "Embedded economic specialists quietly reshape the target's commercial order."
+ GF_nyto_asset_scientist:0 "Replaced Scientists"
+ GF_nyto_asset_scientist_desc:0 "Compromised researchers provide a steady stream of internal data."
+ GF_nyto_asset_officer:0 "Replaced Officers"
+ GF_nyto_asset_officer_desc:0 "Subverted officers can redirect doctrine, logistics, and command priorities."
+ ### GF Nyto Espionage Operations ###
+ operation_nyto_pop:0 "Population Replacement"
+ operation_nyto_pop_desc:0 "By replacing key individuals and quietly planting infiltrators, we can seed catastrophe deep within the target empire. Even senior officials are not beyond our reach."
+ operation_nyto_pop2:0 "Incite the Masses"
+ operation_nyto_pop2_desc:0 "Through our hidden agents within the target empire, we can organize demonstrations, riots, or wider social unrest."
+ operation_nyto_leader:0 "Leader Subversion"
+ operation_nyto_leader_desc:0 "A compromised leader can become the perfect knife hidden within an enemy command structure."
+ ### GF Nyto Operation Fix Tooltips ###
+ GF_nyto_operation.063.tooltip:0 "大量人口被肃清"

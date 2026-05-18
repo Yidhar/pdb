@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "s02g_mesh"
+		file = "gfx/models/ships/TEST/s02g/s02g.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "S_02Cruiser_mod_3G1Shape"
+			index = 0
+			texture_diffuse = "s02d.dds"
+			texture_normal = "s02n.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

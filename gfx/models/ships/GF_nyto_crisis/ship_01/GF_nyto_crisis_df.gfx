@@ -1,0 +1,14 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_crisis_df_mesh"
+		file = "gfx/models/ships/GF_nyto_crisis/ship_01/GF_nyto_crisis_df.mesh"
+
+		meshsettings = {
+			name = "S_02dreadnought_mod_2GShape"
+			index = 0
+			texture_diffuse = "GF_nyto_crisis_df_d.dds"
+			texture_specular = "GF_nyto_crisis_df_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,3 @@
+GF_nyto_concept_Electronic = {
+    icon = "gfx/interface/icons/ship_parts/GF_nyto_Electronic_Warfare.dds"
+}

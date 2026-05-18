@@ -1,0 +1,27 @@
+﻿l_english:
+ ### Defense Decisions ###
+ decision_pc_GF_nyto_embers_gloomy_project:0 "Bloomed Awakening"
+ decision_pc_GF_nyto_embers_gloomy_project_effects:1 "Construct a Collapse Reactor framework around a §YDimmened Ashes World§!. Every upgrade to the collapse reactor will add planet size, and a chance to choose a new type of district."
+ decision_pc_GF_nyto_embers_gloomy_project_desc:1 "The huge station above the planet will turn the entire planet into a Collapse Reactor."
+ decision_GFnyto_planetary_defense:0 "Planetary Orbital Defense"
+ decision_GFnyto_planetary_defense_effects:1 "Adds Planetary Orbital Defense system and Planetary Surface defense system."
+ decision_GFnyto_planetary_defense_desc:1 "Enemy Fleets parking on the orbit of this planet will continuously take damage."
+ decision_GFnyto_yaosai:0 "Project: Fortification"
+ decision_GFnyto_yaosai_desc:0 "Construct a Permanent Steel Fortress Planet"
+ decision_GFnyto_yaosai_desc1:0 "By decision will allow construction of Permanent Fortresses, making our cities Steel Strongholds."
+ ### Legacy Ascension Perks ###
+ ap_GF_nyto_resurrection:0 "§YResurrection§!"
+ ap_GF_nyto_resurrection_desc:0 "§YThe horn sounds, the dead stand tall complete, what's corrupted is now restored, what's dead will be immortal.§!"
+ ap_GF_nyto_conquer_hell:0 "§RConquer Hell§!"
+ ap_GF_nyto_conquer_hell_desc:0 "§RI witnessed fearsome events more supernatural than war itself, the clues currently pursuing may guide me towards the source of all this, I must invest more effort.§!"
+ ap_GF_nyto_noussphere:0 "§YNoussphere§!"
+ ap_GF_nyto_noussphere_desc:0 "What's the price of freedom, commander?"
+ ### GF Nyto Legacy Common ###
+ bombardment_gfnyto_collapse_liquid:0 "Collapse Fluid Orbital Projection"
+ bombardment_gfnyto_collapse_liquid_desc:0 "Unlocks a new orbital bombardment stance that can reduce the target world to dimmed ashes."
+ triggered_GFnyto_disaster:0 "Devil"
+ personality_GF_nyto_warrior:0 "State of War"
+ personality_GF_nyto_warrior_desc:0 "All for Paradeus"
+ ### GF Nyto Crisis Country Type ###
+ starbase_revelation1:0 "Revelation"
+ starbase_revelation1_plural:0 "Revelation Battlestations"

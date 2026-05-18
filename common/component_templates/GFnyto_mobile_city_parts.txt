@@ -1,0 +1,173 @@
+# Migrated from oldversion with 4.3-safe structure and existing pdb resources.
+weapon_component_template = {
+	key = "GF_nyto_mobile_city_energy_L"
+	size = large
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = -300
+	modifier = { ship_shield_add = 1400 }
+	component_set = "GF_nyto_mobile_city_energy"
+	damage = {
+		min = 0
+		max = 0
+	}
+	resources = {
+		category = planet_technician
+		cost = {
+			minerals = 1000
+			alloys = 500
+		}
+		upkeep = {
+			food = 100
+			GF_nyto_collapse_fluid = 200
+		}
+		produces = { energy = 200 }
+	}
+	prerequisites = { "tech_GF_nyto_mobile_city_1" }
+	size_restriction = { GFnyto_mobile_city }
+}
+
+weapon_component_template = {
+	key = "GF_nyto_mobile_city_minerals_L"
+	size = large
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+	component_set = "GF_nyto_mobile_city_minerals"
+	damage = {
+		min = 0
+		max = 0
+	}
+	resources = {
+		category = planet_miners
+		cost = {
+			minerals = 1000
+			alloys = 500
+		}
+		upkeep = {
+			food = 100
+			GF_nyto_collapse_fluid = 200
+		}
+		produces = { minerals = 200 }
+	}
+	prerequisites = { "tech_GF_nyto_mobile_city_1" }
+	size_restriction = { GFnyto_mobile_city }
+}
+
+weapon_component_template = {
+	key = "GF_nyto_mobile_city_food_L"
+	size = large
+	icon = "GFX_ship_part_shield_5"
+	icon_frame = 1
+	power = -300
+	modifier = { ship_hull_add = 1400 }
+	component_set = "GF_nyto_mobile_city_food"
+	damage = {
+		min = 0
+		max = 0
+	}
+	resources = {
+		category = planet_farmers
+		cost = {
+			minerals = 1000
+			alloys = 500
+		}
+		upkeep = {
+			food = 100
+			GF_nyto_collapse_fluid = 200
+		}
+		produces = { food = 360 }
+	}
+	prerequisites = { "tech_GF_nyto_mobile_city_1" }
+	size_restriction = { GFnyto_mobile_city }
+}
+
+weapon_component_template = {
+	key = "GF_nyto_mobile_city_alloys_L"
+	size = large
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+	power = -300
+	modifier = { ship_hull_add = 1400 }
+	component_set = "GF_nyto_mobile_city_alloys"
+	damage = {
+		min = 0
+		max = 0
+	}
+	resources = {
+		category = planet_metallurgists
+		cost = {
+			minerals = 2000
+			rare_crystals = 10
+		}
+		upkeep = {
+			food = 100
+			consumer_goods = 20
+			GF_nyto_collapse_fluid = 200
+		}
+		produces = { alloys = 100 }
+	}
+	prerequisites = { "tech_GF_nyto_mobile_city_1" }
+	size_restriction = { GFnyto_mobile_city }
+}
+
+weapon_component_template = {
+	key = "GF_nyto_mobile_city_consumer_goods_L"
+	size = large
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = -300
+	modifier = { ship_hull_add = 1400 }
+	component_set = "GF_nyto_mobile_city_consumer_goods"
+	damage = {
+		min = 0
+		max = 0
+	}
+	resources = {
+		category = planet_artisans
+		cost = {
+			minerals = 2000
+			rare_crystals = 10
+		}
+		upkeep = {
+			food = 100
+			minerals = 100
+			GF_nyto_collapse_fluid = 200
+		}
+		produces = { consumer_goods = 100 }
+	}
+	prerequisites = { "tech_GF_nyto_mobile_city_1" }
+	size_restriction = { GFnyto_mobile_city }
+}
+
+weapon_component_template = {
+	key = "GF_nyto_mobile_city_research_L"
+	size = large
+	icon = "GFX_ship_part_sensor_4"
+	icon_frame = 1
+	power = -300
+	modifier = { ship_hull_add = 1400 }
+	component_set = "GF_nyto_mobile_city_research"
+	damage = {
+		min = 0
+		max = 0
+	}
+	resources = {
+		category = planet_researchers
+		cost = {
+			minerals = 2000
+			rare_crystals = 10
+		}
+		upkeep = {
+			food = 100
+			consumer_goods = 100
+			GF_nyto_collapse_fluid = 200
+		}
+		produces = {
+			physics_research = 40
+			society_research = 40
+			engineering_research = 40
+		}
+	}
+	prerequisites = { "tech_GF_nyto_mobile_city_1" }
+	size_restriction = { GFnyto_mobile_city }
+}

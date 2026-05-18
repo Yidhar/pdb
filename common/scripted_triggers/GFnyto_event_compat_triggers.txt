@@ -1,0 +1,2 @@
+# 4.3 compatibility scripted triggers for legacy event references.
+# Reserved for event-scope helpers. External planet_class compatibility IDs are intentionally not redefined here.

@@ -1,0 +1,82 @@
+﻿l_english:
+ ### Ship sizes and sections ###
+ GFnyto_Command_ship:0 "Command Ship"
+ GFnyto_Command_ship_plural:0 "Command Ships"
+ GF_nyto_super_battelship:0 "Super Battleship"
+ GF_nyto_super_battelship_plural:0 "Super Battleships"
+ GFnyto_stions_fortress:0 "Eternal Fortress"
+ GFnyto_stions_fortress_plural:0 "Eternal Fortresses"
+ GF_nyto_skill_ship:0 "Skill Carrier"
+ GF_nyto_skill_ship_plural:0 "Skill Carriers"
+ GF_nyto_skill_ship_noftl:0 "Skill Carrier"
+ GF_nyto_skill_ship_noftl_plural:0 "Skill Carriers"
+ GF_nyto_skill_ship_template:0 "Skill Carrier Section"
+ tech_template_stions_fortress_desc:0 "Unlocks the orbital fortress hull design."
+ ### Ship Sizes and Sections ###
+ GFnyto_mather_ship:0 "Mother Ship"
+ GFnyto_mather_ship_plural:0 "Mother Ships"
+ GFnyto_mather_ship_core:0 "Mothership Core"
+ GFnyto_H_titan_aircraft_bow:0 "Carrier Titan Bow"
+ GFnyto_H_titan_aircraft_mid:0 "Carrier Titan Core"
+ GFnyto_H_titan_aircraft_stern:0 "Carrier Titan Stern"
+ GF_Nyto_mather_ship:0 "Nyto Mothership"
+ GF_nyto_skill_ship_2:0 "Nyto Skill Carrier II"
+
+ GFnyto_mobile_city:0 "Mobile City"
+
+ GFnyto_mobile_city_plural:0 "Mobile Cities"
+
+ GFnyto_mobile_city_cap:0 "$GFnyto_mobile_city$"
+
+ GFnyto_mobile_city_desc:0 "A vast mobile city-ship serving as a strategic fortress and carrier for Paradeus operations."
+
+ SHIP_GRAPHICS_GFNYTO_MOBILE_CITY_DESC:0 "$GFnyto_mobile_city_desc$"
+ GFnyto_shiled_ship:0 "Shield Ship"
+ GFnyto_shiled_ship_plural:0 "Shield Ships"
+ GFnyto_shiled_ship_cap:0 "$GFnyto_shiled_ship$"
+ GFnyto_shiled_ship_desc:0 "A dedicated shield vessel built to protect the fleet under the heaviest fire."
+ SHIP_GRAPHICS_GFNYTO_SHILED_SHIP_DESC:0 "$GFnyto_shiled_ship_desc$"
+ GFnyto_mather_ship_cap:0 "$GFnyto_mather_ship$"
+ GFnyto_mather_ship_desc:0 "A massive command carrier designed to project Paradeus power across entire star systems."
+ SHIP_GRAPHICS_GFNYTO_MATHER_SHIP_DESC:0 "$GFnyto_mather_ship_desc$"
+
+ GFnyto_Command_ship_cap:0 "$GFnyto_Command_ship$"
+
+ GFnyto_Command_ship_desc:0 "A flagship-grade command vessel coordinating Paradeus battle groups."
+
+ SHIP_GRAPHICS_GFNYTO_COMMAND_SHIP_DESC:0 "$GFnyto_Command_ship_desc$"
+ GF_nyto_super_battelship_cap:0 "$GF_nyto_super_battelship$"
+ GF_nyto_super_battelship_desc:0 "An oversized battleship platform carrying concentrated heavy weapon arrays."
+ SHIP_GRAPHICS_GF_NYTO_SUPER_BATTELSHIP_DESC:0 "$GF_nyto_super_battelship_desc$"
+ GFnyto_stions_fortress_cap:0 "$GFnyto_stions_fortress$"
+ GFnyto_stions_fortress_desc:0 "A fortress ship built as a mobile bastion for Nyto defensive doctrine."
+ SHIP_GRAPHICS_GFNYTO_STIONS_FORTRESS_DESC:0 "$GFnyto_stions_fortress_desc$"
+
+ GF_nyto_skill_ship_cap:0 "$GF_nyto_skill_ship$"
+
+ GF_nyto_skill_ship_desc:0 "A support vessel used to host special tactical systems and fleet abilities."
+
+ SHIP_GRAPHICS_GF_NYTO_SKILL_SHIP_DESC:0 "$GF_nyto_skill_ship_desc$"
+ GF_nyto_skill_ship_noftl_cap:0 "$GF_nyto_skill_ship_noftl$"
+ GF_nyto_skill_ship_noftl_desc:0 "A support vessel used to host special tactical systems. This variant has no FTL drive."
+ SHIP_GRAPHICS_GF_NYTO_SKILL_SHIP_NOFTL_DESC:0 "$GF_nyto_skill_ship_noftl_desc$"
+ starbase_revelation1:0 "Revelation"
+ starbase_revelation1_plural:0 "Revelations"
+ starbase_revelation1_cap:0 "$starbase_revelation1$"
+ starbase_revelation1_desc:0 "A fortified Revelation battle station deployed as a crisis defensive platform."
+ SHIP_GRAPHICS_STARBASE_REVELATION1_DESC:0 "$starbase_revelation1_desc$"
+
+ battleship_revelation:0 "Revelation Battleship"
+
+ battleship_revelation_plural:0 "Revelation Battleships"
+
+ battleship_revelation_cap:0 "$battleship_revelation$"
+
+ battleship_revelation_desc:0 "A Revelation-pattern battleship configured for crisis warfare."
+
+ SHIP_GRAPHICS_BATTLESHIP_REVELATION_DESC:0 "$battleship_revelation_desc$"
+ Aberrant_Core:0 "Aberrant Core"
+ Aberrant_Core_plural:0 "Aberrant Cores"
+ Aberrant_Core_cap:0 "$Aberrant_Core$"
+ Aberrant_Core_desc:0 "A core vessel carrying anomalous crisis systems and heavy weapon interfaces."
+ SHIP_GRAPHICS_ABERRANT_CORE_DESC:0 "$Aberrant_Core_desc$"

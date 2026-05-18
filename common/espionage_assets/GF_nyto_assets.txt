@@ -1,0 +1,102 @@
+@category_mod = 4
+@asset_spy_network_max = 5
+
+# 被替代的官僚
+GF_nyto_asset_bureaucrat = {
+    appearance = {
+        name_generation_method = random_person
+        portrait_generation_method = random_person
+    }
+    passive = {
+        spy_network_levels_add = @asset_spy_network_max
+        spy_network_daily_value_mult = 0.15
+        ADD_BASE_COUNTRY_INTEL = 1
+    }
+    active = {
+        op_cat_subterfuge_skill_add = @category_mod
+        op_cat_government_skill_add = @category_mod
+    }
+    possible = { }
+    potential = { }
+    categories = { op_cat_subterfuge op_cat_government }
+}
+
+# 被替代的职员
+GF_nyto_asset_clerk = {
+    appearance = {
+        name_generation_method = random_person
+        portrait_generation_method = random_person
+    }
+    passive = {
+        spy_network_levels_add = @asset_spy_network_max
+        spy_network_daily_value_mult = 0.15
+        ADD_BASE_COUNTRY_INTEL = 1
+    }
+    active = {
+        op_cat_subterfuge_skill_add = @category_mod
+        op_cat_diplomacy_skill_add = @category_mod
+    }
+    possible = { }
+    potential = { }
+    categories = { op_cat_subterfuge op_cat_diplomacy }
+}
+
+# 经济学家
+GF_nyto_asset_economist = {
+    appearance = {
+        name_generation_method = random_person
+        portrait_generation_method = random_person
+    }
+    passive = {
+        spy_network_levels_add = @asset_spy_network_max
+        spy_network_daily_value_mult = 0.15
+        ADD_BASE_COUNTRY_INTEL = 1
+    }
+    active = {
+        op_cat_subterfuge_skill_add = @category_mod
+        op_cat_economy_skill_add = @category_mod
+    }
+    possible = { }
+    potential = { }
+    categories = { op_cat_subterfuge op_cat_economy }
+}
+
+# 科学家
+GF_nyto_asset_scientist = {
+    appearance = {
+        name_generation_method = random_person
+        portrait_generation_method = random_person
+    }
+    passive = {
+        spy_network_levels_add = @asset_spy_network_max
+        spy_network_daily_value_mult = 0.15
+        ADD_BASE_COUNTRY_INTEL = 1
+    }
+    active = {
+        op_cat_subterfuge_skill_add = @category_mod
+        op_cat_technology_skill_add = @category_mod
+    }
+    possible = { }
+    potential = { }
+    categories = { op_cat_subterfuge op_cat_technology }
+}
+
+# 军官
+GF_nyto_asset_officer = {
+    appearance = {
+        name_generation_method = random_person
+        portrait_generation_method = random_person
+    }
+    passive = {
+        spy_network_levels_add = @asset_spy_network_max
+        spy_network_daily_value_mult = 0.15
+        ADD_BASE_COUNTRY_INTEL = 1
+    }
+    active = {
+        op_cat_subterfuge_skill_add = @category_mod
+        op_cat_military_skill_add = @category_mod
+    }
+    possible = { }
+    potential = { }
+    categories = { op_cat_subterfuge op_cat_military }
+}

@@ -1,0 +1,28 @@
+# 4.3 compatibility helper effects for event migration.
+# Minimal dependency补齐：只提供 events/ 中旧拼写调用需要的舰队生成入口，不改玩法主链。
+
+creat_battleship_revelation_fleet = {
+	optimize_memory
+	if = {
+		limit = {
+			exists = event_target:This_is_GF_nyto_crisis_country
+		}
+		event_target:This_is_GF_nyto_crisis_country = {
+			random_system = {
+				limit = { exists = this }
+				create_fleet = {
+					name = random
+					settings = { spawn_debris = no }
+					effect = {
+						set_owner = event_target:This_is_GF_nyto_crisis_country
+						create_ship = {
+							name = random
+							design = battleship_revelation
+						}
+						set_location = prev
+					}
+				}
+			}
+		}
+	}
+}

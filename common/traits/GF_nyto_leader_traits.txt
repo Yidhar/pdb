@@ -17,7 +17,7 @@ leader_trait_GF_nyto_epiphany = {
 	cost = 0
 	randomized = no
 	icon = "gfx/interface/icons/traits/nyto/trait_gf_nyto_epiphany.png"
-	immortal = yes
+	immortal_leaders = yes
 	leader_class = all
 	leader_potential_add = {
 		always = no
@@ -56,7 +56,6 @@ leader_trait_GF_nyto_mind_map_corruption = {
 		always = no
 	}
 	modifier = {
-		leader_upkeep_mult = 0.15
 		leader_trait_selection_options_add = -1
 	}
 	notify_on_gained = no

@@ -1,0 +1,54 @@
+GF_nyto_eild_army_1 = {
+	defensive = yes
+	damage = 1.0
+	morale_damage = 1.0
+	health = 1.0
+	collateral_damage = 0
+	has_morale = no
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	potential = {
+		always = no
+	}
+}
+
+GF_nyto_eild_army_2 = {
+	defensive = yes
+	damage = 3.0
+	morale_damage = 1.5
+	health = 3.0
+	collateral_damage = 0
+	has_morale = no
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	potential = {
+		always = no
+	}
+}
+
+GF_nyto_eild_army_3 = {
+	defensive = yes
+	damage = 6
+	morale_damage = 1.0
+	health = 10
+	collateral_damage = 0
+	has_morale = no
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	occupation = yes
+	potential = {
+		always = no
+	}
+}
+
+GF_nyto_eild_army_4 = {
+	defensive = no
+	damage = 30
+	morale = 10
+	health = 60
+	has_morale = no
+	icon = GFX_army_type_xenomorph
+	potential = {
+		always = no
+	}
+}

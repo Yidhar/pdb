@@ -1,0 +1,179 @@
+#bow
+ship_section_template={
+        key="Aberrant_Core_mid"							#ID,不能重复
+        ship_size=Aberrant_Core								#所属类别
+        fits_on_slot=bow  								#是哪个区段？
+        should_draw_components= no
+        entity =  "GF_nyto_crisis_df_b_entity"		#区段模型
+        icon="GFX_ship_part_core_mid"					#图标
+        icon_frame=1
+        component_slot={								#武器位
+            name = "T01"						#名称,单个区段内不能相同
+            template = "invisible_titanic_fixed"	#槽位所述
+            locatorname = "gun1"					#位点名称,就是模型的武器发射位置
+        }
+        component_slot={								#武器位
+            name = "T02"						#名称,单个区段内不能相同
+            template = "invisible_titanic_fixed"	#槽位所述
+            locatorname = "gun1"					#位点名称,就是模型的武器发射位置
+        }
+        component_slot={								#武器位
+            name = "T03"						#名称,单个区段内不能相同
+            template = "invisible_titanic_fixed"	#槽位所述
+            locatorname = "gun1"					#位点名称,就是模型的武器发射位置
+        }
+        component_slot={								#武器位
+            name = "T04"						#名称,单个区段内不能相同
+            template = "invisible_titanic_fixed"	#槽位所述
+            locatorname = "gun1"					#位点名称,就是模型的武器发射位置
+        }
+        component_slot = {
+            name = "X01"
+            template = invisible_extra_large_fixed
+            locatorname = "gun2"
+        }
+        component_slot = {
+            name = "X02"
+            template = invisible_extra_large_fixed
+            locatorname = "gun3"
+        }
+        component_slot = {
+            name = "X04"
+            template = invisible_extra_large_fixed
+            locatorname = "gun4"
+        }
+        component_slot = {
+            name = "X05"
+            template = invisible_extra_large_fixed
+            locatorname = "gun5"
+        }
+        component_slot = {
+            name = "X06"
+            template = invisible_extra_large_fixed
+            locatorname = "gun6"
+        }
+        component_slot = {
+            name = "X07"
+            template = invisible_extra_large_fixed
+            locatorname = "gun7"
+        }
+        component_slot = {
+            name = "X08"
+            template = invisible_extra_large_fixed
+            locatorname = "gun8"
+        }
+        component_slot = {
+            name = "X09"
+            template = invisible_extra_large_fixed
+            locatorname = "gun9"
+        }
+        component_slot = {
+            name = "X10"
+            template = invisible_extra_large_fixed
+            locatorname = "gun10"
+        }
+        component_slot = {
+            name = "X11"
+            template = invisible_extra_large_fixed
+            locatorname = "gun11"
+        }
+        component_slot = {
+            name = "X12"
+            template = invisible_extra_large_fixed
+            locatorname = "gun12"
+        }
+    	small_utility_slots = 4
+        aux_utility_slots = 2
+
+        ai_weight = {weight=1}
+}
+#core
+ship_section_template={
+    key="Aberrant_Core_mid"							#ID,不能重复
+    ship_size=Aberrant_Core								#所属类别
+    fits_on_slot=core  								#是哪个区段？
+    should_draw_components= no
+    entity =  "GF_nyto_crisis_df_loc_entity"		#区段模型
+    icon="GFX_ship_part_core_mid"					#图标
+    icon_frame=1
+    component_slot={								#武器位
+        name = "T01"						#名称,单个区段内不能相同
+        template = "invisible_titanic_fixed"	#槽位所述
+        locatorname = "gun1"					#位点名称,就是模型的武器发射位置
+    }
+    component_slot={								#武器位
+        name = "T02"						#名称,单个区段内不能相同
+        template = "invisible_titanic_fixed"	#槽位所述
+        locatorname = "gun1"					#位点名称,就是模型的武器发射位置
+    }
+    component_slot={								#武器位
+        name = "T03"						#名称,单个区段内不能相同
+        template = "invisible_titanic_fixed"	#槽位所述
+        locatorname = "gun1"					#位点名称,就是模型的武器发射位置
+    }
+    component_slot={								#武器位
+        name = "T04"						#名称,单个区段内不能相同
+        template = "invisible_titanic_fixed"	#槽位所述
+        locatorname = "gun1"					#位点名称,就是模型的武器发射位置
+    }
+    component_slot = {
+        name = "X01"
+        template = invisible_extra_large_fixed
+        locatorname = "gun2"
+    }
+    component_slot = {
+        name = "X02"
+        template = invisible_extra_large_fixed
+        locatorname = "gun3"
+    }
+    component_slot = {
+        name = "X04"
+        template = invisible_extra_large_fixed
+        locatorname = "gun4"
+    }
+    component_slot = {
+        name = "X05"
+        template = invisible_extra_large_fixed
+        locatorname = "gun5"
+    }
+    component_slot = {
+        name = "X06"
+        template = invisible_extra_large_fixed
+        locatorname = "gun6"
+    }
+    component_slot = {
+        name = "X07"
+        template = invisible_extra_large_fixed
+        locatorname = "gun7"
+    }
+    component_slot = {
+        name = "X08"
+        template = invisible_extra_large_fixed
+        locatorname = "gun8"
+    }
+    component_slot = {
+        name = "X09"
+        template = invisible_extra_large_fixed
+        locatorname = "gun9"
+    }
+    component_slot = {
+        name = "X10"
+        template = invisible_extra_large_fixed
+        locatorname = "gun10"
+    }
+    component_slot = {
+        name = "X11"
+        template = invisible_extra_large_fixed
+        locatorname = "gun11"
+    }
+    component_slot = {
+        name = "X12"
+        template = invisible_extra_large_fixed
+        locatorname = "gun12"
+    }
+    small_utility_slots = 4
+    aux_utility_slots = 2
+
+    ai_weight = {weight=1}
+}
+#stren

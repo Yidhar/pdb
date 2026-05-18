@@ -1,0 +1,18 @@
+triggered_GFnyto_disaster = {
+	trigger = {
+		OR = {
+			is_country_type = default
+			is_country_type = awakened_fallen_empire
+			is_country_type = fallen_empire
+		}
+		FROM = {
+			OR = {
+				has_origin = origin_GF_nyto_the_beginning_of_exile
+				has_civic = civic_GF_nyto_heart_of_suffering
+			}
+		}
+	}
+	opinion = {
+		base = -1000
+	}
+}

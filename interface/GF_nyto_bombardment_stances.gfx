@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_planet_modifier_ground_support_gfnyto_collapse_liquid"
+		texturefile = "gfx/interface/fleet_view/fleet_task_ground_support_indiscriminate_action.dds"
+	}
+	spriteType = {
+		name = "GFX_fleet_order_button_ground_support_gfnyto_collapse_liquid"
+		texturefile = "gfx/interface/fleet_view/fleet_task_ground_support_indiscriminate_action.dds"
+	}
+	spriteType = {
+		name = "GFX_fleet_order_button_ground_support_gfnyto_collapse_liquid_selected"
+		texturefile = "gfx/interface/fleet_view/fleet_task_ground_support_indiscriminate_selected.dds"
+	}
+}

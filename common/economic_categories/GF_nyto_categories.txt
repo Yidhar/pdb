@@ -1,0 +1,32 @@
+entropy = {
+	use_for_ai_budget = no
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	parent = country
+	modifier_category = ship
+}
+
+planet_buildings = {
+	parent = planet_structures
+	generate_mult_modifiers = {
+		cost
+		upkeep
+	}
+	generate_add_modifiers = {
+		upkeep
+		cost
+	}
+	modifier_category = planet
+}
+
+planet_districts = {
+	parent = planet_structures
+	generate_mult_modifiers = {
+		produces
+		cost
+		upkeep
+	}
+	modifier_category = planet
+}

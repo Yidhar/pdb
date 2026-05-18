@@ -1,0 +1,636 @@
+namespace = GFnytocrisis
+###加分项
+#毁灭国家
+country_event = {
+	id = GFnytocrisis.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+	}
+	immediate = {
+		from ={
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 500
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 500
+			}
+			add_resource = {
+				menace = 300
+			}
+		}
+	}
+}
+#占领行星
+planet_event = {
+	id = GFnytocrisis.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from ={
+			has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+	}
+	immediate = {
+		from = {
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 100
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 100
+			}
+			add_resource = {
+				menace = 1000
+			}
+		}
+	}
+}
+#摧毁舰船
+country_event = {
+	id = GFnytocrisis.4
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {this = {has_ascension_perk = ap_GF_nyto_conquer_hell}}
+	immediate = {
+		this = {
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 5
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 5
+			}
+			add_resource = {
+				menace = 5
+			}
+		}
+	}
+}
+#摧毁行星
+planet_event = {
+	id = GFnytocrisis.5
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		this = {
+			owner = {
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 500
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 500
+			}
+		}
+	}
+}
+planet_event = {
+	id = GFnytocrisis.6
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+		from = {
+			owner = {
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = -200
+			}
+			subtract_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 200
+			}
+		}
+	}
+}
+#每月结算1
+country_event = {
+	id = GFnytocrisis.8
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {owner = {has_ascension_perk = ap_GF_nyto_conquer_hell}}
+	immediate = {
+		add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = -10				
+			}
+			subtract_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 10
+			}
+			hidden_effect = {country_event = {id = GFnytocrisis.9}}
+		}
+}
+#自鲨
+country_event = {
+	id = GFnytocrisis.9
+	title = "GFnytocrisis.4.name"
+	desc = "GFnytocrisis.4.desc"
+	picture = GFX_evt_GFnyto_bad_ending_1
+	show_sound = event_evolution_mastery
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		owner = {has_ascension_perk = ap_GF_nyto_conquer_hell}
+		check_variable = {
+			which = GFnyto_empire_maintenance
+			value < 0
+		}
+	}
+	option = {
+		name = GFnytocrisis.4.a
+		destroy_country = yes
+	}
+}
+
+#开幕
+country_event = {
+	id = GFnytocrisis.101
+	title = "GFnytocrisis.101.name"
+	desc = "GFnytocrisis.101.desc"
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				count_country = {
+					limit = {
+						is_ai = yes
+						is_country_type = default
+					}
+					count > 4
+				}
+			}
+			#多国家路线
+			country_event = {
+				id = GFnytocrisis.10
+				days = 7
+			}
+		}
+		else = {
+			country_event = {
+				id =GFnytocrisis.20
+				days = 7
+			}
+		}
+	}
+}
+
+
+
+#战争 随机开启战争 每有一个国家增加1计数每有一场战争增加1 每计数提供100%增幅和1日无敌 每次次舰队刷出数量+1
+country_event = {
+	id = GFnytocrisis.10
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		create_country = {
+			name = "GFnytocrisis_country_name"
+			type = Revelation
+			auto_delete = no
+			day_zero_contact = no
+			flag = {
+				icon={
+					category="GFnyto"
+					file="flag_GFnyto_crisis_flags.dds"
+				}
+				background={
+					category="backgrounds"
+					file="00_solid.dds"
+				}
+				colors={
+					"grey"
+					"black"
+					"black"
+					"null"
+				}
+			}
+
+			effect = {
+				export_trigger_value_to_variable = {
+					trigger = count_country
+					parameters = {
+						limit = {
+							is_ai = yes
+							is_country_type = default
+						}
+					}
+					variable = GF_nyto_crisis_goble_country_count
+				}
+				save_global_event_target_as = This_is_GF_nyto_crisis_country
+				set_faction_hostility ={
+					set_hostile = no
+					set_friendly = yes
+					set_neutral = no
+
+				}
+				#OPEN_BORDERS
+				set_hostile = root
+			}
+		}
+		random_playable_country = {
+			limit = {
+				exists = this
+				is_country_type = default
+				is_ai = yes
+			}
+			save_event_target_as = This_is_GF_nyto_crisis_country@this
+			random_playable_country = {
+				limit = {
+					exists = this
+					not = {
+						is_at_war_with = prev
+					}
+				}
+			}
+			#every_playable_country = {
+			#	limit = {
+			#		exists = this
+			#		is_country_type = default
+			#		is_ai = yes
+			#		not = { is_at_war_with = root }
+			#	}
+			#	save_event_target_as = This_is_GF_nyto_crisis_country@this
+			#	random_list = {
+			#		50 ={
+			#			join_war_on_side = { war = event_target:This_is_GF_nyto_crisis_country@this side = defenders }
+			#		}
+			#		50={ }
+			#	}
+			#}
+		}
+
+
+
+		every_playable_country = {
+			if = {
+				limit = { is_ai = yes }
+			}
+			#set_friendl
+			#创建混乱战场和初始舰队
+			while = {
+				count = event_target:This_is_GF_nyto_crisis_country.GF_nyto_crisis_goble_country_count
+				random_playable_country = {
+					declare_war ={
+						target = prev
+						attacker_war_goal = wg_declared_crisis
+						effect = {
+							prev = {
+								random_list = {
+									50 ={
+										join_war_on_side = { war = prev side = defenders }
+										if = { limit = { not = { is_country = root  } }
+											creat_battleship_revelation_fleet = yes
+										}
+									}
+									50 ={
+										join_war_on_side = { war = prev side = attackers  }
+										if = { limit = { not = { is_country = root } }
+											creat_battleship_revelation_fleet = yes
+										}
+									}
+								}
+							}
+
+						}
+					}
+				}
+				reroll_random = yes
+			}
+			add_modifier = {
+				modifier =GF_nyto_crisis_batte
+				multiplier = trigger:count_war
+				days = -1
+			}
+			event_target:This_is_GF_nyto_crisis_country={
+				change_variable = { which = pc_num value = 1 } #国家计数
+			}
+
+		}
+		event_target:This_is_GF_nyto_crisis_country={
+			add_modifier = {
+				modifier = GF_nyto_crisis_batte
+				multiplier = event_target:This_is_GF_nyto_crisis_country.pc_num
+				days = -1
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = GFnytocrisis.101
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = this
+		exists = event_target:This_is_GF_nyto_crisis_country@from
+	}
+}
+
+
+#开始时每存在一个国家多刷一支舰队 每次补充时 每存在一场战斗额外补充一支舰队 每发生一次战斗提高天数的电子站算力和
+system_event = {
+	id = GFnytocrisis.101
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		no_scope ={
+			every_playable_country = {
+				every_war = {
+					limit = {
+						attacker_war_exhaustion = wg_declared_crisis
+					}
+					event_target:This_is_GF_nyto_crisis_country={
+						change_variable = {
+							which = GF_nyto_crisis_war_num
+							value = 1
+						}
+					}
+				}
+
+			}
+		}
+		while = {
+			count = event_target:This_is_GF_nyto_crisis_country.GF_nyto_crisis_war_num
+			creat_battleship_revelation_fleet = yes
+		}
+		system_event = {
+			id = GFnytocrisis.101
+			days = 90
+		}
+	}
+}
+
+#被战争拿下的星球
+# Triggers country_event for the attacker upon defeat
+# This = country, attack leader
+# From = country, planet owner
+# FromFrom = planet
+#on_planet_defenders_los
+event = {
+	id = GFnytocrisis.102
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		or = {
+			is_country = event_target:This_is_GF_nyto_crisis_country
+			from ={
+				is_country = event_target:This_is_GF_nyto_crisis_country
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_country = event_target:This_is_GF_nyto_crisis_country
+			}
+			fromfrom ={
+				set_owner = event_target:This_is_GF_nyto_crisis_country
+			}
+			event_target:This_is_GF_nyto_crisis_country={
+				add_modifier = {
+					modifier = GF_nyto_crisis_default_country_buff
+					days = -1
+				}
+			}
+		}
+		if = {
+			limit = {
+				from ={
+					is_country = event_target:This_is_GF_nyto_crisis_country
+				}
+			}
+			fromfrom ={
+				set_owner = root.This
+			}
+			event_target:This_is_GF_nyto_crisis_country={
+				remove_modifier = GF_nyto_crisis_default_country_buff
+			}
+		}
+	}
+}
+
+#死亡 每任意死亡或损失获得加强
+
+#瘟疫 随存在时间殖民地瘟疫扩散
+
+#饥荒 大幅食物减产并在玩家食物赤字阶段获得无敌,解除无敌后赤字越大伤害越高
+
+
+
+#战争寻路
+#状态机  寻路中 已找到目标 移动中 无法移动到目标 轨道轰炸中
+
+fleet_event = {
+	id = GFnytocrisis.700
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = owner
+	}
+	immediate = {
+		queue_actions = {
+			repeat = {
+				effect = {
+					id = GF_nyto_crisis_country_1_defult_fleet.effect
+					if = {
+						limit = { count_system = {
+							limit = { check_variable = { which = GF_nyto_crisis_country_1_fleet_id value > 0 } }
+							count = all
+						} }
+						#初始化权重
+						every_system = {
+							clear_variable = GF_nyto_crisis_country_1_fleet_id
+						}
+					}
+					if = {
+						#无路径可用时跃迁
+						limit = {
+							has_fleet_flag = GF_nyto_crisis_fleet_find_path
+							any_system = {
+								or = {
+									AND = { exists = starbase starbase= { owner ={ is_hostile = root.owner }  } }
+									any_system_planet = { owner ={ is_hostile = root.owner}  }
+									any_fleet_in_system = { owner = { is_hostile = root.owner }  is_disabled = no }
+								}
+							}
+						}
+						random_system = {
+							limit = {
+								or = {
+									AND = { exists = starbase starbase = { owner = { is_hostile = root.owner } } }
+									any_system_planet = { owner = { is_hostile = root.owner } }
+									any_fleet_in_system = { owner = { is_hostile = root.owner }  is_disabled = no }
+								}
+							}
+							if = {
+								limit = {
+									or = {
+										AND = { exists = starbase starbase = { owner = { is_hostile = root.owner } } }
+										any_system_planet = { owner = { is_hostile = root.owner } }
+									}
+								}
+								root ={
+									set_location = {
+										target = prev
+										direction = out_system
+										distance = 3
+										angle = random
+									}
+								}
+							}
+							else_if = {
+								limit = {
+									any_fleet_in_system = {
+										owner = { is_hostile = root.owner }
+										is_disabled = no
+										is_ship_class != shipclass_starbase
+									}
+								}
+								root ={
+									set_location = {
+										target = prev
+										distance = 50
+										angle = random
+									}
+								}
+							}
+						}
+					}
+					else_if = {
+						#停止
+						limit = {
+							not = {
+								any_system = {
+									or = {
+										AND = { exists = starbase starbase= { owner ={ is_hostile = root.owner }  } }
+										any_system_planet = { owner ={ is_hostile = root.owner}  }
+										any_fleet_in_system = { owner = { is_hostile = root.owner }  is_disabled = no }
+									}
+								}
+							}
+						}
+						clear_orders = yes
+						clear_fleet_actions = this
+					}
+				}
+				find_closest_system = {
+					trigger = {
+						id =GF_nyto_crisis_country_1_fleet.find_find_player_colony
+						any_system_planet = { owner = { AND = { is_ai = no is_hostile = root.owner } } }
+						ROOT = { can_access_system = prev }
+						check_variable = {  which = GF_nyto_crisis_country_1_fleet_id value < 1}
+					}
+					found_system = {
+						#先打军工
+
+						#再打民生
+						#最后摧毁遗迹星系
+					}
+				}
+			}
+		}
+	}
+}
+#随机寻路系统
+
+#军方势力特殊单位  在固定星系部署火炮  将对周围星系添加flag  任何在该星系交战的舰队都会额外被火炮打击
+
+#指某
+
+#威廉
+
+#命运之轮
+
+#遗迹核心
+
+
+#辉耀核 遗迹国家直接创立
+country_event = {
+	id = GFnytocrisis.20
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		create_country = {
+			name = "GFnytocrisis_country_name"
+			type = Revelation
+			auto_delete = no
+			day_zero_contact = no
+			flag = {
+				icon={
+					category="GFnyto"
+					file="flag_GFnyto_crisis_flags.dds"
+				}
+				background={
+					category="backgrounds"
+					file="00_solid.dds"
+				}
+				colors={
+					"grey"
+					"black"
+					"black"
+					"null"
+				}
+			}
+
+			effect = {
+				export_trigger_value_to_variable = {
+					trigger = count_country
+					parameters = {
+						limit = {
+							is_ai = yes
+							is_country_type = default
+						}
+					}
+					variable = GF_nyto_crisis_goble_country_count
+				}
+				save_global_event_target_as = This_is_GF_nyto_crisis_country
+				set_faction_hostility ={
+					set_hostile = yes
+					set_friendly = no
+					set_neutral = no
+
+				}
+				#OPEN_BORDERS
+				set_hostile = root
+				random_system = {
+					star ={
+						set_owner = event_target:This_is_GF_nyto_crisis_country
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,316 @@
+defind_txt ={
+	name = GF_nyto_gla_event_name
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT 	value = 0 } }
+		localization_key = GF_nyto_TXT_NAME_01
+	}
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT value = 1 } }
+		localization_key = GF_nyto_TXT_NAME_02
+	}
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT value = 2 } }
+		localization_key = GF_nyto_TXT_NAME_03
+	}
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT value = 3 } }
+		localization_key = GF_nyto_TXT_NAME_04
+	}
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT value = 4 } }
+		localization_key = GF_nyto_TXT_NAME_05
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 5 } }
+		localization_key = GF_nyto_TXT_NAME_06
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 6 } }
+		localization_key = GF_nyto_TXT_NAME_07
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 7 } }
+		localization_key = GF_nyto_TXT_NAME_08
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 8 } }
+		localization_key = GF_nyto_TXT_NAME_09
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 9 } }
+		localization_key = GF_nyto_TXT_NAME_010
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 10 } }
+		localization_key = GF_nyto_TXT_NAME_011
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 11 } }
+		localization_key = GF_nyto_TXT_NAME_012
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 12 } }
+		localization_key = GF_nyto_TXT_NAME_013
+	}
+}
+defind_txt ={
+	name = GF_nyto_gla_event_faill
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 0
+			}
+		}
+		localization_key = GF_nyto_faill_01
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 1
+			}
+		}
+		localization_key = GF_nyto_faill_02
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 2
+			}
+		}
+		localization_key = GF_nyto_faill_03
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 3
+			}
+		}
+		localization_key = GF_nyto_faill_04
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 4
+			}
+		}
+		localization_key = GF_nyto_faill_05
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 5
+			}
+		}
+		localization_key = GF_nyto_faill_06
+	}
+	text = {
+		trigger = {			
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 6
+			}
+			has_country_flag = user_GF_nyto_opt01
+		}
+		localization_key = GF_nyto_faill_07_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 6
+			}
+			has_country_flag = user_GF_nyto_opt02
+		}
+		localization_key = GF_nyto_faill_07_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 6
+			}
+			has_country_flag = user_GF_nyto_opt03
+		}
+		localization_key = GF_nyto_faill_07_3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 6
+			}
+			has_country_flag = user_GF_nyto_opt04
+		}
+		localization_key = GF_nyto_faill_07_4
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 7
+			}
+		}
+		localization_key = GF_nyto_faill_08
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 8
+			}
+		}
+		localization_key = GF_nyto_faill_09
+	}
+}
+#4个按钮
+defind_txt={
+	name = GF_nyto_opt_01
+	text = {
+		trigger = {
+			has_country_flag = GF_nyto_opt_01_01
+		}
+		localization_key = GF_nyto_opt_01_01
+	}
+}
+defind_txt={
+	name = GF_nyto_opt_02
+	text = {
+		trigger = {
+			has_country_flag = GF_nyto_opt_02_01
+		}
+		localization_key = GF_nyto_opt_02_01
+	}
+}
+defind_txt={
+	name = GF_nyto_opt_03
+	text = {
+		trigger = {
+			has_country_flag = GF_nyto_opt_03_01
+		}
+		localization_key = GF_nyto_opt_03_01
+	}
+}
+defind_txt={
+	name = GF_nyto_opt_04
+	text = {
+		trigger = {
+			has_country_flag = GF_nyto_opt_04_01
+		}
+		localization_key = GF_nyto_opt_04_01
+	}
+}
+
+#污染
+defined_text = {
+	name = GFnyto_plante_wrlv_contaminate
+	value = value:GFnyto_plante_wrlv_contaminate
+}
+#星球自净
+defined_text = {
+	name = GF_nyto_planet_size_cleanse
+	text = {
+		trigger = {
+			not = {
+				is_planet_class = pc_GFnytp_habitis
+				is_planet_class = pc_GF_nyto_devil_furnace
+				is_planet_class = pc_GF_nyto_embers_gloomy
+			}
+		}
+		localization_key = GF_nyto_planet_size_cleanse_text
+	}
+	default = GF_nyto_planet_size_cleanse_text_2
+	#value = value:GF_nyto_planet_size_cleanse
+}
+defined_text = {
+	name = GF_nyto_planet_size_cleanse2
+	value = value:GF_nyto_planet_size_cleanse
+}
+
+#净化塔
+defined_text = {
+	name = GFnyto_plante_wrlv_cleanse
+	value = value:GFnyto_plante_wrlv_cleanse
+}
+
+#花旗
+defined_text = {
+	name = Epiphyllum_flower_period
+	value = value:Epiphyllum_flower_period
+}
+
+#宇宙创生文本替换
+defined_text = {
+	name = GF_nyto_Crisis_7516_desc
+	text = {
+		trigger = {
+			has_authority = auth_GF_paradeus
+			event_target:cosmo_ending_system={
+				OR = {
+					has_star_flag = horizonsignal_system
+					has_star_flag = worm_black_hole
+				}
+			}
+		}
+		localization_key = GF_nyto_Crisis.7516.desc.paradeus
+	}
+	default = GF_nyto_crisis.7516.desc.paperclips
+}
+
+defined_text ={
+	name = GF_nyto_Crisis_7516_opt
+	text = {
+		trigger = {
+			has_authority = auth_GF_paradeus
+			event_target:cosmo_ending_system={
+				OR = {
+					has_star_flag = horizonsignal_system
+					has_star_flag = worm_black_hole
+				}
+			}
+		}
+		localization_key = GF_nyto_crisis.7516.paradeus
+	}
+	default = GF_nyto_crisis.7516.a
+}
+
+defined_text = {
+	name = GF_nyto_the_four_seasons
+	text = {
+		trigger = {
+			is_spring = yes
+		}
+		localization_key = "GFnyto_spring_modifier"
+	}
+	text = {
+		trigger = {
+			is_summer = yes
+		}
+		localization_key = "GFnyto_summer_modifier"
+	}
+	text = {
+		trigger = {
+			is_autumn = yes
+		}
+		localization_key = "GFnyto_autumn_modifier"
+	}
+	text = {
+		trigger = {
+			is_winter = yes
+		}
+		localization_key = "GFnyto_winter_modifier"
+	}
+	default = GF_nyto_the_four_seasons_titl
+
+}
+
+
+defined_text = {
+	name = GF_nyto_boss_has_hp
+	value = value:GF_nyto_is_boss_limt_hp
+}
+defined_text = {
+	name = GF_nyto_boss_has_hp_nums
+	value = value:GF_nyto_is_boss_limt_hp_mult
+}
+defined_text = {
+	name = GF_nyto_armor_req_pows
+	value = value:GF_nyto_armor_req_pow
+}

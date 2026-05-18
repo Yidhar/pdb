@@ -1,0 +1,14 @@
+weapon_type_nytowith
+weapon_type_light
+weapon_type_keto
+weapon_type_Akso
+weapon_type_LsScepter
+weapon_type_son
+weapon_type_prism
+weapon_type_Electronic
+weapon_type_beacon
+weapon_type_aoe
+weapon_type_fireworks
+weapon_GF_ship_skill_01
+weapon_type_Elius
+weapon_type_Elius_nums

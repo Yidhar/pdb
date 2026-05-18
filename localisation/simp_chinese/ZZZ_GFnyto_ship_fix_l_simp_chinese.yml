@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ ### GF Nyto 舰船尺寸修正 ###
+ GFnyto_mobile_city_plural:0 "移动城市群"
+ ### Nyto Ship Components ###
+ GF_nyto_crisis_laser:0 "坍缩激光"
+ GF_nyto_crisis_laser_DESC:0 "危机舰船使用的高能坍缩激光武器。"
+ mod_GF_Nyto_T_weapon2_num:0 "永恒要塞光矛数量"
+ GFnyto_power_lv0:0 "临时反应堆"
+ GFnyto_power_lv0_DESC:0 "一套为涅托舰船提供基础能源的临时反应堆。"
+ GFnyto_additional_arithmetic_module4:0 "附加运算模块 IV"
+ GFnyto_additional_arithmetic_module4_DESC:0 "用于扩展舰船战术计算能力的附加运算核心。"
+ GFnyto_additional_arithmetic_module_base:0 "附加运算模块基座"
+ GFnyto_additional_arithmetic_module_base_DESC:0 "支撑附加运算模块运行的基础舰载设施。"

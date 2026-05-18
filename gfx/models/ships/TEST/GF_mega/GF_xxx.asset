@@ -1,0 +1,4 @@
+entity = {
+	name = "GF_xxx_entity"
+	pdxmesh = "GF_xxx_mesh"
+}

@@ -1,0 +1,231 @@
+# 特殊项目：乐土遗民链
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_1"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	cost = 2000
+	tech_department = society_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_1_1
+	event_scope = planet_event
+	on_start = {
+		add_resource = {
+			energy = -1000
+		}
+	}
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.1
+		}
+	}
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_2"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	cost = 10000
+	tech_department = physics_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_2_1
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.2
+		}
+	}
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_3"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	cost = 10000
+	tech_department = engineering_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_3_1
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.3
+		}
+	}
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_5"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	cost = 10000
+	tech_department = engineering_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_5_1
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.5
+		}
+	}
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_6"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	days_to_research = 360
+	picture = GFX_evt_nyto_unknown_civilization_202055_6_1
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.6
+		}
+	}
+	on_fail = {
+	}
+}
+
+# 特殊项目：数据挖掘 / 飞升链
+special_project = {
+	key = "GF_NYTO_RE_perk"
+	event_chain = "GFnyto_data_mining_chain"
+	cost = 100000
+	tech_department = physics_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_1_1
+	event_scope = country_event
+	on_success = {
+		country_event = { id = GFnyto_ascension_perk.10 }
+		country_event = {
+			id = GFnyto_ascension_perk.4
+			days = 100
+		}
+	}
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_RE_perk.2"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	cost = 100000
+	tech_department = physics_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = {
+		country_event = {
+			id = GFnyto_ascension_perk.5
+		}
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_RE_perk.3"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	cost = 100000
+	tech_department = society_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = {
+		country_event = {
+			id = GFnyto_ascension_perk.6
+		}
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_RE_perk.4"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	cost = 200000
+	tech_department = society_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = {
+		country_event = {
+			id = GFnyto_ascension_perk.7
+		}
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_RE_perk.5"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	days_to_research = 720
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = {
+		set_country_flag = has_nyto_Prp_flag
+		country_event = {
+			id = GFnyto_ascension_perk.8
+		}
+		give_technology = {
+			tech = tech_GF_nyto_light_thruster
+		}
+		enable_special_project = {
+			name = GF_NYTO_RE_perk.6
+		}
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_RE_perk.6"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	days_to_research = 720
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = {
+		set_country_flag = has_nyto_ftl_flag
+		country_event = {
+			id = GFnyto_ascension_perk.8
+		}
+		give_technology = {
+			tech = tech_GF_nyto_Beacon
+		}
+		enable_special_project = {
+			name = GF_NYTO_RE_perk.7
+		}
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_RE_perk.7"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	days_to_research = 720
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = {
+		set_country_flag = has_nyto_Ex_shield_flag
+		country_event = {
+			id = GFnyto_ascension_perk.8
+		}
+		give_technology = {
+			tech = tech_GF_nyto_godenergy
+		}
+		enable_special_project = {
+			name = GF_NYTO_RE_perk.8
+		}
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_RE_perk.8"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	days_to_research = 720
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = {
+		set_country_flag = has_nyto_ai_flag
+		country_event = {
+			id = GFnyto_ascension_perk.8
+		}
+		give_technology = {
+			tech = tech_GF_nyto_bright_poetry
+		}
+	}
+}
+
+special_project = {
+	key = "GF_NYTO_RE_perk.10"
+	event_scope = country_event
+	days_to_research = 720
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = {
+	}
+}
