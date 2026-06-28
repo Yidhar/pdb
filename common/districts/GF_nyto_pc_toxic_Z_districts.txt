@@ -24,11 +24,11 @@ district_GF_nyto_pc_toxic_underground_shelters = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 10
-		job_miner_add = 1
-		job_farmer_add = 1
+		planet_housing_add = 1000
+		job_miner_add = 100
+		job_farmer_add = 100
 		planet_max_buildings_add = 1
-		job_technician_add = 1
+		job_technician_add = 100
 	}
 	ai_weight = {
 		weight = 10
@@ -71,8 +71,8 @@ district_GF_nyto_pc_toxic_underground_industrial_area = {
 		}
 	}
 	planet_modifier = {
-		job_foundry_add = 2
-		job_artisan_add = 2
+		job_foundry_add = 200
+		job_artisan_add = 200
 	}
 	ai_resource_production = {
 		trigger = {
@@ -109,7 +109,7 @@ district_GF_nyto_pc_toxic_underground_research_institute = {
 		}
 	}
 	planet_modifier = {
-		job_GFnyto_collapse_particle_researcher_add = 4
+		job_GFnyto_collapse_particle_researcher_add = 400
 	}
 	ai_resource_production = {
 		engineering_research = 100

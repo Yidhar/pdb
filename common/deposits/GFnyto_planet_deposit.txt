@@ -3,8 +3,8 @@ d_GFnyto_ancient_land_zone = {
 	icon = d_GFnyto_ancient_land_zone
 	category = deposit_cat_rare
 	planet_modifier = {
-		job_soldier_add = 1
-		planet_housing_add = 1
+		job_soldier_add = 100
+		planet_housing_add = 100
 		army_health = 0.1
 	}
 	drop_weight = { weight = 0 }
@@ -15,10 +15,10 @@ d_GFnyto_ancient_city_zone = {
 	icon = d_GFnyto_ancient_city_zone
 	category = deposit_cat_rare
 	planet_modifier = {
-		job_technician_add = 2
-		job_miner_add = 2
-		job_farmer_add = 2
-		planet_housing_add = 5
+		job_technician_add = 200
+		job_miner_add = 200
+		job_farmer_add = 200
+		planet_housing_add = 500
 	}
 	resources = {
 		category = planet_deposits
@@ -36,9 +36,9 @@ d_GFnyto_ancient_industry_zone = {
 	icon = d_GFnyto_ancient_industry_zone
 	category = deposit_cat_rare
 	planet_modifier = {
-		job_foundry_add = 1
-		job_artisan_add = 1
-		planet_housing_add = 5
+		job_foundry_add = 100
+		job_artisan_add = 100
+		planet_housing_add = 500
 	}
 	resources = {
 		category = armies
@@ -67,8 +67,8 @@ d_GFnyto_planetary_surface_defense_zone = {
 	icon = d_GFnyto_planetary_surface_defense_zone
 	category = deposit_cat_rare
 	planet_modifier = {
-		job_soldier_add = 2
-		planet_housing_add = 10
+		job_soldier_add = 200
+		planet_housing_add = 1000
 		army_health = 0.2
 	}
 	drop_weight = { weight = 0 }
@@ -79,7 +79,7 @@ d_GFnyto_planetary_orbit_defense_zone = {
 	icon = d_GFnyto_planetary_orbit_defense_zone
 	category = deposit_cat_rare
 	planet_modifier = {
-		job_soldier_add = 2
+		job_soldier_add = 200
 		army_damage_mult = 0.2
 	}
 	drop_weight = { weight = 0 }

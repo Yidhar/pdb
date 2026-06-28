@@ -28,7 +28,7 @@ pc_GFnytp_habitis = {
 	uses_alternative_skies_for_moons = no
 	show_city = no
 	modifier = {
-		planet_housing_add = 50
+		planet_housing_add = 5000
 		planet_max_buildings_add = 36
 		building_time_mult = -0.15
 	}

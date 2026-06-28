@@ -51,7 +51,7 @@
  district_gf_nyto_city_plural:0 "$district_gf_nyto_city$"
  district_gf_nyto_city_desc:0 "高耸入云的白色尖塔与全息投影交织，为涅托提供神圣而洁净的居住环境。"
  district_gf_nyto_generator:0 "辐射能源区"
- district_gf_nyto_generator_plural:"$district_gf_nyto_generator$"
+ district_gf_nyto_generator_plural:0 "$district_gf_nyto_generator$"
  district_gf_nyto_generator_desc:0 "利用特殊的吸收塔收集和转化环境中的辐射能量，虽然泛着危险的绿光，但效率极高。"
  district_gf_nyto_mining:0 "晶体挖掘区"
  district_gf_nyto_mining_plural:0 "$district_gf_nyto_mining$"

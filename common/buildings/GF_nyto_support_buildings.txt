@@ -14,8 +14,8 @@ building_GFnyto_forward_base = {
 	}
 
 	planet_modifier = {
-		job_GFnyto_explorer_add = 5
-		planet_housing_add = 10
+		job_GFnyto_explorer_add = 500
+		planet_housing_add = 1000
 		planet_stability_add = 10
 		planet_crime_add = -10
 	}
@@ -26,7 +26,7 @@ building_GFnyto_forward_base = {
 		}
 		modifier = {
 			pop_happiness = -0.1
-			job_soldier_add = 3
+			job_soldier_add = 300
 		}
 	}
 
@@ -59,8 +59,8 @@ building_GFnyto_forward_base2 = {
 	}
 
 	planet_modifier = {
-		job_GFnyto_explorer_add = 5
-		planet_housing_add = 10
+		job_GFnyto_explorer_add = 500
+		planet_housing_add = 1000
 		planet_stability_add = 10
 		planet_crime_add = -10
 	}
@@ -71,7 +71,7 @@ building_GFnyto_forward_base2 = {
 		}
 		modifier = {
 			pop_happiness = -0.1
-			job_soldier_add = 3
+			job_soldier_add = 300
 		}
 	}
 
@@ -106,7 +106,7 @@ building_GFnyto_transportation_hub = {
 	}
 
 	planet_modifier = {
-		job_GFnyto_white_knight_add = 2
+		job_GFnyto_white_knight_add = 200
 		planet_jobs_produces_mult = 0.1
 		army_health = 0.2
 	}
@@ -162,7 +162,7 @@ building_GFnyto_heritage_department = {
 	}
 
 	planet_modifier = {
-		job_culture_worker_add = 5
+		job_culture_worker_add = 500
 	}
 
 	resources = {

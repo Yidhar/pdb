@@ -73,7 +73,7 @@ trait_GF_nyto_electronic = {
 		"trait_GF_nyto_blind_devotion"
 	}
 	modifier = {
-		specialist_and_complex_drone_cat_bonus_workforce_mult = 0.05
+		specialist_and_complex_drone_cat_bonus_workforce_mult = 0.35
 	}
 }
 
@@ -142,7 +142,7 @@ trait_GF_nyto_doctrinal_enforcer = {
 		"trait_GF_nyto_ego_dissolution"
 	}
 	modifier = {
-		worker_and_simple_drone_cat_bonus_workforce_mult = 0.05
+		worker_and_simple_drone_cat_bonus_workforce_mult = 0.35
 	}
 }
 

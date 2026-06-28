@@ -13,6 +13,10 @@
 		name_list="GFNYTO01"
 		trait="trait_GF_nyto_ogas_agreement"
 		trait="trait_GF_nyto_collapse_radiation_adaptation"
+		trait="trait_GF_nyto_virtual_ghost"
+		trait="trait_GF_nyto_blind_devotion"
+		trait="trait_GF_nyto_sensory_overload"
+		trait="trait_GF_nyto_nexus_node"
 	}
 	authority="auth_GF_paradeus"
 	government="gov_civic_GF_nyto_starsea_crusade"

@@ -23,7 +23,7 @@ building_GFnyto_class_4_singularity = {
 		}
 	}
 	planet_modifier = {
-		job_GFnyto_phase_technician_add = 3
+		job_GFnyto_phase_technician_add = 300
 	}
 	prerequisites = {
 		"tech_GF_nyto_storage_of_ancient_technology"
@@ -173,7 +173,7 @@ building_GFnyto_fe_stronghold = {
 	}
 	category = army
 	planet_modifier = {
-		job_GFnyto_white_knight_add = 5
+		job_GFnyto_white_knight_add = 500
 		planet_orbital_bombardment_damage = -0.3
 	}
 	resources = {

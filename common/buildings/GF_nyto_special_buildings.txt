@@ -24,7 +24,7 @@ building_GFnyto_dimensional_fabricator = {
 	}
 
 	planet_modifier = {
-		job_GFnyto_collapse_particle_rar_add = 2
+		job_GFnyto_collapse_particle_rar_add = 200
 	}
 
 	prerequisites = {
@@ -76,7 +76,7 @@ building_GFnyto_dimensional_fabricator2 = {
 	}
 
 	planet_modifier = {
-		job_GFnyto_collapse_particle_rar_add = 4
+		job_GFnyto_collapse_particle_rar_add = 400
 	}
 
 	prerequisites = {

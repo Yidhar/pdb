@@ -65,7 +65,7 @@ district_GF_nyto_pc_portal_science = {
 	}
 	planet_modifier = {
 		planet_max_buildings_add = 1
-		job_GFnyto_technology_minister_add = 20
+		job_GFnyto_technology_minister_add = 2000
 		planet_max_districts_add = 1
 	}
 	ai_weight = {
@@ -108,9 +108,9 @@ district_GF_nyto_pc_portal_mineral = {
 		}
 	}
 	planet_modifier = {
-		job_miner_add = 10
-		job_artisan_add = 5
-		job_farmer_add = 5
+		job_miner_add = 1000
+		job_artisan_add = 500
+		job_farmer_add = 500
 		planet_max_buildings_add = 1
 		planet_max_districts_add = 1
 	}
@@ -164,7 +164,7 @@ district_GF_nyto_pc_portal_alloy = {
 		}
 	}
 	planet_modifier = {
-		job_foundry_add = 10
+		job_foundry_add = 1000
 		planet_max_buildings_add = 1
 	}
 	triggered_planet_modifier = {
@@ -214,8 +214,8 @@ district_GF_nyto_pc_portal_ship = {
 		}
 	}
 	planet_modifier = {
-		job_soldier_add = 10
-		job_GFnyto_white_knight_add = 5
+		job_soldier_add = 1000
+		job_GFnyto_white_knight_add = 500
 		planet_max_districts_add = 1
 	}
 	triggered_planet_modifier = {
@@ -261,9 +261,9 @@ district_GF_nyto_pc_portal_refine = {
 		}
 	}
 	planet_modifier = {
-		job_chemist_add = 5
-		job_gas_refiner_add = 5
-		job_translucer_add = 5
+		job_chemist_add = 500
+		job_gas_refiner_add = 500
+		job_translucer_add = 500
 		planet_max_districts_add = 1
 		planet_max_buildings_add = 1
 	}
@@ -308,7 +308,7 @@ district_GF_nyto_pc_portal_energy = {
 	}
 	planet_modifier = {
 		planet_max_districts_add = 1
-		job_GFnyto_phase_technician_add = 5
+		job_GFnyto_phase_technician_add = 500
 		planet_max_buildings_add = 1
 	}
 	ai_weight = {

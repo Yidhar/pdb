@@ -37,7 +37,7 @@ GF_nyto_holding_sacrificial_shrine = {
 		potential = {
 			exists = planet.owner
 		}
-		job_overlord_Epiphyllum_add = 2
+		job_overlord_Epiphyllum_add = 200
 	}
 }
 
@@ -98,7 +98,7 @@ building_GFnyto_class_4_singularity = {
 	}
 
 	planet_modifier = {
-		job_GFnyto_phase_technician_add = 3
+		job_GFnyto_phase_technician_add = 300
 	}
 
 	prerequisites = {

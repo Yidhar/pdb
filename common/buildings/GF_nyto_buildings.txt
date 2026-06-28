@@ -9,7 +9,7 @@ building_GFnyto_collapse_exploit_plant_1 = {
 		}
 	}
 	planet_modifier = {
-		job_GFnyto_collapse_particle_researcher_add = 2
+		job_GFnyto_collapse_particle_researcher_add = 200
 	}
 	resources = {
 		category = planet_buildings
@@ -53,7 +53,7 @@ building_GFnyto_collapse_exploit_plant_2 = {
 		has_upgraded_capital = yes
 	}
 	planet_modifier = {
-		job_GFnyto_collapse_particle_researcher_add = 3
+		job_GFnyto_collapse_particle_researcher_add = 300
 	}
 
 	resources = {
@@ -165,8 +165,8 @@ building_GFnyto_forward_base = {
 		text = building_GFnyto_forward_base_desc1
 	}
 	planet_modifier = {
-		job_GFnyto_explorer_add = 5
-		planet_housing_add = 10
+		job_GFnyto_explorer_add = 500
+		planet_housing_add = 1000
 		planet_stability_add = 10
 		planet_crime_add = -10
 	}
@@ -176,7 +176,7 @@ building_GFnyto_forward_base = {
 		}
 		modifier = {
 			pop_happiness = -0.1
-			job_soldier_add = 3
+			job_soldier_add = 300
 		}
 	}
 	resources = {
@@ -210,8 +210,8 @@ building_GFnyto_forward_base2 = {
 	}
 
 	planet_modifier = {
-		job_GFnyto_explorer_add = 5
-		planet_housing_add = 10
+		job_GFnyto_explorer_add = 500
+		planet_housing_add = 1000
 		planet_stability_add = 10
 		planet_crime_add = -10
 	}
@@ -221,7 +221,7 @@ building_GFnyto_forward_base2 = {
 		}
 		modifier = {
 			pop_happiness = -0.1
-			job_soldier_add = 3
+			job_soldier_add = 300
 		}
 	}
 	country_modifier = {
@@ -253,7 +253,7 @@ building_GFnyto_transportation_hub = {
 	}
 	base_cap_amount = 1
 	planet_modifier = {
-		job_GFnyto_white_knight_add = 2
+		job_GFnyto_white_knight_add = 200
 		planet_jobs_produces_mult = 0.1
 		army_health = 0.2
 	}
@@ -301,7 +301,7 @@ building_GFnyto_heritage_department = {
 		is_capital = yes
 	}
 	base_cap_amount = 1
-	planet_modifier = { job_culture_worker_add = 5 }
+	planet_modifier = { job_culture_worker_add = 500 }
 
 	resources = {
 		category = planet_buildings
@@ -334,7 +334,7 @@ building_GFnyto_algorithm = {
 		}
 	}
 	planet_modifier = {
-		job_GFnyto_algorithm_add = 2
+		job_GFnyto_algorithm_add = 200
 	}
 	resources = {
 		category = planet_buildings
@@ -366,7 +366,7 @@ building_GFnytp_framework_core = {
 			is_nyto_country =yes
 		}
 	}
-	planet_modifier = { job_GFnyto_framework_add = 2 }
+	planet_modifier = { job_GFnyto_framework_add = 200 }
 	resources = {
 		category = research_agreements
 		cost = {
@@ -399,7 +399,7 @@ building_GFnytp_framework_core2 = {
 			is_nyto_country =yes
 		}
 	}
-	planet_modifier = {job_GFnyto_framework_add = 4}
+	planet_modifier = {job_GFnyto_framework_add = 400}
 	resources = {
 		category = research_agreements
 		cost = {
@@ -442,8 +442,8 @@ building_GFnyto_nourishment_center = {
 		}
 	}
 
-	planet_modifier = {job_GFnyto_collapse_particle_zip_add = 2
-		job_GFnyto_collapse_particle_zip_add = 2
+	planet_modifier = {job_GFnyto_collapse_particle_zip_add = 200
+		job_GFnyto_collapse_particle_zip_add = 200
 	}
 	prerequisites = {
 		"tech_GFnyto_tansuo"
@@ -475,7 +475,7 @@ building_GFnyto_nourishment_center2 = {
 		}
 	}
 
-	planet_modifier = {job_GFnyto_collapse_particle_zip_add=4}
+	planet_modifier = {job_GFnyto_collapse_particle_zip_add=400}
 	prerequisites = {
 		"tech_GFnyto_tansuo2"
 	}
@@ -516,7 +516,7 @@ building_GFnyto_dimensional_fabricator = {
 		}
 	}
 	planet_modifier = {
-		job_GFnyto_collapse_particle_rar_add = 2
+		job_GFnyto_collapse_particle_rar_add = 200
 	}
 
 	prerequisites = {
@@ -562,7 +562,7 @@ building_GFnyto_dimensional_fabricator2 = {
 			GF_nyto_collapse_liquid = 5
 		}
 	}
-	planet_modifier = {job_GFnyto_collapse_particle_rar_add = 4}
+	planet_modifier = {job_GFnyto_collapse_particle_rar_add = 400}
 	prerequisites = {
 		"tech_GFnyto_tansuo2"
 	}
@@ -716,7 +716,7 @@ GF_nyto_holding_sacrificial_shrine = {
 		potential = {
 			exists = planet.owner
 		}
-		job_overlord_Epiphyllum_add  = 2
+		job_overlord_Epiphyllum_add  = 200
 	}
 }
 
