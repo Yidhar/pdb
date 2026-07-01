@@ -84,6 +84,7 @@ GFnyto_Command_ship = {
 				OR = {
 					is_megastructure_type = mega_shipyard_3
 					is_megastructure_type = mega_shipyard_restored
+					is_megastructure_type = GFnyto_habitat_02
 				}
 			}
 		}
@@ -97,6 +98,7 @@ GFnyto_Command_ship = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = GFnyto_habitat_02
 					}
 				}
 				AND = {
@@ -113,16 +115,16 @@ GFnyto_Command_ship = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = GFnyto_habitat_02
 					}
 				}
 				AND = {
 					is_scope_type = starbase
-					has_starbase_building = titan_yards
+					has_starbase_building = capital_yards
 				}
 			}
 		}
 	}
-	# TODO: [USER INTERVENTION REQUIRED] restore StarForge/exe_black_hole_restore build nodes after megastructure migration
 	prerequisites = { tech_template_GFnyto_Command_ship }
 	num_target_locators = 8
 	resources = {
@@ -184,11 +186,11 @@ GF_nyto_super_battelship = {
 				OR = {
 					is_megastructure_type = mega_shipyard_3
 					is_megastructure_type = mega_shipyard_restored
+					is_megastructure_type = GFnyto_habitat_02
 				}
 			}
 		}
 	}
-	# TODO: [USER INTERVENTION REQUIRED] restore GFnyto_habitat_02 / StarForge / exe_black_hole_restore build nodes after megastructure migration
 	prerequisites = { tech_template_GFnyto_cv_batellship }
 	num_target_locators = 10
 	resources = {

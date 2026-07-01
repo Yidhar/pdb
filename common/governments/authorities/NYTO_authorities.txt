@@ -21,7 +21,6 @@ auth_GF_paradeus = {
     icon = "gfx/interface/icons/governments/GF_paradeus.dds"
     random_weight = { modifier = { factor = 0 } }
     country_modifier = {
-        pop_demotion_time_mult = -1
         envoys_add = 2
         intel_decryption_add = 2
         SPY_NETWORK_DAILY_VALUE_ADD = 0.5

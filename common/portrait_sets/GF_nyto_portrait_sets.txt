@@ -10,8 +10,10 @@ elid ={
     portraits ={
         "GFnyto_eild"
     }
-    randomizable = no
     conditional_portraits ={
-        "GFnyto_eild"
+        randomizable = { always = no }
+        portraits = {
+            "GFnyto_eild"
+        }
     }
 }
