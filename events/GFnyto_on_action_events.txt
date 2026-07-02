@@ -99,11 +99,12 @@ country_event = {
 }
 #行星轨道防御系统
 #被轰炸
-planet_event = {
+carrier_event = {
 	id = gfnytoaction.10
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		is_scope_type = planet
 		colony_type = col_GF_nyto_capital
 	}
 	immediate = {
@@ -125,7 +126,7 @@ planet_event = {
 			set_update_modifiers_batch = end
 		}
 	}
-}
+}
 
 country_event = {
 	id = gfnytoaction.6

@@ -826,7 +826,7 @@ planet_event = {
 }
 
 #殖民被坍缩液轰炸星球
-planet_event = {
+carrier_event = {
 	id = GFnytoeild.10
 	title = "GFnytoeild.10.name"
 	desc = "GFnytoeild.10.desc"
@@ -835,15 +835,14 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	is_triggered_only = yes
-	pre_triggers = {
+	trigger = {
+		is_scope_type = planet
 		has_owner = yes
 		is_homeworld = no
 		original_owner = yes
 		has_ground_combat = no
 		is_capital = no
 		is_occupied_flag = no
-	}
-	trigger = {
 		owner = {
 			has_origin = origin_GF_nyto_the_last_light
 		}
