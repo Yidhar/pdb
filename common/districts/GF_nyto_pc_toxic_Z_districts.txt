@@ -27,7 +27,6 @@ district_GF_nyto_pc_toxic_underground_shelters = {
 		planet_housing_add = 1000
 		job_miner_add = 100
 		job_farmer_add = 100
-		planet_max_buildings_add = 1
 		job_technician_add = 100
 	}
 	ai_weight = {
@@ -41,6 +40,9 @@ district_GF_nyto_pc_toxic_underground_shelters = {
 		minerals = 100
 		food = 100
 		energy = 100
+	}
+	zone_slots = {
+		slot_GF_nyto_underground
 	}
 }
 
@@ -80,6 +82,9 @@ district_GF_nyto_pc_toxic_underground_industrial_area = {
 		}
 		alloys = 1000
 		consumer_goods = 1000
+	}
+	zone_slots = {
+		slot_GF_nyto_underground
 	}
 }
 
@@ -127,5 +132,8 @@ district_GF_nyto_pc_toxic_underground_research_institute = {
 				}
 			}
 		}
+	}
+	zone_slots = {
+		slot_GF_nyto_underground
 	}
 }

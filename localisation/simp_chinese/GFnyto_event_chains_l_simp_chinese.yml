@@ -6,3 +6,10 @@
  GFnyto_data_mining_chain_desc:0 "锡安对于我们现在而言仍然有许多未知的地方，必须深入勘探。也许能找到遗迹文明的些许踪迹。"
  GFnyto_crisis_chain_title:0 "征服地狱"
  GFnyto_crisis_chain_desc:0 "通过锡安，我们预见了一场针对银河系的入侵。只是坐以待毙的话，面对强大的入侵者我们毫无胜算。如果能够整合星海，我们或许还有一丝胜机。不幸的是，能看清现状的人寥寥无几。"
+
+ GF_nyto_Elid_level2:0 "高危ELID威胁等级"
+ mod_GF_nyto_has_armor:0 "永恒要塞装甲强化"
+ mod_GF_Nyto_T_weapon2_num:0 "终末辉光同步节点"
+ GF_nyto_Land_base_station:0 "陆基防御站"
+ GF_nyto_Land_base_station_desc:0 "固定式陆基火力节点，用于在关键城区和地下交通枢纽构筑不可移动的防御支点。"
+ GF_nyto_yaosai_army_name:0 "$GF_nyto_yaosai$"

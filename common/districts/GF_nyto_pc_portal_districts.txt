@@ -25,7 +25,6 @@ district_GF_nyto_pc_portal_house = {
 	}
 	planet_modifier = {
 		planet_housing_add = 500
-		planet_max_buildings_add = 1
 		planet_amenities_add = 200
 		planet_max_districts_add = 1
 	}
@@ -35,6 +34,11 @@ district_GF_nyto_pc_portal_house = {
 			weight = 1000
 			free_housing < 10
 		}
+	}
+	zone_slots = {
+		slot_city_government
+		slot_GF_nyto_embers_city
+		slot_GF_nyto_embers_city
 	}
 }
 
@@ -64,7 +68,6 @@ district_GF_nyto_pc_portal_science = {
 		}
 	}
 	planet_modifier = {
-		planet_max_buildings_add = 1
 		job_GFnyto_technology_minister_add = 2000
 		planet_max_districts_add = 1
 	}
@@ -79,6 +82,9 @@ district_GF_nyto_pc_portal_science = {
 				}
 			}
 		}
+	}
+	zone_slots = {
+		slot_GF_nyto_portal_research
 	}
 }
 
@@ -111,7 +117,6 @@ district_GF_nyto_pc_portal_mineral = {
 		job_miner_add = 1000
 		job_artisan_add = 500
 		job_farmer_add = 500
-		planet_max_buildings_add = 1
 		planet_max_districts_add = 1
 	}
 	triggered_planet_modifier = {
@@ -135,6 +140,9 @@ district_GF_nyto_pc_portal_mineral = {
 				}
 			}
 		}
+	}
+	zone_slots = {
+		slot_GF_nyto_portal_city
 	}
 }
 
@@ -165,9 +173,11 @@ district_GF_nyto_pc_portal_alloy = {
 	}
 	planet_modifier = {
 		job_foundry_add = 1000
-		planet_max_buildings_add = 1
 	}
 	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
 		modifier = {
 			planet_metallurgists_sr_living_metal_produces_add = 0.2
 			planet_metallurgists_nanites_produces_add = 0.2
@@ -185,6 +195,9 @@ district_GF_nyto_pc_portal_alloy = {
 				}
 			}
 		}
+	}
+	zone_slots = {
+		slot_GF_nyto_portal_industry
 	}
 }
 
@@ -219,7 +232,12 @@ district_GF_nyto_pc_portal_ship = {
 		planet_max_districts_add = 1
 	}
 	triggered_planet_modifier = {
-		ship_orbit_upkeep_mult = -0.01
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			ship_orbit_upkeep_mult = -0.01
+		}
 	}
 	ai_weight = {
 		weight = 0
@@ -232,6 +250,9 @@ district_GF_nyto_pc_portal_ship = {
 				}
 			}
 		}
+	}
+	zone_slots = {
+		slot_GF_nyto_portal_military
 	}
 }
 
@@ -265,7 +286,6 @@ district_GF_nyto_pc_portal_refine = {
 		job_gas_refiner_add = 500
 		job_translucer_add = 500
 		planet_max_districts_add = 1
-		planet_max_buildings_add = 1
 	}
 	ai_weight = {
 		weight = 0
@@ -278,6 +298,9 @@ district_GF_nyto_pc_portal_refine = {
 				}
 			}
 		}
+	}
+	zone_slots = {
+		slot_GF_nyto_portal_industry
 	}
 }
 
@@ -309,7 +332,6 @@ district_GF_nyto_pc_portal_energy = {
 	planet_modifier = {
 		planet_max_districts_add = 1
 		job_GFnyto_phase_technician_add = 500
-		planet_max_buildings_add = 1
 	}
 	ai_weight = {
 		weight = 0
@@ -322,5 +344,8 @@ district_GF_nyto_pc_portal_energy = {
 				}
 			}
 		}
+	}
+	zone_slots = {
+		slot_GF_nyto_portal_military
 	}
 }

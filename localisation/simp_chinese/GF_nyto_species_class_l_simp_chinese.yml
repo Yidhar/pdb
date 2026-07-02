@@ -56,10 +56,6 @@
  mod_pc_GFnytp_habitis_habitability:0 "哈比斯宜居性"
  trait_pc_GFnytp_habitis_preference:0 "哈比斯偏好"
  trait_pc_GFnytp_habitis_preference_desc:0 "该物种适应哈比斯环境。"
- trait_pc_GF_nyto_devil_furnace_preference:0 "恶魔熔炉偏好"
- trait_pc_GF_nyto_devil_furnace_preference_desc:0 "该物种适应恶魔熔炉环境。"
- trait_pc_GF_nyto_embers_gloomy_preference:0 "余烬阴霾偏好"
- trait_pc_GF_nyto_embers_gloomy_preference_desc:0 "该物种适应余烬阴霾环境。"
  ### GFnyto Species Classes ###
  nyto_machine:0 "涅托(机械)"
  nyto_machine_desc:0 "机械化躯体的涅托分支，用于合成人或无人机兼容线路。"

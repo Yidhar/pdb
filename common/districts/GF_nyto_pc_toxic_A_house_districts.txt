@@ -43,6 +43,11 @@ district_GF_nyto_pc_toxic_house = {
 		energy = 1000000
 		food = 1000000
 	}
+	zone_slots = {
+		slot_city_government
+		slot_GF_nyto_embers_city
+		slot_GF_nyto_embers_city
+	}
 }
 
 #发电区划
@@ -103,9 +108,13 @@ district_GF_nyto_pc_toxic_energy = {
 		}
 		energy = 999999
 	}
+	zone_slots = {
+		slot_GF_nyto_toxic_city
+	}
 }
 
-#昙花区划
+#昙花区划 [WIP - DISABLED] trait_GFnyto_tanhua 未定义，此区划当前不可用
+# TODO: 恢复 trait_GFnyto_tanhua 定义后，将下方 always = no 替换为 has_trait = trait_GFnyto_tanhua
 district_GFnyto_pc_Epiphyllum = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
@@ -179,6 +188,9 @@ district_GFnyto_pc_Epiphyllum = {
 			always = yes
 		}
 		food = 999999
+	}
+	zone_slots = {
+		slot_GF_nyto_toxic_city
 	}
 }
 
@@ -382,6 +394,9 @@ district_GF_nyto_pc_toxic_alloy = {
 	planet_modifier = {
 		planet_housing_add = 1000
 	}
+	zone_slots = {
+		slot_GF_nyto_toxic_city
+	}
 } #当星球为综合工业星球时产出全部多项资源
 
 
@@ -412,12 +427,8 @@ district_GF_nyto_pc_toxic_leisure = {
 			exotic_gases = 50
 		}
 		produces = {
-			trigger = {
-
-			}
 			GF_nyto_collapse_fluid = 60
 			multiplier = value:GF_nyto_drp_modifer|JOB|GFnyto_collapse_particle_zip|districts|district_GF_nyto_pc_toxic_leisure|rss|GF_nyto_collapse_fluid|category|worker|rss_category|planet_researchers|
-
 		}
 		upkeep = {
 			exotic_gases = 20
@@ -442,6 +453,9 @@ district_GF_nyto_pc_toxic_leisure = {
 			always = yes
 		}
 		energy = -100
+	}
+	zone_slots = {
+		slot_GF_nyto_toxic_city
 	}
 }
 
@@ -584,9 +598,8 @@ district_GF_nyto_pc_toxic_science = {
 					}
 				}
 			}
-			rare_crystals = 2
-			GF_nyto_collapse_fluid = 2
-			GF_nyto_collapse_fluid = 20
+		rare_crystals = 2
+		GF_nyto_collapse_fluid = 20
 			GF_nyto_training_keys = 1
 			multiplier = value:GF_nyto_drp_modifer|districts|district_GF_nyto_pc_toxic_science|
 		}
@@ -604,6 +617,9 @@ district_GF_nyto_pc_toxic_science = {
 		physics_research = 9999
 		society_research = 9999
 		engineering_research = 9999
+	}
+	zone_slots = {
+		slot_GF_nyto_toxic_city
 	}
 }
 
@@ -643,5 +659,8 @@ district_GF_nyto_pc_toxic_trade = {
 	planet_modifier = {
 		planet_housing_add = 1000
 		job_GFnyto_white_knight_add = 1000
+	}
+	zone_slots = {
+		slot_GF_nyto_toxic_city
 	}
 }

@@ -9,6 +9,8 @@ trait_GF_nyto_ogas_agreement_plus_desc:0 "§L这个物种的大脑拥有强大�
 trait_GF_nyto_collapse_radiation_adaptation:0 "坍缩辐射适应"
 trait_GF_nyto_collapse_radiation_adaptation_desc:0 "§L为了适应恶劣的环境,身体组织变得依赖辐射,辐射过少时还出现器官衰竭和免疫紊乱的情况。辐射过高又会导致身体组织高度结晶化变成EILD。§!\n"
 
+ leader_trait_GF_nyto_collapse_radiation_adaptation:0 "$trait_GF_nyto_collapse_radiation_adaptation$"
+ leader_trait_GF_nyto_collapse_radiation_adaptation_desc:0 "$trait_GF_nyto_collapse_radiation_adaptation_desc$"
 
  trait_GF_nyto_isomer_synchronization:0 "异构体同步"
  trait_GF_nyto_isomer_synchronization_desc:0 "这些个体之间存在着某种难以言喻的链接，如同异构体般共享着思维与感官，极大地提升了社会的协调性与稳定性。"

@@ -63,6 +63,305 @@
 # }
 
 
+# ==================== Embers (Gloomy World - Pre-Spring) Zones ====================
+
+zone_GF_nyto_embers_city = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = 120
+	potential = {
+		uses_district_set = GF_nyto_embers_gloomy_world
+		NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+	}
+	unlock = {
+		always = yes
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 3
+	zone_sets = {
+		zone_GF_nyto_embers_city
+	}
+	include = {
+		all
+	}
+	excluded_building_sets = {
+		generator_automation
+		mining_automation
+		farming_automation
+	}
+	district_planet_modifier = {
+		planet_housing_add = 3000
+		planet_amenities_add = 500
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_GF_nyto_embers_industry = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = 120
+	potential = {
+		uses_district_set = GF_nyto_embers_gloomy_world
+		NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+	}
+	unlock = {
+		always = yes
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 3
+	zone_sets = {
+		zone_GF_nyto_embers_industry
+	}
+	include = {
+		all
+	}
+	excluded_building_sets = {
+		generator_automation
+		mining_automation
+		farming_automation
+	}
+	district_planet_modifier = {
+		job_miner_add = 500
+		job_farmer_add = 500
+		job_artisan_add = 150
+		job_foundry_add = 150
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_GF_nyto_underground = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = 120
+	potential = {
+		uses_district_set = GF_nyto_embers_gloomy_world
+		NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
+	}
+	unlock = {
+		always = yes
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 3
+	zone_sets = {
+		zone_GF_nyto_underground
+	}
+	include = {
+		all
+	}
+	excluded_building_sets = {
+		generator_automation
+		mining_automation
+		farming_automation
+	}
+	district_planet_modifier = {
+		planet_housing_add = 1000
+		job_miner_add = 100
+		job_farmer_add = 100
+		job_technician_add = 100
+		job_foundry_add = 200
+		job_artisan_add = 200
+		job_GFnyto_collapse_particle_researcher_add = 400
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+# ==================== Toxic (Post-Spring) Zones ====================
+
+zone_GF_nyto_toxic_city = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = 120
+	potential = {
+		has_planet_flag = GFnyto_Spring_wakes_up
+	}
+	unlock = {
+		always = yes
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 3
+	zone_sets = {
+		zone_GF_nyto_toxic_city
+	}
+	include = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+# ==================== Portal Star Zones ====================
+
+zone_GF_nyto_portal_city = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = 120
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	unlock = {
+		always = yes
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 3
+	zone_sets = {
+		zone_GF_nyto_portal_city
+	}
+	include = {
+		all
+	}
+	excluded_building_sets = {
+		generator_automation
+		mining_automation
+		farming_automation
+	}
+	district_planet_modifier = {
+		planet_housing_add = 500
+		planet_amenities_add = 200
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_GF_nyto_portal_industry = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = 120
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	unlock = {
+		always = yes
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 3
+	zone_sets = {
+		zone_GF_nyto_portal_industry
+	}
+	include = {
+		all
+	}
+	excluded_building_sets = {
+		generator_automation
+		mining_automation
+		farming_automation
+	}
+	district_planet_modifier = {
+		job_foundry_add = 1000
+		job_chemist_add = 500
+		job_gas_refiner_add = 500
+		job_translucer_add = 500
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_GF_nyto_portal_military = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = 120
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	unlock = {
+		always = yes
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 3
+	zone_sets = {
+		zone_GF_nyto_portal_military
+	}
+	include = {
+		all
+	}
+	excluded_building_sets = {
+		generator_automation
+		mining_automation
+		farming_automation
+	}
+	district_planet_modifier = {
+		job_soldier_add = 1000
+		job_GFnyto_white_knight_add = 500
+		job_GFnyto_phase_technician_add = 500
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_GF_nyto_portal_research = {
+	icon = GFX_district_specialization_urban
+	base_buildtime = 120
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	unlock = {
+		always = yes
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 3
+	zone_sets = {
+		zone_GF_nyto_portal_research
+	}
+	include = {
+		all
+	}
+	excluded_building_sets = {
+		generator_automation
+		mining_automation
+		farming_automation
+	}
+	district_planet_modifier = {
+		job_GFnyto_technology_minister_add = 2000
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+# ==================== Collapse Zones ====================
+
 zone_gf_nyto_collapse_purify = {
 	icon = GFX_district_specialization_urban
 	base_buildtime = 120
@@ -90,8 +389,6 @@ zone_gf_nyto_collapse_purify = {
 		all
 	}
 	excluded_building_sets = {
-		urban_automation
-		urban_automation_arcology
 		generator_automation
 		mining_automation
 		farming_automation
@@ -136,8 +433,6 @@ zone_gf_nyto_collapse_pollute = {
 		all
 	}
 	excluded_building_sets = {
-		urban_automation
-		urban_automation_arcology
 		generator_automation
 		mining_automation
 		farming_automation

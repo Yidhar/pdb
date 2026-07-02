@@ -6,5 +6,10 @@
         "*.gui": "stellaris",
         "*.gfx": "stellaris",
         "*.asset": "stellaris"
-    }
+    },
+    "stellarisLanguageServices.localisation.languages": [
+        "Chinese"
+    ],
+    "stellarisLanguageServices.rules_remote_url": "",
+    "stellarisLanguageServices.rules_version": "latest"
 }

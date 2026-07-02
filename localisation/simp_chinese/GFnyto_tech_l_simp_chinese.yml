@@ -194,4 +194,5 @@ tech_GF_nyto_loser_fallen_empire_0:0 "这个是为了削弱堕落用的。"
  tech_template_GF_nyto_stions_fortress_commn:0 "最小指挥单元扩展"
  tech_template_GF_nyto_stions_fortress_commn_effect:0 "$mod_GF_nyto_stions_weapon_num$ §G+1§!"
  tech_template_GF_nyto_stions_fortress_commn_desc:0 "允许永恒要塞在展开时部署更多的离子炮台"
-
+ tech_template_GF_nyto_stions_fortress_HP_titl:0 "永恒要塞残机：+1"
+ tech_template_GF_nyto_stions_fortress_commn_titl:0 "永恒要塞附属粒子炮：+1"

@@ -146,11 +146,6 @@ country_event = {
 					species = root
 				}
 			}
-			set_variable = {
-				which = SRA_planet_districts_modifier_upkeep
-				value =  value:SRA_planet_districts_modifier|districts|SRA_engery_distr|BaseMaintenance|2|MaintenanceGrowthFactor|0.08|MaintenancePower|1.8|
-			}
-
 		}
 	}
 }

@@ -6,6 +6,9 @@ district_gf_nyto_city = {
 	max_for_deposits_on_planet = 1
 	icon = district_city
 	potential = {
+		owner = {
+			has_origin = origin_gf_nyto_attractor_field
+		}
         uses_district_set = GF_nyto_embers_gloomy_world
         NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
 	}
@@ -19,9 +22,18 @@ district_gf_nyto_city = {
 			is_planet_class = pc_relic
 		}
 	}
-    zone_slots = {
-        slot_city_government
-    }
+	convert_to = {
+		district_GF_nyto_pc_toxic_house
+		district_GF_nyto_pc_toxic_underground_shelters
+		district_city
+		district_nexus
+		district_hive
+	}
+	zone_slots = {
+		slot_city_government
+		slot_GF_nyto_embers_city
+		slot_GF_nyto_embers_city
+	}
 	conversion_ratio = 1
 	resources = {
 		category = planet_districts_cities
@@ -66,6 +78,9 @@ district_gf_nyto_generator = {
 	min_for_deposits_on_planet = 1
 	icon = district_generator
 	potential = {
+		owner = {
+			has_origin = origin_gf_nyto_attractor_field
+		}
         uses_district_set = GF_nyto_embers_gloomy_world
         NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
 	}
@@ -80,9 +95,9 @@ district_gf_nyto_generator = {
 		}
 	}
 	conversion_ratio = 1
-    zone_slots = {
-        slot_city_government
-    }
+	zone_slots = {
+		slot_GF_nyto_embers_city
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
@@ -142,9 +157,9 @@ district_gf_nyto_mining = {
 		}
 	}
 	conversion_ratio = 1
-    zone_slots = {
-        slot_city_government
-    }
+	zone_slots = {
+		slot_GF_nyto_embers_industry
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
@@ -204,9 +219,9 @@ district_gf_nyto_agriculture = {
 		}
 	}
 	conversion_ratio = 1
-    zone_slots = {
-        slot_city_government
-    }
+	zone_slots = {
+		slot_GF_nyto_embers_industry
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
@@ -257,6 +272,8 @@ district_gf_nyto_industrial = {
         NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
 	}
 	allow = {
+        uses_district_set = GF_nyto_embers_gloomy_world
+        NOT = { has_planet_flag = GFnyto_Spring_wakes_up }
 		NOT = {
 			is_planet_class = pc_city
 		}
@@ -266,9 +283,9 @@ district_gf_nyto_industrial = {
 	}
 
 	conversion_ratio = 1
-    zone_slots = {
-        slot_city_government
-    }
+	zone_slots = {
+		slot_GF_nyto_embers_industry
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {

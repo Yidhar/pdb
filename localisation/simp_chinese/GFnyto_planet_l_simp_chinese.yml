@@ -12,8 +12,16 @@ mod_pc_GF_nyto_devil_furnace_habitability:0 "恶魔熔炉星球适应"
 GF_nyto_Radiation_desc:0 "§W这颗星球受到了严重的坍塌辐射污染。\n当前污染度:§!§R[planet.GFnyto_plante_wrlv]§!%\n当前每年产生§R[GFnyto_plante_wrlv_contaminate]§!污染度\n当前星球自净化能力:[GF_nyto_planet_size_cleanse]\n当前启用的净化装置:§l[GFnyto_plante_wrlv_cleanse]§!"
 GF_nyto_Radiation2_desc:0 "$GF_nyto_Radiation_desc$"
  ### 4.3 Common Batch 1 compatibility localisation ###
- trait_pc_GF_nyto_embers_gloomy_preference:0 "余烬阴霾偏好"
- trait_pc_GF_nyto_embers_gloomy_preference_desc:0 "该物种已适应§H余烬阴霾星球§!的特殊环境。"
+ trait_pc_GF_nyto_embers_gloomy_preference:0 "余烬黯然偏好"
+ trait_pc_GF_nyto_embers_gloomy_preference_desc:0 "该物种已适应§H余烬黯然星球§!的特殊生态与辐射环境。"
  trait_pc_GF_nyto_devil_furnace_preference:0 "恶魔熔炉偏好"
  trait_pc_GF_nyto_devil_furnace_preference_desc:0 "该物种已适应§H恶魔熔炉星球§!的高温与工业化环境。"
  GF_nyto_yaosai_army_name:0 "永固要塞"
+
+ ### GFnyto Colony Types ###
+ col_GF_nyto_pc_toxic_alloy_plural_tt:0 "军事工业星球"
+ col_Gf_nyto_xiyou_rss_tt:0 "战略资源中枢"
+ col_GF_nyto_food_planet_tt:0 "民用产业星球"
+ col_GF_nyto_nv_fleet_tt:0 "舰队支持中心"
+ col_GF_nyto_science_tt:0 "科研中枢"
+ col_GF_nyto_capital_tt:0 "阿佛纳斯"
